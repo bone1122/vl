@@ -1,0 +1,4 @@
+name = "v20250723"
+main = "_server.js"
+compatibility_date = "2025-07-23"
+keep_vars = true
