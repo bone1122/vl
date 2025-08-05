@@ -1,1 +1,4581 @@
-const _0xa62ad6=_0x1bed;(function(_0x8a3a60,_0x515b20){const _0x5a942d=_0x1bed,_0x4a8697=_0x8a3a60();while(!![]){try{const _0x3f420b=parseInt(_0x5a942d(0x348))/0x1*(-parseInt(_0x5a942d(0x340))/0x2)+parseInt(_0x5a942d(0x2bc))/0x3+-parseInt(_0x5a942d(0x212))/0x4+parseInt(_0x5a942d(0x329))/0x5*(-parseInt(_0x5a942d(0x16b))/0x6)+parseInt(_0x5a942d(0x182))/0x7+parseInt(_0x5a942d(0x255))/0x8*(-parseInt(_0x5a942d(0x22a))/0x9)+parseInt(_0x5a942d(0x148))/0xa;if(_0x3f420b===_0x515b20)break;else _0x4a8697['push'](_0x4a8697['shift']());}catch(_0x386601){_0x4a8697['push'](_0x4a8697['shift']());}}}(_0x3734,0xb1556));function _0x1bed(_0x46e24b,_0x484cda){const _0x3734bd=_0x3734();return _0x1bed=function(_0x1bed64,_0xff11ce){_0x1bed64=_0x1bed64-0x133;let _0x3ad53c=_0x3734bd[_0x1bed64];return _0x3ad53c;},_0x1bed(_0x46e24b,_0x484cda);}import{connect}from'cloudflare:sockets';let userID='',proxyIP='',DNS64Server='',subConverter=atob(_0xa62ad6(0x2e9)),subConfig=atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvY29uZmlnL0FDTDRTU1JfT25saW5lX01pbmlfTXVsdGlNb2RlLmluaQ=='),subProtocol=_0xa62ad6(0x26c),subEmoji=_0xa62ad6(0x250),socks5Address='',parsedSocks5Address={},enableSocks=![],enableHttp=![],noTLS=_0xa62ad6(0x2b0);const expire=0xf4849500;let proxyIPs,socks5s,go2Socks5s=[_0xa62ad6(0x279),_0xa62ad6(0x2d7),_0xa62ad6(0x2c5),_0xa62ad6(0x137)],addresses=[],addressesapi=[],addressesnotls=[],addressesnotlsapi=[],addressescsv=[],DLS=0x8,remarkIndex=0x1,FileName=atob(_0xa62ad6(0x170)),BotToken,ChatID,proxyhosts=[],proxyhostsURL='',RproxyIP='false';const httpPorts=[_0xa62ad6(0x17d),'8880','2052',_0xa62ad6(0x177),_0xa62ad6(0x157),_0xa62ad6(0x242)];let httpsPorts=[_0xa62ad6(0x2ed),_0xa62ad6(0x2d9),_0xa62ad6(0x14c),'2096',_0xa62ad6(0x18b)],有效时间=0x7,更新时间=0x3,userIDLow,userIDTime='',proxyIPPool=[],path='/?ed=2560',动态UUID=userID,link=[],banHosts=[atob(_0xa62ad6(0x2db))],SCV=_0xa62ad6(0x250),allowInsecure='&allowInsecure=1';export default{async 'fetch'(_0x95b3df,_0x464956,_0x3af684){const _0x19bf82=_0xa62ad6;try{const _0x41b359=_0x95b3df[_0x19bf82(0x345)][_0x19bf82(0x231)](_0x19bf82(0x1ad))||_0x19bf82(0x336),_0x576503=_0x41b359[_0x19bf82(0x23c)]();userID=_0x464956['UUID']||_0x464956[_0x19bf82(0x166)]||_0x464956[_0x19bf82(0x305)]||_0x464956[_0x19bf82(0x164)]||userID;if(_0x464956[_0x19bf82(0x136)]||_0x464956['TOKEN']||userID&&!isValidUUID(userID)){动态UUID=_0x464956[_0x19bf82(0x136)]||_0x464956['TOKEN']||userID,有效时间=Number(_0x464956[_0x19bf82(0x1e0)])||有效时间,更新时间=Number(_0x464956['UPTIME'])||更新时间;const _0x2b339e=await 生成动态UUID(动态UUID);userID=_0x2b339e[0x0],userIDLow=_0x2b339e[0x1];}else 动态UUID=userID;if(!userID)return new Response(_0x19bf82(0x2c6),{'status':0x194,'headers':{'Content-Type':_0x19bf82(0x1f8)}});const _0x182aec=new Date();_0x182aec[_0x19bf82(0x291)](0x0,0x0,0x0,0x0);const _0x512db7=Math['ceil'](_0x182aec[_0x19bf82(0x1e3)]()/0x3e8),_0xb79a1b=await 双重哈希(''+userID+_0x512db7),_0x197f9c=[_0xb79a1b[_0x19bf82(0x1e8)](0x0,0x8),_0xb79a1b['slice'](0x8,0xc),_0xb79a1b[_0x19bf82(0x1e8)](0xc,0x10),_0xb79a1b[_0x19bf82(0x1e8)](0x10,0x14),_0xb79a1b[_0x19bf82(0x1e8)](0x14)][_0x19bf82(0x17c)]('-'),_0xfd14a9=_0xb79a1b['slice'](0x6,0x9)+'.'+_0xb79a1b['slice'](0xd,0x13);proxyIP=_0x464956[_0x19bf82(0x1ea)]||_0x464956[_0x19bf82(0x216)]||proxyIP,proxyIPs=await 整理(proxyIP),proxyIP=proxyIPs[Math[_0x19bf82(0x205)](Math[_0x19bf82(0x1cc)]()*proxyIPs['length'])],DNS64Server=_0x464956[_0x19bf82(0x1b9)]||_0x464956[_0x19bf82(0x172)]||DNS64Server,socks5Address=_0x464956['HTTP']||_0x464956[_0x19bf82(0x2e1)]||socks5Address,socks5s=await 整理(socks5Address),socks5Address=socks5s[Math[_0x19bf82(0x205)](Math['random']()*socks5s[_0x19bf82(0x27e)])],enableHttp=_0x464956[_0x19bf82(0x16c)]?!![]:socks5Address[_0x19bf82(0x23c)]()['includes'](_0x19bf82(0x1bb)),socks5Address=socks5Address[_0x19bf82(0x1bf)]('//')[0x1]||socks5Address;if(_0x464956[_0x19bf82(0x322)])go2Socks5s=await 整理(_0x464956[_0x19bf82(0x322)]);if(_0x464956[_0x19bf82(0x14f)])httpsPorts=await 整理(_0x464956['CFPORTS']);if(_0x464956[_0x19bf82(0x267)])banHosts=await 整理(_0x464956['BAN']);if(socks5Address)try{parsedSocks5Address=socks5AddressParser(socks5Address),RproxyIP=_0x464956[_0x19bf82(0x1e7)]||'false',enableSocks=!![];}catch(_0x2a6a2c){let _0x4b5fcb=_0x2a6a2c;console[_0x19bf82(0x167)](_0x4b5fcb[_0x19bf82(0x32b)]()),RproxyIP=_0x464956[_0x19bf82(0x1e7)]||!proxyIP?_0x19bf82(0x250):_0x19bf82(0x2b0),enableSocks=![];}else RproxyIP=_0x464956[_0x19bf82(0x1e7)]||!proxyIP?_0x19bf82(0x250):_0x19bf82(0x2b0);const _0x320b7e=_0x95b3df['headers']['get']('Upgrade'),_0x1422ba=new URL(_0x95b3df[_0x19bf82(0x2f7)]);if(!_0x320b7e||_0x320b7e!==_0x19bf82(0x2bd)){if(_0x464956[_0x19bf82(0x1d8)])addresses=await 整理(_0x464956[_0x19bf82(0x1d8)]);if(_0x464956[_0x19bf82(0x19e)])addressesapi=await 整理(_0x464956[_0x19bf82(0x19e)]);if(_0x464956[_0x19bf82(0x138)])addressesnotls=await 整理(_0x464956[_0x19bf82(0x138)]);if(_0x464956['ADDNOTLSAPI'])addressesnotlsapi=await 整理(_0x464956[_0x19bf82(0x282)]);if(_0x464956[_0x19bf82(0x2e4)])addressescsv=await 整理(_0x464956[_0x19bf82(0x2e4)]);DLS=Number(_0x464956[_0x19bf82(0x218)])||DLS,remarkIndex=Number(_0x464956[_0x19bf82(0x1a7)])||remarkIndex,BotToken=_0x464956['TGTOKEN']||BotToken,ChatID=_0x464956[_0x19bf82(0x29e)]||ChatID,FileName=_0x464956[_0x19bf82(0x149)]||FileName,subEmoji=_0x464956['SUBEMOJI']||_0x464956[_0x19bf82(0x33a)]||subEmoji;if(subEmoji=='0')subEmoji='false';if(_0x464956[_0x19bf82(0x28d)])link=await 整理(_0x464956[_0x19bf82(0x28d)]);let _0x1693f9=_0x464956['SUB']||'';subConverter=_0x464956[_0x19bf82(0x156)]||subConverter;subConverter[_0x19bf82(0x2fb)](_0x19bf82(0x1bb))?(subConverter=subConverter[_0x19bf82(0x1bf)]('//')[0x1],subProtocol=_0x19bf82(0x249)):subConverter=subConverter[_0x19bf82(0x1bf)]('//')[0x1]||subConverter;subConfig=_0x464956[_0x19bf82(0x281)]||subConfig;if(_0x1422ba['searchParams'][_0x19bf82(0x331)]('sub')&&_0x1422ba[_0x19bf82(0x2eb)]['get']('sub')!=='')_0x1693f9=_0x1422ba[_0x19bf82(0x2eb)][_0x19bf82(0x231)](_0x19bf82(0x2e8))[_0x19bf82(0x23c)]();if(_0x1422ba['searchParams'][_0x19bf82(0x331)](_0x19bf82(0x2b7)))noTLS='true';if(_0x1422ba[_0x19bf82(0x2eb)]['has'](_0x19bf82(0x216)))path=_0x19bf82(0x1d3)+_0x1422ba['searchParams']['get']('proxyip'),RproxyIP=_0x19bf82(0x2b0);else{if(_0x1422ba[_0x19bf82(0x2eb)]['has']('socks5'))path=_0x19bf82(0x245)+_0x1422ba['searchParams'][_0x19bf82(0x231)](_0x19bf82(0x246)),RproxyIP=_0x19bf82(0x2b0);else _0x1422ba[_0x19bf82(0x2eb)][_0x19bf82(0x331)]('socks')&&(path=_0x19bf82(0x245)+_0x1422ba[_0x19bf82(0x2eb)]['get'](_0x19bf82(0x196)),RproxyIP='false');}SCV=_0x464956[_0x19bf82(0x33e)]||SCV;if(!SCV||SCV=='0'||SCV=='false')allowInsecure='';else SCV=_0x19bf82(0x250);const _0x4acaba=_0x1422ba[_0x19bf82(0x2ca)][_0x19bf82(0x23c)]();if(_0x4acaba=='/'){if(_0x464956['URL302'])return Response[_0x19bf82(0x23b)](_0x464956['URL302'],0x12e);else{if(_0x464956[_0x19bf82(0x20d)])return await 代理URL(_0x464956['URL'],_0x1422ba);else return new Response(await nginx(),{'status':0xc8,'headers':{'Content-Type':_0x19bf82(0x302)}});}}else{if(_0x4acaba=='/'+_0x197f9c){const _0x4fa233=await 生成配置信息(userID,_0x95b3df[_0x19bf82(0x345)][_0x19bf82(0x231)](_0x19bf82(0x2f0)),_0x1693f9,_0x19bf82(0x188),RproxyIP,_0x1422ba,_0x197f9c,_0xfd14a9,_0x464956);return new Response(''+_0x4fa233,{'status':0xc8});}else{if(_0x1422ba['pathname']=='/'+动态UUID+_0x19bf82(0x310)||_0x4acaba=='/'+userID+_0x19bf82(0x310))return await KV(_0x95b3df,_0x464956);else{if(_0x1422ba[_0x19bf82(0x2ca)]=='/'+动态UUID+_0x19bf82(0x28b)||_0x4acaba=='/'+userID+'/bestip')return await bestIP(_0x95b3df,_0x464956);else{if(_0x1422ba[_0x19bf82(0x2ca)]=='/'+动态UUID||_0x4acaba=='/'+userID){await sendMessage(_0x19bf82(0x28e)+FileName,_0x95b3df['headers'][_0x19bf82(0x231)](_0x19bf82(0x2a1)),_0x19bf82(0x30d)+_0x41b359+'</tg-spoiler>\x0a域名:\x20'+_0x1422ba[_0x19bf82(0x300)]+_0x19bf82(0x233)+(_0x1422ba['pathname']+_0x1422ba[_0x19bf82(0x303)])+'</tg-spoiler>');const _0x1165ec=await 生成配置信息(userID,_0x95b3df[_0x19bf82(0x345)]['get'](_0x19bf82(0x2f0)),_0x1693f9,_0x41b359,RproxyIP,_0x1422ba,_0x197f9c,_0xfd14a9,_0x464956),_0x3eb994=Date[_0x19bf82(0x260)](),_0x1b6953=new Date(_0x3eb994);_0x1b6953[_0x19bf82(0x291)](0x0,0x0,0x0,0x0);const _0x49d891=Math[_0x19bf82(0x205)]((_0x3eb994-_0x1b6953[_0x19bf82(0x1e3)]())/0x5265c00*0x18*0x10000000000/0x2);let _0x21c213=_0x49d891,_0x377fdf=_0x49d891,_0x3a5d11=0x18*0x10000000000;if(_0x464956['CF_EMAIL']&&_0x464956[_0x19bf82(0x2f9)]||_0x464956[_0x19bf82(0x2bf)]&&_0x464956[_0x19bf82(0x31c)]){const _0x14cfaf=await getUsage(_0x464956[_0x19bf82(0x2bf)],_0x464956[_0x19bf82(0x1b3)],_0x464956['CF_APIKEY'],_0x464956[_0x19bf82(0x31c)],_0x464956[_0x19bf82(0x32f)]);_0x21c213=_0x14cfaf[0x1],_0x377fdf=_0x14cfaf[0x2],_0x3a5d11=_0x464956[_0x19bf82(0x32f)]?Number(_0x464956[_0x19bf82(0x32f)]):0x400*0x64;}return _0x576503&&_0x576503[_0x19bf82(0x2fb)](_0x19bf82(0x1b1))?new Response(_0x1165ec,{'status':0xc8,'headers':{'Content-Type':_0x19bf82(0x296),'Profile-Update-Interval':'6','Subscription-Userinfo':_0x19bf82(0x2d4)+_0x21c213+';\x20download='+_0x377fdf+_0x19bf82(0x1fd)+_0x3a5d11+';\x20expire='+expire,'Cache-Control':_0x19bf82(0x320)}}):new Response(_0x1165ec,{'status':0xc8,'headers':{'Content-Disposition':_0x19bf82(0x2ce)+FileName+_0x19bf82(0x32a)+encodeURIComponent(FileName),'Profile-Update-Interval':'6','Profile-web-page-url':_0x95b3df[_0x19bf82(0x2f7)][_0x19bf82(0x2fb)]('?')?_0x95b3df[_0x19bf82(0x2f7)][_0x19bf82(0x1bf)]('?')[0x0]:_0x95b3df[_0x19bf82(0x2f7)],'Subscription-Userinfo':_0x19bf82(0x2d4)+_0x21c213+_0x19bf82(0x1f3)+_0x377fdf+_0x19bf82(0x1fd)+_0x3a5d11+';\x20expire='+expire}});}else{if(_0x464956['URL302'])return Response[_0x19bf82(0x23b)](_0x464956[_0x19bf82(0x277)],0x12e);else{if(_0x464956['URL'])return await 代理URL(_0x464956[_0x19bf82(0x20d)],_0x1422ba);else return new Response(_0x19bf82(0x1ee),{'status':0x194});}}}}}}}else{socks5Address=_0x1422ba[_0x19bf82(0x2eb)]['get'](_0x19bf82(0x246))||socks5Address;if(new RegExp(_0x19bf82(0x23f),'i')[_0x19bf82(0x236)](_0x1422ba[_0x19bf82(0x2ca)]))socks5Address=_0x1422ba[_0x19bf82(0x2ca)][_0x19bf82(0x1bf)]('5=')[0x1];else{if(new RegExp('/socks://','i')['test'](_0x1422ba[_0x19bf82(0x2ca)])||new RegExp(_0x19bf82(0x1de),'i')['test'](_0x1422ba[_0x19bf82(0x2ca)])||new RegExp('/http://','i')['test'](_0x1422ba[_0x19bf82(0x2ca)])){enableHttp=_0x1422ba['pathname']['includes'](_0x19bf82(0x1bb)),socks5Address=_0x1422ba['pathname']['split']('://')[0x1][_0x19bf82(0x1bf)]('#')[0x0];if(socks5Address[_0x19bf82(0x2fb)]('@')){const _0x5cb784=socks5Address['lastIndexOf']('@');let _0x17012f=socks5Address['substring'](0x0,_0x5cb784)[_0x19bf82(0x19b)](_0x19bf82(0x316),'=');const _0x395da2=/^(?:[A-Z0-9+/]{4})*(?:[A-Z0-9+/]{2}==|[A-Z0-9+/]{3}=)?$/i;if(_0x395da2[_0x19bf82(0x236)](_0x17012f)&&!_0x17012f[_0x19bf82(0x2fb)](':'))_0x17012f=atob(_0x17012f);socks5Address=_0x17012f+'@'+socks5Address['substring'](_0x5cb784+0x1);}go2Socks5s=['all\x20in'];}}if(socks5Address)try{parsedSocks5Address=socks5AddressParser(socks5Address),enableSocks=!![];}catch(_0x2b21b6){let _0x3abaf0=_0x2b21b6;console[_0x19bf82(0x167)](_0x3abaf0[_0x19bf82(0x32b)]()),enableSocks=![];}else enableSocks=![];if(_0x1422ba[_0x19bf82(0x2eb)][_0x19bf82(0x331)](_0x19bf82(0x216)))proxyIP=_0x1422ba['searchParams'][_0x19bf82(0x231)](_0x19bf82(0x216)),enableSocks=![];else{if(new RegExp(_0x19bf82(0x1d3),'i')[_0x19bf82(0x236)](_0x1422ba['pathname']))proxyIP=_0x1422ba[_0x19bf82(0x2ca)][_0x19bf82(0x23c)]()[_0x19bf82(0x1bf)](_0x19bf82(0x1d3))[0x1],enableSocks=![];else{if(new RegExp(_0x19bf82(0x162),'i')['test'](_0x1422ba[_0x19bf82(0x2ca)]))proxyIP=_0x19bf82(0x142)+_0x1422ba[_0x19bf82(0x2ca)]['toLowerCase']()[_0x19bf82(0x1bf)](_0x19bf82(0x162))[0x1],enableSocks=![];else new RegExp(_0x19bf82(0x1f9),'i')[_0x19bf82(0x236)](_0x1422ba['pathname'])&&(proxyIP=_0x1422ba['pathname'][_0x19bf82(0x23c)]()[_0x19bf82(0x1bf)](_0x19bf82(0x1f9))[0x1],enableSocks=![]);}}return await 维列斯OverWSHandler(_0x95b3df);}}catch(_0x311703){let _0x51814b=_0x311703;return new Response(_0x51814b['toString']());}}};async function 维列斯OverWSHandler(_0x14c967){const _0x1b41ca=_0xa62ad6,_0xf8e283=new WebSocketPair(),[_0x239aa3,_0x2ec5d4]=Object[_0x1b41ca(0x1ae)](_0xf8e283);_0x2ec5d4[_0x1b41ca(0x1af)]();let _0x4783d8='',_0x38df4c='';const _0x1b2f48=(_0x311556,_0x207a04)=>{console['log']('['+_0x4783d8+':'+_0x38df4c+']\x20'+_0x311556,_0x207a04||'');},_0x45462c=_0x14c967[_0x1b41ca(0x345)][_0x1b41ca(0x231)](_0x1b41ca(0x213))||'',_0x5b0b11=makeReadableWebSocketStream(_0x2ec5d4,_0x45462c,_0x1b2f48);let _0x2f73ef={'value':null},_0x1fe967=null,_0x492d78=![];return _0x5b0b11[_0x1b41ca(0x327)](new WritableStream({async 'write'(_0x49b11f,_0x3c0523){const _0x32ff99=_0x1b41ca;if(_0x492d78&&_0x1fe967)return _0x1fe967(_0x49b11f);if(_0x2f73ef[_0x32ff99(0x1ff)]){const _0x465d79=_0x2f73ef['value'][_0x32ff99(0x27b)][_0x32ff99(0x171)]();await _0x465d79[_0x32ff99(0x185)](_0x49b11f),_0x465d79[_0x32ff99(0x2af)]();return;}const {hasError:_0x282d79,message:_0x4017ac,addressType:_0x10bce1,portRemote:portRemote=0x1bb,addressRemote:addressRemote='',rawDataIndex:_0x3e5be7,维列斯Version:维列斯Version=new Uint8Array([0x0,0x0]),isUDP:_0x525dce}=process维列斯Header(_0x49b11f,userID);_0x4783d8=addressRemote,_0x38df4c=portRemote+'--'+Math[_0x32ff99(0x1cc)]()+'\x20'+(_0x525dce?_0x32ff99(0x187):_0x32ff99(0x2ae))+'\x20';if(_0x282d79){throw new Error(_0x4017ac);return;}if(_0x525dce){if(portRemote===0x35)_0x492d78=!![];else{throw new Error(_0x32ff99(0x24e));return;}}const _0x36e9df=new Uint8Array([维列斯Version[0x0],0x0]),_0x33f738=_0x49b11f['slice'](_0x3e5be7);if(_0x492d78){const {write:_0x54fcbf}=await handleUDPOutBound(_0x2ec5d4,_0x36e9df,_0x1b2f48);_0x1fe967=_0x54fcbf,_0x1fe967(_0x33f738);return;}if(!banHosts[_0x32ff99(0x2fb)](addressRemote))_0x1b2f48('处理\x20TCP\x20出站连接\x20'+addressRemote+':'+portRemote),handleTCPOutBound(_0x2f73ef,_0x10bce1,addressRemote,portRemote,_0x33f738,_0x2ec5d4,_0x36e9df,_0x1b2f48);else throw new Error(_0x32ff99(0x1f1)+addressRemote+':'+portRemote);},'close'(){const _0x2d382a=_0x1b41ca;_0x1b2f48(_0x2d382a(0x24b));},'abort'(_0x3ea881){const _0x34e48e=_0x1b41ca;_0x1b2f48('readableWebSocketStream\x20已中止',JSON[_0x34e48e(0x244)](_0x3ea881));}}))[_0x1b41ca(0x33d)](_0x223054=>{const _0x3631d5=_0x1b41ca;_0x1b2f48(_0x3631d5(0x161),_0x223054);}),new Response(null,{'status':0x65,'webSocket':_0x239aa3});}async function handleTCPOutBound(_0x44cf0b,_0x127984,_0x220699,_0x3764d4,_0x48e6bd,_0x431962,_0x3ccb5e,_0x3c42b4){async function _0x11c00d(_0x2e7a47){const _0x271483=_0x1bed;if(go2Socks5s[_0x271483(0x2fb)](atob(_0x271483(0x2c4)))||go2Socks5s[_0x271483(0x2fb)](atob('Kg==')))return!![];return go2Socks5s[_0x271483(0x1b2)](_0x40378a=>{const _0x2eaa73=_0x271483;let _0x2dd9db=_0x40378a['replace'](/\*/g,'.*'),_0x2ff894=new RegExp('^'+_0x2dd9db+'$','i');return _0x2ff894[_0x2eaa73(0x236)](_0x2e7a47);});}async function _0x68a0a0(_0x396373,_0x5bbd60,_0x221980=![],_0x55b43e=![]){const _0x3e00df=_0x1bed;_0x3c42b4(_0x3e00df(0x2dd)+_0x396373+':'+_0x5bbd60);const _0x201794=_0x221980?_0x55b43e?await httpConnect(_0x396373,_0x5bbd60,_0x3c42b4):await socks5Connect(_0x127984,_0x396373,_0x5bbd60,_0x3c42b4):connect({'hostname':_0x396373,'port':_0x5bbd60});_0x44cf0b[_0x3e00df(0x1ff)]=_0x201794;const _0x50be9f=_0x201794[_0x3e00df(0x27b)][_0x3e00df(0x171)]();return await _0x50be9f[_0x3e00df(0x185)](_0x48e6bd),_0x50be9f['releaseLock'](),_0x201794;}async function _0x360606(){const _0x389bfd=_0x1bed;if(!_0x59c0da){const _0x3d8e50='['+await resolveToIPv6(_0x220699)+']';_0x3c42b4('NAT64\x20代理连接到\x20'+_0x3d8e50+_0x389bfd(0x2cf)),_0x28b3ba=await _0x68a0a0(_0x3d8e50,'443');}_0x28b3ba['closed']['catch'](_0x5f3495=>{const _0x3d19ef=_0x389bfd;console[_0x3d19ef(0x167)](_0x3d19ef(0x1dc),_0x5f3495);})['finally'](()=>{safeCloseWebSocket(_0x431962);}),remoteSocketToWS(_0x28b3ba,_0x431962,_0x3ccb5e,null,_0x3c42b4);}async function _0x23b71d(){const _0x35903d=_0x1bed;if(enableSocks)_0x28b3ba=await _0x68a0a0(_0x220699,_0x3764d4,!![],enableHttp);else{if(!proxyIP||proxyIP=='')proxyIP=atob(_0x35903d(0x16a));else{if(proxyIP[_0x35903d(0x2fb)](']:'))_0x3764d4=proxyIP[_0x35903d(0x1bf)](']:')[0x1]||_0x3764d4,proxyIP=proxyIP[_0x35903d(0x1bf)](']:')[0x0]+']'||proxyIP;else proxyIP[_0x35903d(0x1bf)](':')[_0x35903d(0x27e)]===0x2&&(_0x3764d4=proxyIP[_0x35903d(0x1bf)](':')[0x1]||_0x3764d4,proxyIP=proxyIP[_0x35903d(0x1bf)](':')[0x0]||proxyIP);}if(proxyIP[_0x35903d(0x2fb)](_0x35903d(0x1d7)))_0x3764d4=proxyIP['split'](_0x35903d(0x1d7))[0x1][_0x35903d(0x1bf)]('.')[0x0]||_0x3764d4;_0x28b3ba=await _0x68a0a0(proxyIP['toLowerCase']()||_0x220699,_0x3764d4);}remoteSocketToWS(_0x28b3ba,_0x431962,_0x3ccb5e,_0x360606,_0x3c42b4);}let _0x59c0da=![];if(go2Socks5s['length']>0x0&&enableSocks)_0x59c0da=await _0x11c00d(_0x220699);let _0x28b3ba=await _0x68a0a0(_0x220699,_0x3764d4,_0x59c0da,enableHttp);remoteSocketToWS(_0x28b3ba,_0x431962,_0x3ccb5e,_0x23b71d,_0x3c42b4);}function makeReadableWebSocketStream(_0x5e626a,_0x44069c,_0x549107){let _0x41a8f5=![];const _0x157555=new ReadableStream({'start'(_0x5be33e){const _0x4f7532=_0x1bed;_0x5e626a['addEventListener'](_0x4f7532(0x201),_0x2d14c8=>{const _0x1a1ac4=_0x4f7532;if(_0x41a8f5)return;const _0x2b7fe9=_0x2d14c8[_0x1a1ac4(0x1b4)];_0x5be33e[_0x1a1ac4(0x209)](_0x2b7fe9);}),_0x5e626a[_0x4f7532(0x25e)]('close',()=>{safeCloseWebSocket(_0x5e626a);if(_0x41a8f5)return;_0x5be33e['close']();}),_0x5e626a['addEventListener'](_0x4f7532(0x2d5),_0x2089b5=>{const _0xbbe707=_0x4f7532;_0x549107('WebSocket\x20服务器发生错误'),_0x5be33e[_0xbbe707(0x2d5)](_0x2089b5);});const {earlyData:_0x277428,error:_0x1e9fc2}=base64ToArrayBuffer(_0x44069c);if(_0x1e9fc2)_0x5be33e[_0x4f7532(0x2d5)](_0x1e9fc2);else _0x277428&&_0x5be33e[_0x4f7532(0x209)](_0x277428);},'pull'(_0x3a39bd){},'cancel'(_0x29ec53){const _0x19fa3e=_0x1bed;if(_0x41a8f5)return;_0x549107(_0x19fa3e(0x30a)+_0x29ec53),_0x41a8f5=!![],safeCloseWebSocket(_0x5e626a);}});return _0x157555;}function process维列斯Header(_0x7d3636,_0x2dc9c1){const _0x37a108=_0xa62ad6;if(_0x7d3636[_0x37a108(0x143)]<0x18)return{'hasError':!![],'message':_0x37a108(0x220)};const _0x390bc3=new Uint8Array(_0x7d3636[_0x37a108(0x1e8)](0x0,0x1));let _0x1d4da5=![],_0xce249a=![];function _0x1ba304(_0x3e7943,_0xf54cb1,_0x418f5a){const _0x6b6e0e=_0x37a108,_0x504044=new Uint8Array(_0x418f5a[_0x6b6e0e(0x1e8)](0x1,0x11)),_0x3bdcf8=stringify(_0x504044);return _0x3bdcf8===_0x3e7943||_0x3bdcf8===_0xf54cb1;}_0x1d4da5=_0x1ba304(_0x2dc9c1,userIDLow,_0x7d3636);if(!_0x1d4da5)return{'hasError':!![],'message':_0x37a108(0x29a)+new Uint8Array(_0x7d3636['slice'](0x1,0x11))};const _0x1f82a7=new Uint8Array(_0x7d3636[_0x37a108(0x1e8)](0x11,0x12))[0x0],_0x5660e1=new Uint8Array(_0x7d3636[_0x37a108(0x1e8)](0x12+_0x1f82a7,0x12+_0x1f82a7+0x1))[0x0];if(_0x5660e1===0x1){}else{if(_0x5660e1===0x2)_0xce249a=!![];else return{'hasError':!![],'message':'command\x20'+_0x5660e1+_0x37a108(0x311)};}const _0x4ca290=0x12+_0x1f82a7+0x1,_0x40844c=_0x7d3636[_0x37a108(0x1e8)](_0x4ca290,_0x4ca290+0x2),_0x54d45d=new DataView(_0x40844c)[_0x37a108(0x293)](0x0);let _0x4714c8=_0x4ca290+0x2;const _0x4ef8ce=new Uint8Array(_0x7d3636[_0x37a108(0x1e8)](_0x4714c8,_0x4714c8+0x1)),_0x463010=_0x4ef8ce[0x0];let _0x835c0=0x0,_0x3382e0=_0x4714c8+0x1,_0x3e35f9='';switch(_0x463010){case 0x1:_0x835c0=0x4,_0x3e35f9=new Uint8Array(_0x7d3636[_0x37a108(0x1e8)](_0x3382e0,_0x3382e0+_0x835c0))[_0x37a108(0x17c)]('.');break;case 0x2:_0x835c0=new Uint8Array(_0x7d3636[_0x37a108(0x1e8)](_0x3382e0,_0x3382e0+0x1))[0x0],_0x3382e0+=0x1,_0x3e35f9=new TextDecoder()[_0x37a108(0x223)](_0x7d3636[_0x37a108(0x1e8)](_0x3382e0,_0x3382e0+_0x835c0));break;case 0x3:_0x835c0=0x10;const _0x3d9b7f=new DataView(_0x7d3636[_0x37a108(0x1e8)](_0x3382e0,_0x3382e0+_0x835c0)),_0x578a5a=[];for(let _0x265e3e=0x0;_0x265e3e<0x8;_0x265e3e++){_0x578a5a[_0x37a108(0x225)](_0x3d9b7f[_0x37a108(0x293)](_0x265e3e*0x2)[_0x37a108(0x32b)](0x10));}_0x3e35f9=_0x578a5a[_0x37a108(0x17c)](':');break;default:return{'hasError':!![],'message':_0x37a108(0x219)+_0x463010};}if(!_0x3e35f9)return{'hasError':!![],'message':_0x37a108(0x1f5)+_0x463010};return{'hasError':![],'addressRemote':_0x3e35f9,'addressType':_0x463010,'portRemote':_0x54d45d,'rawDataIndex':_0x3382e0+_0x835c0,'维列斯Version':_0x390bc3,'isUDP':_0xce249a};}async function remoteSocketToWS(_0x43fae4,_0x5797b0,_0x5ebd9e,_0x103ab9,_0x1f64b6){const _0x482562=_0xa62ad6;let _0x32659c=0x0,_0x4661c5=[],_0x1655ad=_0x5ebd9e,_0x5ecbe1=![];await _0x43fae4['readable'][_0x482562(0x327)](new WritableStream({'start'(){},async 'write'(_0x2f759d,_0x6b9fea){const _0x382236=_0x482562;_0x5ecbe1=!![],_0x5797b0['readyState']!==WS_READY_STATE_OPEN&&_0x6b9fea[_0x382236(0x2d5)](_0x382236(0x307)),_0x1655ad?(_0x5797b0[_0x382236(0x1df)](await new Blob([_0x1655ad,_0x2f759d])[_0x382236(0x2fa)]()),_0x1655ad=null):_0x5797b0['send'](_0x2f759d);},'close'(){_0x1f64b6('remoteConnection!.readable\x20is\x20close\x20with\x20hasIncomingData\x20is\x20'+_0x5ecbe1);},'abort'(_0x375f61){const _0x1e4c56=_0x482562;console[_0x1e4c56(0x2d5)]('remoteConnection!.readable\x20abort',_0x375f61);}}))[_0x482562(0x33d)](_0x383cef=>{const _0x3d0a58=_0x482562;console[_0x3d0a58(0x2d5)](_0x3d0a58(0x16f),_0x383cef['stack']||_0x383cef),safeCloseWebSocket(_0x5797b0);}),_0x5ecbe1===![]&&_0x103ab9&&(_0x1f64b6('retry'),_0x103ab9());}function _0x3734(){const _0x5d6850=['\x0aASN:\x20','?sub\x27,\x27qrcode_0\x27)\x22\x20style=\x22color:blue;text-decoration:underline;cursor:pointer;\x22>https://','TGID','&path=','name','CF-Connecting-IP','\x20个，现共\x20',':\x27\x20+\x20port\x20+\x20\x27/cdn-cgi/trace\x27,\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20signal:\x20controller.signal,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20mode:\x20\x27cors\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20clearTimeout(timeoutId);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20catch\x20(preRequestError)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20预请求失败可以忽略，继续进行正式测试\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.log(\x27预请求失败\x20(\x27\x20+\x20ip\x20+\x20\x27:\x27\x20+\x20port\x20+\x20\x27):\x27,\x20preRequestError.message);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20正式延迟测试\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20startTime\x20=\x20Date.now();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20try\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20controller\x20=\x20new\x20AbortController();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20timeoutId\x20=\x20setTimeout(()\x20=>\x20controller.abort(),\x20timeout);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20parts\x20=\x20ip.split(\x27.\x27).map(part\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20hex\x20=\x20parseInt(part,\x2010).toString(16);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20hex.length\x20===\x201\x20?\x20\x270\x27\x20+\x20hex\x20:\x20hex;\x20//\x20补零\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20nip\x20=\x20parts.join(\x27\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20response\x20=\x20await\x20fetch(\x27https://\x27\x20+\x20nip\x20+\x20\x27.','CFCDN（访问方式）:\x20ProxyIP<br>&nbsp;&nbsp;','发送HTTP\x20CONNECT请求失败:','.workers.dev',',\x20network:\x20','toFixed','https://raw.githubusercontent.com/ipverse/asn-ip/master/as/35916/ipv4-aggregated.txt','\x20[<a\x20href=\x27','DNS查询失败','#CF随机节点','SOCKS5\x20服务器认证失败','tcp\x20','releaseLock','false','https://www.cloudflare.com/ips-v4/','proxyip=true','entries','Connection:\x20Keep-Alive\x0d\x0a','<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20---------------------------------------------------------------<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20################################################################<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','http://ip-api.com/json/','notls','虚假HOST:\x20','162.159.152.0/23','无效的地址类型:\x20','loon','3445998BszVBk','websocket','无效的端口号:\x20','CF_ID','/version\x27\x20target=\x22_blank\x22\x20rel=\x22noopener\x20noreferrer\x22>','as13335','application/dns-json','&host=','YWxsIGlu','*cloudatacdn.com','请设置你的UUID变量，或尝试重试部署，检查变量是否生效？','official','text','LmlwLjA5MDIyNy54eXo=','pathname','nekobox','proxy-warning','DNS64Server查询失败:','attachment;\x20filename=',':443','map','signal','DoH解析失败，使用默认域名','188.114.96.0/21','upload=','error','Error\x20fetching\x20content:\x20','*tapecontent.net','Kg==','2083','aXAuMDkwMjI3Lnh5eg==','c3BlZWQuY2xvdWRmbGFyZS5jb20=','readyState','connected\x20to\x20','method','charCodeAt','成功保存\x20','SOCKS5','个有效IP','pow','ADDCSV','<strong>?socks5=user:password@127.0.0.1:1080</strong><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>6.</strong>\x20如需指定多个参数则需要使用\x27&\x27做间隔，例如：<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20&nbsp;&nbsp;https://','all','<br>UUIDLow:\x20','sub','U1VCQVBJLkNNTGl1c3Nzcy5uZXQ=','&fp=random&type=ws&host=','searchParams','accounts','2053','190.93.240.0/21','readable','Host','\x0a\x20\x20\x20\x20<div\x20class=\x22warning-notice\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h3>🚨\x20代理检测警告</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p><strong>检测到您当前很可能处于代理/VPN环境中！</strong></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p>在代理状态下进行的IP优选测试结果将不准确，可能导致：</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li>延迟数据失真，无法反映真实网络状况</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li>优选出的IP在直连环境下表现不佳</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li>测试结果对实际使用场景参考价值有限</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p><strong>建议操作：</strong>请关闭所有代理软件（VPN、科学上网工具等），确保处于直连网络环境后重新访问本页面。</p>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20','endsWith','&sni=','isArray','User-Agent:\x20Mozilla/5.0\x20(Windows\x20NT\x2010.0;\x20Win64;\x20x64)\x20AppleWebKit/537.36\x0d\x0a','\x20(UTC+8):\x20','url','dmlzYS5jbg==','CF_APIKEY','arrayBuffer','includes','fulfilled','匹配到','&fragment=1,40-60,30-50,tlshello#','?lang=zh-CN','hostname','sum','text/html;\x20charset=UTF-8','search','HTTP代理连接失败:\x20','PASSWORD','ADDCSV（IPTest测速csv文件\x20限速\x20','webSocket.readyState\x20is\x20not\x20open,\x20maybe\x20close','/edit\x27>编辑优选列表</a>]\x20\x20[<a\x20href=\x27','104.16.0.0/14','可读流被取消，原因是\x20','解析错误:','</div>','UA:\x20','country','服务器不接受任何认证方法','/edit','\x20is\x20not\x20support,\x20command\x2001-tcp,02-udp,03-mux','SOCKS5\x20连接建立失败','\x20-\x20名称:\x20','统计结果\x20-\x20Pages:\x20','\x20已启用临时域名中转服务，请尽快绑定自定义域！','%3D',',\x20servername:\x20','获取CF\x20IPs失败:','\x20个新的优选IP（原有\x20','轮生成IP，当前已有','无效的IPv4地址段','CF_APITOKEN','未找到IPv4地址','轮生成','-\x20{name:\x20','no-store','}}}','GO2SOCKS5','/sendMessage?chat_id=','save','result',',\x20tls:\x20','pipeTo','://','10KmNVlO',';\x20filename*=utf-8\x27\x27','toString','未绑定KV空间','成功追加\x20','size','CF_ALL','\x0a<tg-spoiler>城市:\x20','has','Invalid\x20IP\x20list','cHJveHlpcC5jbWxpdXNzc3MubmV0','QUREJUU3JUE0JUJBJUU0JUJFJThCJUVGJUJDJTlBCnZpc2EuY24lMjMlRTQlQkMlOTglRTklODAlODklRTUlOUYlOUYlRTUlOTAlOEQKMTI3LjAuMC4xJTNBMTIzNCUyM0NGbmF0CiU1QjI2MDYlM0E0NzAwJTNBJTNBJTVEJTNBMjA1MyUyM0lQdjYKCiVFNiVCMyVBOCVFNiU4NCU4RiVFRiVCQyU5QQolRTYlQUYlOEYlRTglQTElOEMlRTQlQjglODAlRTQlQjglQUElRTUlOUMlQjAlRTUlOUQlODAlRUYlQkMlOEMlRTYlQTAlQkMlRTUlQkMlOEYlRTQlQjglQkElMjAlRTUlOUMlQjAlRTUlOUQlODAlM0ElRTclQUIlQUYlRTUlOEYlQTMlMjMlRTUlQTQlODclRTYlQjMlQTgKSVB2NiVFNSU5QyVCMCVFNSU5RCU4MCVFOSU5QyU4MCVFOCVBNiU4MSVFNyU5NCVBOCVFNCVCOCVBRCVFNiU4QiVBQyVFNSU4RiVCNyVFNiU4QiVBQyVFOCVCNSVCNyVFNiU5RCVBNSVFRiVCQyU4QyVFNSVBNiU4MiVFRiVCQyU5QSU1QjI2MDYlM0E0NzAwJTNBJTNBJTVEJTNBMjA1MwolRTclQUIlQUYlRTUlOEYlQTMlRTQlQjglOEQlRTUlODYlOTklRUYlQkMlOEMlRTklQkIlOTglRTglQUUlQTQlRTQlQjglQkElMjA0NDMlMjAlRTclQUIlQUYlRTUlOEYlQTMlRUYlQkMlOEMlRTUlQTYlODIlRUYlQkMlOUF2aXNhLmNuJTIzJUU0JUJDJTk4JUU5JTgwJTg5JUU1JTlGJTlGJUU1JTkwJThECgoKQUREQVBJJUU3JUE0JUJBJUU0JUJFJThCJUVGJUJDJTlBCmh0dHBzJTNBJTJGJTJGcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSUyRmNtbGl1JTJGV29ya2VyVmxlc3Myc3ViJTJGcmVmcyUyRmhlYWRzJTJGbWFpbiUyRmFkZHJlc3Nlc2FwaS50eHQKCiVFNiVCMyVBOCVFNiU4NCU4RiVFRiVCQyU5QUFEREFQSSVFNyU5QiVCNCVFNiU4RSVBNSVFNiVCNyVCQiVFNSU4QSVBMCVFNyU5QiVCNCVFOSU5MyVCRSVFNSU4RCVCMyVFNSU4RiVBRg==','digest','null','as199524','DoH解析出错:','buffer','EMOJI','workers.dev','getReader','catch','SCV','未提供账户ID，正在自动获取...','44FKjqyY','concat','173.245.48.0/20\x0a103.21.244.0/22\x0a103.22.200.0/22\x0a103.31.4.0/22\x0a141.101.64.0/18\x0a108.162.192.0/18\x0a190.93.240.0/20\x0a188.114.96.0/20\x0a197.234.240.0/22\x0a198.41.128.0/17\x0a162.158.0.0/15\x0a104.16.0.0/13\x0a104.24.0.0/14\x0a172.64.0.0/13\x0a131.0.72.0/22','Error:\x20fetch\x20is\x20not\x20available\x20in\x20this\x20environment.','Bearer\x20','headers','个IP','?notls','10958yHVtKx','HTTP代理连接成功:\x20','min','application/json','KEY','*.loadshare.org','ADDNOTLS','GraphQL查询失败:\x20','safeCloseWebSocket\x20error',':\x27\x20+\x20port\x20+\x20\x27/cdn-cgi/trace\x27,\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20signal:\x20controller.signal,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20mode:\x20\x27cors\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20clearTimeout(timeoutId);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20检查响应状态\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(response.status\x20===\x20200)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20latency\x20=\x20Date.now()\x20-\x20startTime;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20responseText\x20=\x20await\x20response.text();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20解析trace响应\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20traceData\x20=\x20parseTraceResponse(responseText);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(traceData\x20&&\x20traceData.ip\x20&&\x20traceData.colo)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20判断IP类型\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20responseIP\x20=\x20traceData.ip;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20ipType\x20=\x20\x27official\x27;\x20//\x20默认官方IP\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20检查是否是IPv6（包含冒号）或者IP相等\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(responseIP.includes(\x27:\x27)\x20||\x20responseIP\x20===\x20ip)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipType\x20=\x20\x27proxy\x27;\x20//\x20反代IP\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20如果responseIP与ip不相等且不是IPv6，则是官方IP\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ip:\x20ip,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20port:\x20port,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20latency:\x20latency,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20colo:\x20traceData.colo,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20type:\x20ipType,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20responseIP:\x20responseIP\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20};\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20null;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20catch\x20(error)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20latency\x20=\x20Date.now()\x20-\x20startTime;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20检查是否是真正的超时（接近设定的timeout时间）\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(latency\x20>=\x20timeout\x20-\x20100)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20null;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20null;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20//\x20新增：解析trace响应的函数\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20parseTraceResponse(responseText)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20try\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20lines\x20=\x20responseText.split(\x27\x5cn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20data\x20=\x20{};\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20for\x20(const\x20line\x20of\x20lines)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20trimmedLine\x20=\x20line.trim();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(trimmedLine\x20&&\x20trimmedLine.includes(\x27=\x27))\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20[key,\x20value]\x20=\x20trimmedLine.split(\x27=\x27,\x202);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20data[key]\x20=\x20value;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20data;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20catch\x20(error)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.error(\x27解析trace响应失败:\x27,\x20error);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20null;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20async\x20function\x20testIPsWithConcurrency(ips,\x20port,\x20maxConcurrency\x20=\x2032)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20results\x20=\x20[];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20totalIPs\x20=\x20ips.length;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20completedTests\x20=\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20progressBar\x20=\x20document.getElementById(\x27progress-bar\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20progressText\x20=\x20document.getElementById(\x27progress-text\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20创建工作队列\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20index\x20=\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20async\x20function\x20worker()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20while\x20(index\x20<\x20ips.length)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20currentIndex\x20=\x20index++;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ip\x20=\x20ips[currentIndex];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20result\x20=\x20await\x20testIP(ip,\x20port);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(result)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20results.push(result);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20completedTests++;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20更新进度\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20progress\x20=\x20(completedTests\x20/\x20totalIPs)\x20*\x20100;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20progressBar.style.width\x20=\x20progress\x20+\x20\x27%\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20progressText.textContent\x20=\x20`${completedTests}/${totalIPs}\x20(${progress.toFixed(1)}%)\x20-\x20有效IP:\x20${results.length}`;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20创建工作线程\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20workers\x20=\x20Array(Math.min(maxConcurrency,\x20ips.length))\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.fill()\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.map(()\x20=>\x20worker());\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20await\x20Promise.all(workers);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20results;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20async\x20function\x20startTest()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20testBtn\x20=\x20document.getElementById(\x27test-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20portSelect\x20=\x20document.getElementById(\x27port-select\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipSourceSelect\x20=\x20document.getElementById(\x27ip-source-select\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20progressBar\x20=\x20document.getElementById(\x27progress-bar\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20progressText\x20=\x20document.getElementById(\x27progress-text\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipList\x20=\x20document.getElementById(\x27ip-list\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20resultCount\x20=\x20document.getElementById(\x27result-count\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipCount\x20=\x20document.getElementById(\x27ip-count\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipDisplayInfo\x20=\x20document.getElementById(\x27ip-display-info\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20showMoreSection\x20=\x20document.getElementById(\x27show-more-section\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20selectedPort\x20=\x20portSelect.value;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20selectedIPSource\x20=\x20ipSourceSelect.value;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20保存当前选择到本地存储\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20localStorage.setItem(StorageKeys.PORT,\x20selectedPort);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20localStorage.setItem(StorageKeys.IP_SOURCE,\x20selectedIPSource);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20testBtn.disabled\x20=\x20true;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20testBtn.textContent\x20=\x20\x27加载IP列表...\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20portSelect.disabled\x20=\x20true;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceSelect.disabled\x20=\x20true;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20testResults\x20=\x20[];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20displayedResults\x20=\x20[];\x20//\x20重置显示结果\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showingAll\x20=\x20false;\x20//\x20重置显示状态\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20currentDisplayType\x20=\x20\x27loading\x27;\x20//\x20设置当前显示类型\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipList.innerHTML\x20=\x20\x27<div\x20class=\x22ip-item\x22>正在加载IP列表，请稍候...</div>\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipDisplayInfo.textContent\x20=\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreSection.style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonStates();\x20//\x20更新按钮状态\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20重置进度条\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20progressBar.style.width\x20=\x20\x270%\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20根据IP库类型显示对应的加载信息\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20ipSourceName\x20=\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20switch(selectedIPSource)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20case\x20\x27official\x27:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceName\x20=\x20\x27CF官方\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20break;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20case\x20\x27cm\x27:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceName\x20=\x20\x27CM整理\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20break;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20case\x20\x27as13335\x27:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceName\x20=\x20\x27CF全段\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20break;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20case\x20\x27as209242\x27:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceName\x20=\x20\x27CF非官方\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20break;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20case\x20\x27as24429\x27:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceName\x20=\x20\x27Alibaba\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20break;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20case\x20\x27as199524\x27:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceName\x20=\x20\x27G-Core\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20break;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20case\x20\x27proxyip\x27:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceName\x20=\x20\x27反代IP\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20break;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20default:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceName\x20=\x20\x27未知\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20progressText.textContent\x20=\x20\x27正在加载\x20\x27\x20+\x20ipSourceName\x20+\x20\x27\x20IP列表...\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20加载IP列表\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20originalIPs\x20=\x20await\x20loadIPs(selectedIPSource,\x20selectedPort);\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(originalIPs.length\x20===\x200)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipList.innerHTML\x20=\x20\x27<div\x20class=\x22ip-item\x22>加载IP列表失败，请重试</div>\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipCount.textContent\x20=\x20\x270\x20个\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20testBtn.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20testBtn.textContent\x20=\x20\x27开始延迟测试\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20portSelect.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceSelect.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20progressText.textContent\x20=\x20\x27加载失败\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20更新IP数量显示\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipCount.textContent\x20=\x20originalIPs.length\x20+\x20\x27\x20个\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20显示加载的IP列表（默认显示前16个）\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20displayLoadedIPs();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20开始测试\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20testBtn.textContent\x20=\x20\x27测试中...\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20progressText.textContent\x20=\x20\x27开始测试端口\x20\x27\x20+\x20selectedPort\x20+\x20\x27...\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20currentDisplayType\x20=\x20\x27testing\x27;\x20//\x20切换到测试状态\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20在测试开始时隐藏显示更多按钮\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreSection.style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20使用更高的并发数（从16增加到32）来加快测试速度\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20results\x20=\x20await\x20testIPsWithConcurrency(originalIPs,\x20selectedPort,\x2032);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20按延迟排序\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20testResults\x20=\x20results.sort((a,\x20b)\x20=>\x20a.latency\x20-\x20b.latency);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20显示结果\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20currentDisplayType\x20=\x20\x27results\x27;\x20//\x20切换到结果显示状态\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showingAll\x20=\x20false;\x20//\x20重置显示状态\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20displayResults();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20创建地区筛选器\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20createRegionFilter();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20testBtn.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20testBtn.textContent\x20=\x20\x27重新测试\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20portSelect.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceSelect.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20progressText.textContent\x20=\x20\x27完成\x20-\x20有效IP:\x20\x27\x20+\x20testResults.length\x20+\x20\x27/\x27\x20+\x20originalIPs.length\x20+\x20\x27\x20(端口:\x20\x27\x20+\x20selectedPort\x20+\x20\x27,\x20IP库:\x20\x27\x20+\x20ipSourceName\x20+\x20\x27)\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20//\x20新增：加载IP列表的函数\x0a\x20\x20\x20\x20\x20\x20\x20\x20async\x20function\x20loadIPs(ipSource,\x20port)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20try\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20response\x20=\x20await\x20fetch(`?loadIPs=${ipSource}&port=${port}`,\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20method:\x20\x27GET\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(!response.ok)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20throw\x20new\x20Error(\x27Failed\x20to\x20load\x20IPs\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20data\x20=\x20await\x20response.json();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20data.ips\x20||\x20[];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20catch\x20(error)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.error(\x27加载IP列表失败:\x27,\x20error);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20[];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20displayResults()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipList\x20=\x20document.getElementById(\x27ip-list\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20resultCount\x20=\x20document.getElementById(\x27result-count\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20showMoreSection\x20=\x20document.getElementById(\x27show-more-section\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20showMoreBtn\x20=\x20document.getElementById(\x27show-more-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipDisplayInfo\x20=\x20document.getElementById(\x27ip-display-info\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(testResults.length\x20===\x200)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipList.innerHTML\x20=\x20\x27<div\x20class=\x22ip-item\x22>未找到有效的IP</div>\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20resultCount.textContent\x20=\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipDisplayInfo.textContent\x20=\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreSection.style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20displayedResults\x20=\x20[];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonStates();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20确定显示数量\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20maxDisplayCount\x20=\x20showingAll\x20?\x20testResults.length\x20:\x20Math.min(testResults.length,\x2016);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20displayedResults\x20=\x20testResults.slice(0,\x20maxDisplayCount);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20更新结果计数显示\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(testResults.length\x20<=\x2016)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20resultCount.textContent\x20=\x20\x27(共测试出\x20\x27\x20+\x20testResults.length\x20+\x20\x27\x20个有效IP)\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipDisplayInfo.textContent\x20=\x20\x27显示全部\x20\x27\x20+\x20testResults.length\x20+\x20\x27\x20个测试结果\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreSection.style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20resultCount.textContent\x20=\x20\x27(共测试出\x20\x27\x20+\x20testResults.length\x20+\x20\x27\x20个有效IP)\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipDisplayInfo.textContent\x20=\x20\x27显示前\x20\x27\x20+\x20maxDisplayCount\x20+\x20\x27\x20个测试结果，共\x20\x27\x20+\x20testResults.length\x20+\x20\x27\x20个有效IP\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreSection.style.display\x20=\x20\x27block\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreBtn.textContent\x20=\x20showingAll\x20?\x20\x27显示更少\x27\x20:\x20\x27显示更多\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreBtn.disabled\x20=\x20false;\x20//\x20确保在结果显示时启用按钮\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20resultsHTML\x20=\x20displayedResults.map(result\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20className\x20=\x20\x27good-latency\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(result.latency\x20>\x20200)\x20className\x20=\x20\x27bad-latency\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20else\x20if\x20(result.latency\x20>\x20100)\x20className\x20=\x20\x27medium-latency\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20\x27<div\x20class=\x22ip-item\x20\x27\x20+\x20className\x20+\x20\x27\x22>\x27\x20+\x20result.display\x20+\x20\x27</div>\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}).join(\x27\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipList.innerHTML\x20=\x20resultsHTML;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonStates();\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20//\x20新增：创建地区筛选器\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20createRegionFilter()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20获取所有唯一的地区代码（使用cca2代码）\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20uniqueRegions\x20=\x20[...new\x20Set(testResults.map(result\x20=>\x20result.locationCode))];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20uniqueRegions.sort();\x20//\x20按字母顺序排序\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20filterContainer\x20=\x20document.getElementById(\x27region-filter\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(!filterContainer)\x20return;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(uniqueRegions.length\x20===\x200)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filterContainer.style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20创建筛选按钮\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20filterHTML\x20=\x20\x27<h3>地区筛选：</h3><div\x20class=\x22region-buttons\x22>\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filterHTML\x20+=\x20\x27<button\x20class=\x22region-btn\x20active\x22\x20data-region=\x22all\x22>全部\x20(\x27\x20+\x20testResults.length\x20+\x20\x27)</button>\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20uniqueRegions.forEach(region\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20count\x20=\x20testResults.filter(r\x20=>\x20r.locationCode\x20===\x20region).length;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filterHTML\x20+=\x20\x27<button\x20class=\x22region-btn\x22\x20data-region=\x22\x27\x20+\x20region\x20+\x20\x27\x22>\x27\x20+\x20region\x20+\x20\x27\x20(\x27\x20+\x20count\x20+\x20\x27)</button>\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filterHTML\x20+=\x20\x27</div>\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filterContainer.innerHTML\x20=\x20filterHTML;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filterContainer.style.display\x20=\x20\x27block\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20添加点击事件\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20document.querySelectorAll(\x27.region-btn\x27).forEach(button\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20button.addEventListener(\x27click\x27,\x20function()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20更新活动按钮\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20document.querySelectorAll(\x27.region-btn\x27).forEach(btn\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20btn.classList.remove(\x27active\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20this.classList.add(\x27active\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20筛选结果\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20selectedRegion\x20=\x20this.getAttribute(\x27data-region\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(selectedRegion\x20===\x20\x27all\x27)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20displayedResults\x20=\x20[...testResults];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20displayedResults\x20=\x20testResults.filter(result\x20=>\x20result.locationCode\x20===\x20selectedRegion);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20重置显示状态\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showingAll\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20displayFilteredResults();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20//\x20新增：显示筛选后的结果\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20displayFilteredResults()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipList\x20=\x20document.getElementById(\x27ip-list\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20resultCount\x20=\x20document.getElementById(\x27result-count\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20showMoreSection\x20=\x20document.getElementById(\x27show-more-section\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20showMoreBtn\x20=\x20document.getElementById(\x27show-more-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipDisplayInfo\x20=\x20document.getElementById(\x27ip-display-info\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(displayedResults.length\x20===\x200)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipList.innerHTML\x20=\x20\x27<div\x20class=\x22ip-item\x22>未找到有效的IP</div>\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20resultCount.textContent\x20=\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipDisplayInfo.textContent\x20=\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreSection.style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonStates();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20确定显示数量\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20maxDisplayCount\x20=\x20showingAll\x20?\x20displayedResults.length\x20:\x20Math.min(displayedResults.length,\x2016);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20currentResults\x20=\x20displayedResults.slice(0,\x20maxDisplayCount);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20更新结果计数显示\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20totalCount\x20=\x20testResults.length;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20filteredCount\x20=\x20displayedResults.length;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(filteredCount\x20<=\x2016)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20resultCount.textContent\x20=\x20\x27(共测试出\x20\x27\x20+\x20totalCount\x20+\x20\x27\x20个有效IP，筛选出\x20\x27\x20+\x20filteredCount\x20+\x20\x27\x20个)\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipDisplayInfo.textContent\x20=\x20\x27显示全部\x20\x27\x20+\x20filteredCount\x20+\x20\x27\x20个筛选结果\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreSection.style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20resultCount.textContent\x20=\x20\x27(共测试出\x20\x27\x20+\x20totalCount\x20+\x20\x27\x20个有效IP，筛选出\x20\x27\x20+\x20filteredCount\x20+\x20\x27\x20个)\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipDisplayInfo.textContent\x20=\x20\x27显示前\x20\x27\x20+\x20maxDisplayCount\x20+\x20\x27\x20个筛选结果，共\x20\x27\x20+\x20filteredCount\x20+\x20\x27\x20个\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreSection.style.display\x20=\x20\x27block\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreBtn.textContent\x20=\x20showingAll\x20?\x20\x27显示更少\x27\x20:\x20\x27显示更多\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreBtn.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20resultsHTML\x20=\x20currentResults.map(result\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20className\x20=\x20\x27good-latency\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(result.latency\x20>\x20200)\x20className\x20=\x20\x27bad-latency\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20else\x20if\x20(result.latency\x20>\x20100)\x20className\x20=\x20\x27medium-latency\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20\x27<div\x20class=\x22ip-item\x20\x27\x20+\x20className\x20+\x20\x27\x22>\x27\x20+\x20result.display\x20+\x20\x27</div>\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}).join(\x27\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipList.innerHTML\x20=\x20resultsHTML;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonStates();\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20</script>\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20</body>\x0a\x20\x20\x20\x20</html>\x0a\x20\x20\x20\x20','\x0d\x0a\x0d\x0a','无效的IP地址:\x20','warn','DNS\x20服务器(','\x20时（北京时间）<br><br>','https://','proxyip.','byteLength','<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20UA:\x20','检查账户\x20','\x20个重复项','city','8260250gUWaDG','SUBNAME','ceil','?sb</a><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22qrcode_3\x22\x20style=\x22margin:\x2010px\x2010px\x2010px\x2010px;\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20loon订阅地址:<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22copyToClipboard(\x27https://','2087','无效的IP:端口格式:\x20','未找到IPv6地址','CFPORTS','close',',\x20Workers:\x20','forEach','无效的\x20SOCKS\x20地址格式：端口号必须是数字','保存失败:\x20','P2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT10bHMmc25pPQ==','SUBAPI','2086','body','\x0a组织:\x20','as24429',',\x20port:\x20','POST','ADDNOTLSAPI（noTLS优选域名&IP\x20的\x20API）:\x20<br>&nbsp;&nbsp;','&insert=false&config=','104.16.0.0/13','padStart','readableWebSocketStream\x20管道错误','/proxyip.','优选地址','pswd','<br>','uuid','log','errors','\x20HTTP/1.1\x0d\x0a','UFJPWFlJUC50cDEuMDkwMjI3Lnh5eg==','1621356utYyIv','HTTP',',\x20client-fingerprint:\x20','JTA5JTA5JTA5JTA5JTA5JTNDc3Ryb25nJTNFMS4lM0MlMkZzdHJvbmclM0UlMjBBRERBUEklMjAlRTUlQTYlODIlRTYlOUUlOUMlRTYlOTglQUYlRTUlOEYlOEQlRTQlQkIlQTNJUCVFRiVCQyU4QyVFNSU4RiVBRiVFNCVCRCU5QyVFNCVCOCVCQVBST1hZSVAlRTclOUElODQlRTglQUYlOUQlRUYlQkMlOEMlRTUlOEYlQUYlRTUlQjAlODYlMjIlM0Zwcm94eWlwJTNEdHJ1ZSUyMiVFNSU4RiU4MiVFNiU5NSVCMCVFNiVCNyVCQiVFNSU4QSVBMCVFNSU4OCVCMCVFOSU5MyVCRSVFNiU4RSVBNSVFNiU5QyVBQiVFNSVCMCVCRSVFRiVCQyU4QyVFNCVCRSU4QiVFNSVBNiU4MiVFRiVCQyU5QSUzQ2JyJTNFCiUwOSUwOSUwOSUwOSUwOSUyNm5ic3AlM0IlMjZuYnNwJTNCaHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGY21saXUlMkZXb3JrZXJWbGVzczJzdWIlMkZtYWluJTJGYWRkcmVzc2VzYXBpLnR4dCUzQ3N0cm9uZyUzRSUzRnByb3h5aXAlM0R0cnVlJTNDJTJGc3Ryb25nJTNFJTNDYnIlM0UlM0NiciUzRQolMDklMDklMDklMDklMDklM0NzdHJvbmclM0UyLiUzQyUyRnN0cm9uZyUzRSUyMEFEREFQSSUyMCVFNSVBNiU4MiVFNiU5RSU5QyVFNiU5OCVBRiUyMCUzQ2ElMjBocmVmJTNEJTI3aHR0cHMlM0ElMkYlMkZnaXRodWIuY29tJTJGWElVMiUyRkNsb3VkZmxhcmVTcGVlZFRlc3QlMjclM0VDbG91ZGZsYXJlU3BlZWRUZXN0JTNDJTJGYSUzRSUyMCVFNyU5QSU4NCUyMGNzdiUyMCVFNyVCQiU5MyVFNiU5RSU5QyVFNiU5NiU4NyVFNCVCQiVCNiVFRiVCQyU4QyVFNCVCRSU4QiVFNSVBNiU4MiVFRiVCQyU5QSUzQ2JyJTNFCiUwOSUwOSUwOSUwOSUwOSUyNm5ic3AlM0IlMjZuYnNwJTNCaHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGY21saXUlMkZXb3JrZXJWbGVzczJzdWIlMkZtYWluJTJGQ2xvdWRmbGFyZVNwZWVkVGVzdC5jc3YlM0NiciUzRSUzQ2JyJTNFCiUwOSUwOSUwOSUwOSUwOSUyNm5ic3AlM0IlMjZuYnNwJTNCLSUyMCVFNSVBNiU4MiVFOSU5QyU4MCVFNiU4QyU4NyVFNSVBRSU5QTIwNTMlRTclQUIlQUYlRTUlOEYlQTMlRTUlOEYlQUYlRTUlQjAlODYlMjIlM0Zwb3J0JTNEMjA1MyUyMiVFNSU4RiU4MiVFNiU5NSVCMCVFNiVCNyVCQiVFNSU4QSVBMCVFNSU4OCVCMCVFOSU5MyVCRSVFNiU4RSVBNSVFNiU5QyVBQiVFNSVCMCVCRSVFRiVCQyU4QyVFNCVCRSU4QiVFNSVBNiU4MiVFRiVCQyU5QSUzQ2JyJTNFCiUwOSUwOSUwOSUwOSUwOSUyNm5ic3AlM0IlMjZuYnNwJTNCaHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGY21saXUlMkZXb3JrZXJWbGVzczJzdWIlMkZtYWluJTJGQ2xvdWRmbGFyZVNwZWVkVGVzdC5jc3YlM0NzdHJvbmclM0UlM0Zwb3J0JTNEMjA1MyUzQyUyRnN0cm9uZyUzRSUzQ2JyJTNFJTNDYnIlM0UKJTA5JTA5JTA5JTA5JTA5JTI2bmJzcCUzQiUyNm5ic3AlM0ItJTIwJUU1JUE2JTgyJUU5JTlDJTgwJUU2JThDJTg3JUU1JUFFJTlBJUU4JThBJTgyJUU3JTgyJUI5JUU1JUE0JTg3JUU2JUIzJUE4JUU1JThGJUFGJUU1JUIwJTg2JTIyJTNGaWQlM0RDRiVFNCVCQyU5OCVFOSU4MCU4OSUyMiVFNSU4RiU4MiVFNiU5NSVCMCVFNiVCNyVCQiVFNSU4QSVBMCVFNSU4OCVCMCVFOSU5MyVCRSVFNiU4RSVBNSVFNiU5QyVBQiVFNSVCMCVCRSVFRiVCQyU4QyVFNCVCRSU4QiVFNSVBNiU4MiVFRiVCQyU5QSUzQ2JyJTNFCiUwOSUwOSUwOSUwOSUwOSUyNm5ic3AlM0IlMjZuYnNwJTNCaHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGY21saXUlMkZXb3JrZXJWbGVzczJzdWIlMkZtYWluJTJGQ2xvdWRmbGFyZVNwZWVkVGVzdC5jc3YlM0NzdHJvbmclM0UlM0ZpZCUzRENGJUU0JUJDJTk4JUU5JTgwJTg5JTNDJTJGc3Ryb25nJTNFJTNDYnIlM0UlM0NiciUzRQolMDklMDklMDklMDklMDklMjZuYnNwJTNCJTI2bmJzcCUzQi0lMjAlRTUlQTYlODIlRTklOUMlODAlRTYlOEMlODclRTUlQUUlOUElRTUlQTQlOUElRTQlQjglQUElRTUlOEYlODIlRTYlOTUlQjAlRTUlODglOTklRTklOUMlODAlRTglQTYlODElRTQlQkQlQkYlRTclOTQlQTglMjclMjYlMjclRTUlODElOUElRTklOTclQjQlRTklOUElOTQlRUYlQkMlOEMlRTQlQkUlOEIlRTUlQTYlODIlRUYlQkMlOUElM0NiciUzRQolMDklMDklMDklMDklMDklMjZuYnNwJTNCJTI2bmJzcCUzQmh0dHBzJTNBJTJGJTJGcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSUyRmNtbGl1JTJGV29ya2VyVmxlc3Myc3ViJTJGbWFpbiUyRkNsb3VkZmxhcmVTcGVlZFRlc3QuY3N2JTNGaWQlM0RDRiVFNCVCQyU5OCVFOSU4MCU4OSUzQ3N0cm9uZyUzRSUyNiUzQyUyRnN0cm9uZyUzRXBvcnQlM0QyMDUzJTNDYnIlM0U=','remoteSocketToWS\x20has\x20exception\x20','ZWRnZXR1bm5lbA==','getWriter','NAT64','flatMap','</span></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p><strong>获取到的IP总数：</strong><span\x20id=\x22ip-count\x22>点击开始测试后加载</span></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p><strong>测试进度：</strong><span\x20id=\x22progress-text\x22>未开始</span></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22progress-bar\x22\x20id=\x22progress-bar\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22test-info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p><strong>📊\x20测试说明：</strong>当前优选方式仅进行网络延迟测试，主要评估连接响应速度，并未包含带宽速度测试。延迟测试可快速筛选出响应最快的IP节点，适合日常使用场景的初步优选。</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20<div\x20class=\x22warm-tips\x22\x20id=\x22warm-tips\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h3>💡\x20温馨提示</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p><strong>优选完成但测试\x22真连接延迟\x22为\x20-1？</strong>这很有可能是您的网络运营商对你的请求进行了阻断。</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p><strong>建议尝试以下解决方案：</strong></p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>更换端口：</strong>尝试使用其他端口（如\x202053、2083、2087、2096、8443）</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>更换IP库：</strong>切换到不同的IP来源（CM整理列表、AS13335、AS209242列表等，但如果你不明白AS24429和AS199524意味着什么，那就不要选。）</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>更换自定义域名：</strong>如果您使用的还是免费域名，那么您更应该尝试一下更换自定义域</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p>💡\x20<strong>小贴士：</strong>不同地区和网络环境对各端口的支持情况可能不同，多尝试几个端口组合通常能找到适合的IP。</p>\x0a\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20<div\x20class=\x22test-controls\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22port-selector\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22ip-source-select\x22>IP库：</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20id=\x22ip-source-select\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22official\x22>CF官方列表</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22cm\x22>CM整理列表</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22as13335\x22>AS13335列表</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22as209242\x22>AS209242列表</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22as24429\x22>AS24429列表(Alibaba)</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22as199524\x22>AS199524列表(G-Core)</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22proxyip\x22>反代IP列表</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22port-select\x22\x20style=\x22margin-left:\x2020px;\x22>端口：</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20id=\x22port-select\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22443\x22>443</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x222053\x22>2053</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x222083\x22>2083</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x222087\x22>2087</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x222096\x22>2096</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x228443\x22>8443</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22button-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22test-button\x22\x20id=\x22test-btn\x22\x20onclick=\x22startTest()\x22>开始延迟测试</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22save-button\x22\x20id=\x22save-btn\x22\x20onclick=\x22saveIPs()\x22\x20disabled>覆盖保存优选IP</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22append-button\x22\x20id=\x22append-btn\x22\x20onclick=\x22appendIPs()\x22\x20disabled>追加保存优选IP</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22edit-button\x22\x20id=\x22edit-btn\x22\x20onclick=\x22goEdit()\x22>编辑优选列表</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22back-button\x22\x20id=\x22back-btn\x22\x20onclick=\x22goBack()\x22>返回配置页</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22save-warning\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<small>⚠️\x20重要提醒：\x22覆盖保存优选IP\x22会完全覆盖当前\x20addresses/ADD\x20优选内容，请慎重考虑！建议优先使用\x22追加保存优选IP\x22功能。</small>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22save-tip\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>💡\x20保存提示：</strong>[<strong>覆盖保存优选IP</strong>]\x20和\x20[<strong>追加保存优选IP</strong>]\x20功能仅会保存延迟最低的<strong>前16个优选IP</strong>。如需添加更多IP或进行自定义编辑，请使用\x20[<strong>编辑优选列表</strong>]\x20功能。\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22message\x22\x20class=\x22message\x22></div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20<h2>IP列表\x20<span\x20id=\x22result-count\x22></span></h2>\x0a\x20\x20\x20\x20<div\x20class=\x22ip-display-info\x22\x20id=\x22ip-display-info\x22></div>\x0a\x20\x20\x20\x20<div\x20id=\x22region-filter\x22\x20style=\x22margin:\x2015px\x200;\x20display:\x20none;\x22></div>\x0a\x20\x20\x20\x20<div\x20class=\x22ip-list\x22\x20id=\x22ip-list\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22ip-item\x22>请选择端口和IP库，然后点击\x22开始延迟测试\x22加载IP列表</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22show-more-section\x22\x20id=\x22show-more-section\x22\x20style=\x22display:\x20none;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22show-more-btn\x22\x20id=\x22show-more-btn\x22\x20onclick=\x22toggleShowMore()\x22>显示更多</button>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20<script>\x0a\x20\x20\x20\x20\x20\x20\x20\x20let\x20originalIPs\x20=\x20[];\x20//\x20改为动态加载\x0a\x20\x20\x20\x20\x20\x20\x20\x20let\x20testResults\x20=\x20[];\x0a\x20\x20\x20\x20\x20\x20\x20\x20let\x20displayedResults\x20=\x20[];\x20//\x20新增：存储当前显示的结果\x0a\x20\x20\x20\x20\x20\x20\x20\x20let\x20showingAll\x20=\x20false;\x20//\x20新增：标记是否显示全部内容\x0a\x20\x20\x20\x20\x20\x20\x20\x20let\x20currentDisplayType\x20=\x20\x27loading\x27;\x20//\x20新增：当前显示类型\x20\x27loading\x27\x20|\x20\x27results\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20let\x20cloudflareLocations\x20=\x20{};\x20//\x20新增：存储Cloudflare位置信息\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20//\x20新增：本地存储管理\x0a\x20\x20\x20\x20\x20\x20\x20\x20const\x20StorageKeys\x20=\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20PORT:\x20\x27cf-ip-test-port\x27,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20IP_SOURCE:\x20\x27cf-ip-test-source\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20};\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20//\x20新增：加载Cloudflare位置信息\x0a\x20\x20\x20\x20\x20\x20\x20\x20async\x20function\x20loadCloudflareLocations()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20try\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20response\x20=\x20await\x20fetch(\x27https://speed.cloudflare.com/locations\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(response.ok)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20locations\x20=\x20await\x20response.json();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20转换为以iata为key的对象，便于快速查找\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cloudflareLocations\x20=\x20{};\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20locations.forEach(location\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cloudflareLocations[location.iata]\x20=\x20location;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.log(\x27Cloudflare位置信息加载成功:\x27,\x20Object.keys(cloudflareLocations).length,\x20\x27个位置\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.warn(\x27无法加载Cloudflare位置信息，将使用原始colo值\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20catch\x20(error)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.error(\x27加载Cloudflare位置信息失败:\x27,\x20error);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.warn(\x27将使用原始colo值\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20//\x20初始化页面设置\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20initializeSettings()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20portSelect\x20=\x20document.getElementById(\x27port-select\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipSourceSelect\x20=\x20document.getElementById(\x27ip-source-select\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20从本地存储读取上次的选择\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20savedPort\x20=\x20localStorage.getItem(StorageKeys.PORT);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20savedIPSource\x20=\x20localStorage.getItem(StorageKeys.IP_SOURCE);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20恢复端口选择\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(savedPort\x20&&\x20portSelect.querySelector(`option[value=\x22${savedPort}\x22]`))\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20portSelect.value\x20=\x20savedPort;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20portSelect.value\x20=\x20\x278443\x27;\x20//\x20默认值\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20恢复IP库选择\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(savedIPSource\x20&&\x20ipSourceSelect.querySelector(`option[value=\x22${savedIPSource}\x22]`))\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceSelect.value\x20=\x20savedIPSource;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceSelect.value\x20=\x20\x27official\x27;\x20//\x20默认值改为CF官方列表\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20添加事件监听器保存选择\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20portSelect.addEventListener(\x27change\x27,\x20function()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20localStorage.setItem(StorageKeys.PORT,\x20this.value);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceSelect.addEventListener(\x27change\x27,\x20function()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20localStorage.setItem(StorageKeys.IP_SOURCE,\x20this.value);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20//\x20页面加载完成后初始化设置\x0a\x20\x20\x20\x20\x20\x20\x20\x20document.addEventListener(\x27DOMContentLoaded\x27,\x20async\x20function()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20先加载Cloudflare位置信息\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20await\x20loadCloudflareLocations();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20然后初始化页面设置\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20initializeSettings();\x0a\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20//\x20新增：切换显示更多/更少\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20toggleShowMore()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20在测试过程中不允许切换显示\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(currentDisplayType\x20===\x20\x27testing\x27)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showingAll\x20=\x20!showingAll;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(currentDisplayType\x20===\x20\x27loading\x27)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20displayLoadedIPs();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20if\x20(currentDisplayType\x20===\x20\x27results\x27)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20displayResults();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20//\x20新增：显示加载的IP列表\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20displayLoadedIPs()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipList\x20=\x20document.getElementById(\x27ip-list\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20showMoreSection\x20=\x20document.getElementById(\x27show-more-section\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20showMoreBtn\x20=\x20document.getElementById(\x27show-more-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipDisplayInfo\x20=\x20document.getElementById(\x27ip-display-info\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(originalIPs.length\x20===\x200)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipList.innerHTML\x20=\x20\x27<div\x20class=\x22ip-item\x22>加载IP列表失败，请重试</div>\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreSection.style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipDisplayInfo.textContent\x20=\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20displayCount\x20=\x20showingAll\x20?\x20originalIPs.length\x20:\x20Math.min(originalIPs.length,\x2016);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20displayIPs\x20=\x20originalIPs.slice(0,\x20displayCount);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20更新显示信息\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(originalIPs.length\x20<=\x2016)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipDisplayInfo.textContent\x20=\x20`显示全部\x20${originalIPs.length}\x20个IP`;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreSection.style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipDisplayInfo.textContent\x20=\x20`显示前\x20${displayCount}\x20个IP，共加载\x20${originalIPs.length}\x20个IP`;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20只在非测试状态下显示\x22显示更多\x22按钮\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(currentDisplayType\x20!==\x20\x27testing\x27)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreSection.style.display\x20=\x20\x27block\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreBtn.textContent\x20=\x20showingAll\x20?\x20\x27显示更少\x27\x20:\x20\x27显示更多\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreBtn.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMoreSection.style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20显示IP列表\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipList.innerHTML\x20=\x20displayIPs.map(ip\x20=>\x20`<div\x20class=\x22ip-item\x22>${ip}</div>`).join(\x27\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20showMessage(text,\x20type\x20=\x20\x27success\x27)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20messageDiv\x20=\x20document.getElementById(\x27message\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20messageDiv.textContent\x20=\x20text;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20messageDiv.className\x20=\x20`message\x20${type}`;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20messageDiv.style.display\x20=\x20\x27block\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x203秒后自动隐藏消息\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20setTimeout(()\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20messageDiv.style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x203000);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20updateButtonStates()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20saveBtn\x20=\x20document.getElementById(\x27save-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20appendBtn\x20=\x20document.getElementById(\x27append-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20hasResults\x20=\x20displayedResults.length\x20>\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20saveBtn.disabled\x20=\x20!hasResults;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20appendBtn.disabled\x20=\x20!hasResults;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20disableAllButtons()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20testBtn\x20=\x20document.getElementById(\x27test-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20saveBtn\x20=\x20document.getElementById(\x27save-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20appendBtn\x20=\x20document.getElementById(\x27append-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20editBtn\x20=\x20document.getElementById(\x27edit-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20backBtn\x20=\x20document.getElementById(\x27back-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20portSelect\x20=\x20document.getElementById(\x27port-select\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipSourceSelect\x20=\x20document.getElementById(\x27ip-source-select\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20testBtn.disabled\x20=\x20true;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20saveBtn.disabled\x20=\x20true;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20appendBtn.disabled\x20=\x20true;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20editBtn.disabled\x20=\x20true;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20backBtn.disabled\x20=\x20true;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20portSelect.disabled\x20=\x20true;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceSelect.disabled\x20=\x20true;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20enableButtons()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20testBtn\x20=\x20document.getElementById(\x27test-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20editBtn\x20=\x20document.getElementById(\x27edit-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20backBtn\x20=\x20document.getElementById(\x27back-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20portSelect\x20=\x20document.getElementById(\x27port-select\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ipSourceSelect\x20=\x20document.getElementById(\x27ip-source-select\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20testBtn.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20editBtn.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20backBtn.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20portSelect.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipSourceSelect.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonStates();\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20async\x20function\x20saveIPs()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20使用当前显示的结果而不是全部结果\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20ipsToSave\x20=\x20[];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(document.getElementById(\x27region-filter\x27)\x20&&\x20document.getElementById(\x27region-filter\x27).style.display\x20!==\x20\x27none\x27)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20如果地区筛选器可见，使用筛选后的结果\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipsToSave\x20=\x20displayedResults;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20否则使用全部测试结果\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipsToSave\x20=\x20testResults;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(ipsToSave.length\x20===\x200)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMessage(\x27没有可保存的IP结果\x27,\x20\x27error\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20saveBtn\x20=\x20document.getElementById(\x27save-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20originalText\x20=\x20saveBtn.textContent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20禁用所有按钮\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20disableAllButtons();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20saveBtn.textContent\x20=\x20\x27保存中...\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20try\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20只保存前16个最优IP\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20saveCount\x20=\x20Math.min(ipsToSave.length,\x2016);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ips\x20=\x20ipsToSave.slice(0,\x20saveCount).map(result\x20=>\x20result.display);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20response\x20=\x20await\x20fetch(\x27?action=save\x27,\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20method:\x20\x27POST\x27,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20headers:\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x27Content-Type\x27:\x20\x27application/json\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20body:\x20JSON.stringify({\x20ips\x20})\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20data\x20=\x20await\x20response.json();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(data.success)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMessage(data.message\x20+\x20\x27（已保存前\x27\x20+\x20saveCount\x20+\x20\x27个最优IP）\x27,\x20\x27success\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMessage(data.error\x20||\x20\x27保存失败\x27,\x20\x27error\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20catch\x20(error)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMessage(\x27保存失败:\x20\x27\x20+\x20error.message,\x20\x27error\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20finally\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20saveBtn.textContent\x20=\x20originalText;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20enableButtons();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20async\x20function\x20appendIPs()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20使用当前显示的结果而不是全部结果\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20ipsToAppend\x20=\x20[];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(document.getElementById(\x27region-filter\x27)\x20&&\x20document.getElementById(\x27region-filter\x27).style.display\x20!==\x20\x27none\x27)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20如果地区筛选器可见，使用筛选后的结果\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipsToAppend\x20=\x20displayedResults;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20否则使用全部测试结果\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ipsToAppend\x20=\x20testResults;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(ipsToAppend.length\x20===\x200)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMessage(\x27没有可追加的IP结果\x27,\x20\x27error\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20appendBtn\x20=\x20document.getElementById(\x27append-btn\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20originalText\x20=\x20appendBtn.textContent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20禁用所有按钮\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20disableAllButtons();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20appendBtn.textContent\x20=\x20\x27追加中...\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20try\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20只追加前16个最优IP\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20saveCount\x20=\x20Math.min(ipsToAppend.length,\x2016);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20ips\x20=\x20ipsToAppend.slice(0,\x20saveCount).map(result\x20=>\x20result.display);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20response\x20=\x20await\x20fetch(\x27?action=append\x27,\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20method:\x20\x27POST\x27,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20headers:\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x27Content-Type\x27:\x20\x27application/json\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20body:\x20JSON.stringify({\x20ips\x20})\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20data\x20=\x20await\x20response.json();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(data.success)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMessage(data.message\x20+\x20\x27（已追加前\x27\x20+\x20saveCount\x20+\x20\x27个最优IP）\x27,\x20\x27success\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMessage(data.error\x20||\x20\x27追加失败\x27,\x20\x27error\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20catch\x20(error)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20showMessage(\x27追加失败:\x20\x27\x20+\x20error.message,\x20\x27error\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20finally\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20appendBtn.textContent\x20=\x20originalText;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20enableButtons();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20goEdit()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20currentUrl\x20=\x20window.location.href;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20parentUrl\x20=\x20currentUrl.substring(0,\x20currentUrl.lastIndexOf(\x27/\x27));\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20window.location.href\x20=\x20parentUrl\x20+\x20\x27/edit\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20goBack()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20currentUrl\x20=\x20window.location.href;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20parentUrl\x20=\x20currentUrl.substring(0,\x20currentUrl.lastIndexOf(\x27/\x27));\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20window.location.href\x20=\x20parentUrl;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20async\x20function\x20testIP(ip,\x20port)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20timeout\x20=\x205000;\x20//\x20增加超时时间到5秒\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20解析IP格式\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20parsedIP\x20=\x20parseIPFormat(ip,\x20port);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(!parsedIP)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20null;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20进行测试，最多重试3次\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20lastError\x20=\x20null;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20for\x20(let\x20attempt\x20=\x201;\x20attempt\x20<=\x203;\x20attempt++)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20result\x20=\x20await\x20singleTest(parsedIP.host,\x20parsedIP.port,\x20timeout);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(result)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.log(`IP\x20${parsedIP.host}:${parsedIP.port}\x20第${attempt}次测试成功:\x20${result.latency}ms,\x20colo:\x20${result.colo},\x20类型:\x20${result.type}`);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20根据colo字段获取国家代码\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20locationCode\x20=\x20cloudflareLocations[result.colo]\x20?\x20cloudflareLocations[result.colo].cca2\x20:\x20result.colo;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20生成显示格式\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20typeText\x20=\x20result.type\x20===\x20\x27official\x27\x20?\x20\x27官方优选\x27\x20:\x20\x27反代优选\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20display\x20=\x20`${parsedIP.host}:${parsedIP.port}#${locationCode}\x20${typeText}\x20${result.latency}ms`;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ip:\x20parsedIP.host,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20port:\x20parsedIP.port,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20latency:\x20result.latency,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20colo:\x20result.colo,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20type:\x20result.type,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20locationCode:\x20locationCode,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20comment:\x20`${locationCode}\x20${typeText}`,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20display\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20};\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.log(`IP\x20${parsedIP.host}:${parsedIP.port}\x20第${attempt}次测试失败`);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(attempt\x20<\x203)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20短暂延迟后重试\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20await\x20new\x20Promise(resolve\x20=>\x20setTimeout(resolve,\x20200));\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20null;\x20//\x20所有尝试都失败\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20//\x20新增：解析IP格式的函数\x0a\x20\x20\x20\x20\x20\x20\x20\x20function\x20parseIPFormat(ipString,\x20defaultPort)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20try\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20host,\x20port,\x20comment;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20先处理注释部分（#之后的内容）\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20mainPart\x20=\x20ipString;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(ipString.includes(\x27#\x27))\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20parts\x20=\x20ipString.split(\x27#\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20mainPart\x20=\x20parts[0];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20comment\x20=\x20parts[1];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20处理端口部分\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(mainPart.includes(\x27:\x27))\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20parts\x20=\x20mainPart.split(\x27:\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20host\x20=\x20parts[0];\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20port\x20=\x20parseInt(parts[1]);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20host\x20=\x20mainPart;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20port\x20=\x20parseInt(defaultPort);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20验证IP格式\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(!host\x20||\x20!port\x20||\x20isNaN(port))\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20null;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20host:\x20host.trim(),\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20port:\x20port,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20comment:\x20comment\x20?\x20comment.trim()\x20:\x20null\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20};\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20catch\x20(error)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.error(\x27解析IP格式失败:\x27,\x20ipString,\x20error);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20null;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20async\x20function\x20singleTest(ip,\x20port,\x20timeout)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20先进行预请求以缓存DNS解析结果\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20try\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20controller\x20=\x20new\x20AbortController();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20timeoutId\x20=\x20setTimeout(()\x20=>\x20controller.abort(),\x20timeout);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20parts\x20=\x20ip.split(\x27.\x27).map(part\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20hex\x20=\x20parseInt(part,\x2010).toString(16);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20hex.length\x20===\x201\x20?\x20\x270\x27\x20+\x20hex\x20:\x20hex;\x20//\x20补零\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20nip\x20=\x20parts.join(\x27\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20预请求，不计入延迟时间\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20await\x20fetch(\x27https://\x27\x20+\x20nip\x20+\x20\x27.',',\x20uuid:\x20','P2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT0mdHlwZT13cyZob3N0PQ==','2082','无效的IPv4地址','\x20配置信息<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20---------------------------------------------------------------<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','.pages.dev','\x20优选订阅列表:<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20---------------------------------------------------------------<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20&nbsp;&nbsp;<strong><a\x20href=\x22javascript:void(0);\x22\x20id=\x22noticeToggle\x22\x20onclick=\x22toggleNotice()\x22>注意事项∨</a></strong><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22noticeContent\x22\x20class=\x22notice-content\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','join','8080','function','\x0a<tg-spoiler>','<div\x20style=\x22font-size:13px;\x22>','<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20SCV（跳过TLS证书验证）:\x20','6537979DXXbKi','8.8.4.4','doh\x20success\x20and\x20dns\x20message\x20length\x20is\x20','write','\x20个账户，正在智能匹配...','udp\x20','CF-Workers-SUB','保存成功','✅\x20找到匹配账户，使用第\x20','8443','&list=false&tfo=false&scv=','追加失败：合并后内容过大（','保存KV时发生错误:','\x20通过代理\x20','104.24.0.0/14','&type=','abort','最终选择账户\x20','连接到\x20','TIME（动态UUID有效时间）:\x20','socks','HTTP/1.0\x20200','from','虚假订阅:\x20','处理HTTP代理响应失败:\x20','replaceAll','statusText','https://raw.githubusercontent.com/cmliu/ACL4SSR/main/baipiao.txt','ADDAPI','?loon</a><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22qrcode_5\x22\x20style=\x22margin:\x2010px\x2010px\x2010px\x2010px;\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong><a\x20href=\x22javascript:void(0);\x22\x20id=\x22noticeToggle\x22\x20onclick=\x22toggleNotice()\x22>实用订阅技巧∨</a></strong><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22noticeContent\x22\x20class=\x22notice-content\x22\x20style=\x22display:\x20none;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>1.</strong>\x20如您使用的是\x20PassWall、PassWall2\x20路由插件，订阅编辑的\x20<strong>用户代理(User-Agent)</strong>\x20设置为\x20<strong>PassWall</strong>\x20即可；<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>2.</strong>\x20如您使用的是\x20SSR+\x20路由插件，推荐使用\x20<strong>Base64订阅地址</strong>\x20进行订阅；<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>3.</strong>\x20快速切换\x20<a\x20href=\x27','正在获取账户信息...','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<script>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(document.querySelector(\x27.editor\x27))\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20timer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20textarea\x20=\x20document.getElementById(\x27content\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20originalContent\x20=\x20textarea.value;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20function\x20goBack()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20currentUrl\x20=\x20window.location.href;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20parentUrl\x20=\x20currentUrl.substring(0,\x20currentUrl.lastIndexOf(\x27/\x27));\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20window.location.href\x20=\x20parentUrl;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20function\x20goBestIP()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20currentUrl\x20=\x20window.location.href;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20parentUrl\x20=\x20currentUrl.substring(0,\x20currentUrl.lastIndexOf(\x27/\x27));\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20window.location.href\x20=\x20parentUrl\x20+\x20\x27/bestip\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20function\x20replaceFullwidthColon()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20text\x20=\x20textarea.value;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20textarea.value\x20=\x20text.replace(/：/g,\x20\x27:\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20function\x20saveContent(button)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20try\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20updateButtonText\x20=\x20(step)\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20button.textContent\x20=\x20`保存中:\x20${step}`;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20};\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20检测是否为iOS设备\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20isIOS\x20=\x20/iPad|iPhone|iPod/.test(navigator.userAgent);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20仅在非iOS设备上执行replaceFullwidthColon\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(!isIOS)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20replaceFullwidthColon();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonText(\x27开始保存\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20button.disabled\x20=\x20true;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20获取textarea内容和原始内容\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20textarea\x20=\x20document.getElementById(\x27content\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(!textarea)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20throw\x20new\x20Error(\x27找不到文本编辑区域\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonText(\x27获取内容\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20newContent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20let\x20originalContent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20try\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20newContent\x20=\x20textarea.value\x20||\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20originalContent\x20=\x20textarea.defaultValue\x20||\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20catch\x20(e)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.error(\x27获取内容错误:\x27,\x20e);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20throw\x20new\x20Error(\x27无法获取编辑内容\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonText(\x27准备状态更新函数\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20updateStatus\x20=\x20(message,\x20isError\x20=\x20false)\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20statusElem\x20=\x20document.getElementById(\x27saveStatus\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(statusElem)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20statusElem.textContent\x20=\x20message;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20statusElem.style.color\x20=\x20isError\x20?\x20\x27red\x27\x20:\x20\x27#666\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20};\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonText(\x27准备按钮重置函数\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20resetButton\x20=\x20()\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20button.textContent\x20=\x20\x27保存\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20button.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20};\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(newContent\x20!==\x20originalContent)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonText(\x27发送保存请求\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20fetch(window.location.href,\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20method:\x20\x27POST\x27,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20body:\x20newContent,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20headers:\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x27Content-Type\x27:\x20\x27text/plain;charset=UTF-8\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cache:\x20\x27no-cache\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20})\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.then(response\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonText(\x27检查响应状态\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(!response.ok)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20throw\x20new\x20Error(`HTTP\x20error!\x20status:\x20${response.status}`);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonText(\x27更新保存状态\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20now\x20=\x20new\x20Date().toLocaleString();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20document.title\x20=\x20`编辑已保存\x20${now}`;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateStatus(`已保存\x20${now}`);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20})\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.catch(error\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonText(\x27处理错误\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.error(\x27Save\x20error:\x27,\x20error);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateStatus(`保存失败:\x20${error.message}`,\x20true);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20})\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.finally(()\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20resetButton();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateButtonText(\x27检查内容变化\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20updateStatus(\x27内容未变化\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20resetButton();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20catch\x20(error)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.error(\x27保存过程出错:\x27,\x20error);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20button.textContent\x20=\x20\x27保存\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20button.disabled\x20=\x20false;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20statusElem\x20=\x20document.getElementById(\x27saveStatus\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(statusElem)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20statusElem.textContent\x20=\x20`错误:\x20${error.message}`;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20statusElem.style.color\x20=\x20\x27red\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20textarea.addEventListener(\x27blur\x27,\x20saveContent);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20textarea.addEventListener(\x27input\x27,\x20()\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20clearTimeout(timer);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20timer\x20=\x20setTimeout(saveContent,\x205000);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20function\x20toggleNotice()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20noticeContent\x20=\x20document.getElementById(\x27noticeContent\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20noticeToggle\x20=\x20document.getElementById(\x27noticeToggle\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(noticeContent.style.display\x20===\x20\x27none\x27\x20||\x20noticeContent.style.display\x20===\x20\x27\x27)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20noticeContent.style.display\x20=\x20\x27block\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20noticeToggle.textContent\x20=\x20\x27注意事项∧\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20noticeContent.style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20noticeToggle.textContent\x20=\x20\x27注意事项∨\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20初始化\x20noticeContent\x20的\x20display\x20属性\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20document.addEventListener(\x27DOMContentLoaded\x27,\x20()\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20document.getElementById(\x27noticeContent\x27).style.display\x20=\x20\x27none\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</script>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</body>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</html>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','\x27,\x27qrcode_v2ray\x27)\x22\x20style=\x22color:blue;text-decoration:underline;cursor:pointer;\x22>','none','worker','HOST:\x20','&fdn=false&sort=false&new_name=true','CSVREMARK','<br>&nbsp;&nbsp;','as209242','\x22,\x20headers:\x20{',',\x20总计:\x20','返回默认值：全部为0','User-Agent','values','accept','aHR0cHM6Ly9naXRodWIuY29tL2NtbGl1L1dvcmtlclZsZXNzMnN1Yg==','mozilla','some','CF_EMAIL','data','.xyz','substr','172.64.0.0/14','ZG14bGMzTT0=','DNS64','无效的\x20SOCKS\x20地址格式：IPv6\x20地址必须用方括号括起来，如\x20[2001:db8::1]','http://','pagesFunctionsInvocationsAdaptiveGroups',',\x20alpn:\x20[h3],\x20udp:\x20false,\x20sni:\x20','<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20FKID:\x20','split','allSettled','请提供用户名和密码','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','141.101.64.0/19','?b64</a><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22qrcode_1\x22\x20style=\x22margin:\x2010px\x2010px\x2010px\x2010px;\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20clash订阅地址:<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22copyToClipboard(\x27https://','every','loadIPs','/sub?target=clash&url=','v2rayN','，期望是\x205','读取数据时发生错误:\x20','获取CSV地址时出错:','random','?clash</a><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22qrcode_2\x22\x20style=\x22margin:\x2010px\x2010px\x2010px\x2010px;\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20singbox订阅地址:<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22copyToClipboard(\x27https://','?loon\x27,\x27qrcode_5\x27)\x22\x20style=\x22color:blue;text-decoration:underline;cursor:pointer;\x22>https://','read',',\x20ID:\x20','解析IP行失败:\x20','https://raw.githubusercontent.com/ipverse/asn-ip/master/as/24429/ipv4-aggregated.txt','/proxyip=','ADDAPI（TLS优选域名&IP\x20的\x20API）:\x20<br>&nbsp;&nbsp;','https://api.cloudflare.com/client/v4/graphql','?sub=sub.google.com<strong>&</strong>proxyip=proxyip.cmliussss.net<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<script\x20src=\x22https://cdn.jsdelivr.net/npm/@keeex/qrcodejs-kx@1.0.2/qrcode.min.js\x22></script>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<script>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20function\x20copyToClipboard(text,\x20qrcode)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20navigator.clipboard.writeText(text).then(()\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20alert(\x27已复制到剪贴板\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}).catch(err\x20=>\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.error(\x27复制失败:\x27,\x20err);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20qrcodeDiv\x20=\x20document.getElementById(qrcode);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20qrcodeDiv.innerHTML\x20=\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20new\x20QRCode(qrcodeDiv,\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text:\x20text,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20220,\x20//\x20调整宽度\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20220,\x20//\x20调整高度\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20colorDark:\x20\x22#000000\x22,\x20//\x20二维码颜色\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20colorLight:\x20\x22#ffffff\x22,\x20//\x20背景颜色\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20correctLevel:\x20QRCode.CorrectLevel.Q,\x20//\x20设置纠错级别\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20scale:\x201\x20//\x20调整像素颗粒度\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20});\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20function\x20toggleNotice()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20noticeContent\x20=\x20document.getElementById(\x27noticeContent\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20noticeToggle\x20=\x20document.getElementById(\x27noticeToggle\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20if\x20(noticeContent.style.display\x20===\x20\x27none\x27)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20noticeContent.style.display\x20=\x20\x27block\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20noticeToggle.textContent\x20=\x20\x27实用订阅技巧∧\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x20else\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20noticeContent.style.display\x20=\x20\x27none\x27;\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20noticeToggle.textContent\x20=\x20\x27实用订阅技巧∨\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</script>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20---------------------------------------------------------------<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20################################################################<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','.tp','ADD','setUint8','filter','CSV文件缺少必需的字段','retry\x20tcpSocket\x20closed\x20error','then','/socks5://','send','TIME','https://api.telegram.org/bot',')\x20TCP\x20连接异常中断','getTime','bmlwLmxmcmVlLm9yZw==','<br>SUBAPI（订阅转换后端）:\x20<a\x20href=\x27','\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20id=\x22content\x22>','RPROXYIP','slice','replace','PROXYIP','IENGLVdvcmtlcnMtZWRnZXR1bm5lbC9jbWxpdQ==','.net','ips','不用怀疑！你UUID就是错的！！！','<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20UUID:\x20','&security=','黑名单关闭\x20TCP\x20出站连接\x20','charAt',';\x20download=','Host:\x20','addressValue\x20is\x20empty,\x20addressType\x20is\x20','as35916','trim','text/plain;charset=utf-8','/pyip=','\x0a\x09<!DOCTYPE\x20html>\x0a\x09<html>\x0a\x09<head>\x0a\x09<title>Welcome\x20to\x20nginx!</title>\x0a\x09<style>\x0a\x09\x09body\x20{\x0a\x09\x09\x09width:\x2035em;\x0a\x09\x09\x09margin:\x200\x20auto;\x0a\x09\x09\x09font-family:\x20Tahoma,\x20Verdana,\x20Arial,\x20sans-serif;\x0a\x09\x09}\x0a\x09</style>\x0a\x09</head>\x0a\x09<body>\x0a\x09<h1>Welcome\x20to\x20nginx!</h1>\x0a\x09<p>If\x20you\x20see\x20this\x20page,\x20the\x20nginx\x20web\x20server\x20is\x20successfully\x20installed\x20and\x0a\x09working.\x20Further\x20configuration\x20is\x20required.</p>\x0a\x09\x0a\x09<p>For\x20online\x20documentation\x20and\x20support\x20please\x20refer\x20to\x0a\x09<a\x20href=\x22http://nginx.org/\x22>nginx.org</a>.<br/>\x0a\x09Commercial\x20support\x20is\x20available\x20at\x0a\x09<a\x20href=\x22http://nginx.com/\x22>nginx.com</a>.</p>\x0a\x09\x0a\x09<p><em>Thank\x20you\x20for\x20using\x20nginx.</em></p>\x0a\x09</body>\x0a\x09</html>\x0a\x09','127.0.0.1:1234#CFnat','b64',';\x20total=','</textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22save-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22back-btn\x22\x20onclick=\x22goBack()\x22>返回配置页</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22bestip-btn\x22\x20onclick=\x22goBestIP()\x22>在线优选IP</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22save-btn\x22\x20onclick=\x22saveContent(this)\x22>保存</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22save-status\x22\x20id=\x22saveStatus\x22></span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20################################################################<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','value','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20################################################################<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Subscribe\x20/\x20sub\x20订阅地址,\x20点击链接自动\x20<strong>复制订阅链接</strong>\x20并\x20<strong>生成订阅二维码</strong>\x20<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20---------------------------------------------------------------<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20自适应订阅地址:<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22copyToClipboard(\x27https://','message','\x20-\x20','103.21.244.0/24','text/html,application/xhtml+xml,application/xml;','floor','?sb\x27,\x27qrcode_3\x27)\x22\x20style=\x22color:blue;text-decoration:underline;cursor:pointer;\x22>https://','dGlvbj0=','getUint8','enqueue','<br>SUB（优选订阅生成器）:\x20','获取地址时出错:','</a><br>SUBCONFIG（订阅转换配置文件）:\x20<a\x20href=\x27','URL','SOCKS5\x20服务器版本错误:\x20收到\x20','TOKEN:\x20','获取账户信息失败:\x20','通过DoH解析获取到域名:\x20','4782856FJumCV','sec-websocket-protocol','Answer','无效的\x20SOCKS\x20地址格式：认证部分必须是\x20\x22username:password\x22\x20的形式','proxyip','&emoji=','DLS','invild\x20addressType\x20is\x20','CFCDN（访问方式）:\x20内置兜底,\x20您也可以设置\x20proxyIP/PROXYIP\x20。<br>','subtle','clash','HTTP代理连接中断','?b64\x27,\x27qrcode_1\x27)\x22\x20style=\x22color:blue;text-decoration:underline;cursor:pointer;\x22>https://','set','invalid\x20data','https://raw.githubusercontent.com/ipverse/asn-ip/master/as/199524/ipv4-aggregated.txt','GET','decode','put','push','\x20天<br>UPTIME（动态UUID更新时间）:\x20','</a><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22qrcode_0\x22\x20style=\x22margin:\x2010px\x2010px\x2010px\x2010px;\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Base64订阅地址:<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22copyToClipboard(\x27https://','内容过大，超过KV存储限制（24MB）','?encry','4896icEYGx','/bestip\x27>在线优选IP</a>]','Proxy-Authorization:\x20Basic\x20','MD5','读取KV时发生错误:','protocol','\x20个账户','get','Proxy-Connection:\x20Keep-Alive\x0d\x0a','\x0a<tg-spoiler>入口:\x20','startsWith','type','test','handleDNSQuery\x20函数发生异常，错误信息:\x20','443','</a>','sing-box','redirect','toLowerCase','gzip,\x20deflate,\x20br','已发送\x20SOCKS5\x20问候消息','/socks5=','status','Content-Type','2095','append','stringify','/?socks5=','socks5','match','toISOString','http','singbox','readableWebSocketStream\x20已关闭','<br>您的订阅内容由\x20内置\x20addresses/ADD*\x20参数变量提供','https://raw.githubusercontent.com/ipverse/asn-ip/master/as/209242/ipv4-aggregated.txt','UDP\x20代理仅对\x20DNS（53\x20端口）启用','\x0aIP:\x20','true','Socks5','\x27>优选订阅生成器</a>\x20至：sub.google.com，您可将\x22?sub=sub.google.com\x22参数添加到链接末尾，例如：<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20&nbsp;&nbsp;https://','CIDR\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!DOCTYPE\x20html>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<html>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<head>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<title>优选订阅列表</title>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20charset=\x22utf-8\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\x22viewport\x22\x20content=\x22width=device-width,\x20initial-scale=1\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<style>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20body\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2015px;\x20/*\x20调整padding\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20border-box;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2013px;\x20/*\x20设置全局字体大小\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.editor-container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.editor\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20520px;\x20/*\x20调整高度\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2015px\x200;\x20/*\x20调整margin\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x20/*\x20调整padding\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-sizing:\x20border-box;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ccc;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2013px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201.5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow-y:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20resize:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.save-container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x208px;\x20/*\x20调整margin\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x20/*\x20调整gap\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.save-btn,\x20.back-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x206px\x2015px;\x20/*\x20调整padding\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.save-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#4CAF50;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.save-btn:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#45a049;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.back-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#666;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.back-btn:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#555;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.bestip-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#2196F3;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x206px\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.bestip-btn:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#1976D2;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.save-status\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#666;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.notice-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2013px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#333;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</style>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</head>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<body>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20################################################################<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','3016VJAvRG','HTTP代理连接失败:\x20未收到成功响应','\x20⚠️','接口地址','TLS','获取使用量时发生错误:','最终生成','ADD.txt','setUint16','addEventListener','delete','now','\x20到\x20','查询时间范围:\x20',',\x20ws-opts:\x20{path:\x20\x22','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','org','<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','BAN','encode','requests','邮箱:\x20','TRUE','https','%EF%BC%88%E7%99%BD%E5%90%8D%E5%8D%95%EF%BC%89%3A%20','ADD（TLS优选域名&IP）:\x20<br>&nbsp;&nbsp;','reduce','/96','application/dns-message','substring','Status','indexOf','CFCDN（访问方式）:\x20','\x0a国家:\x20','URL302','add','*ttvnw.net',',\x20type:\x20','writable','发现\x20','未找到账户数据','length','toUpperCase','❌\x20未找到匹配的账户，使用默认第\x200\x20个账户','SUBCONFIG','ADDNOTLSAPI','dns\x20udp\x20has\x20error','发送HTTP\x20CONNECT请求失败:\x20','FALSE','workersInvocationsAdaptive','\x0a\x20\x20\x20\x20<!DOCTYPE\x20html>\x0a\x20\x20\x20\x20<html>\x0a\x20\x20\x20\x20<head>\x0a\x20\x20\x20\x20<title>Cloudflare\x20IP优选</title>\x0a\x20\x20\x20\x20<style>\x0a\x20\x20\x20\x20\x20\x20\x20\x20body\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2080%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20Tahoma,\x20Verdana,\x20Arial,\x20sans-serif;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ip-list\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f5f5f5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-height:\x20400px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow-y:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ip-item\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x202px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20monospace;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.stats\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#e3f2fd;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2020px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.test-info\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f3e5f5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ce93d8;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#4a148c;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.test-info\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201.5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.proxy-warning\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#d32f2f\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x201.1em;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.warning-notice\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#ffebee;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x202px\x20solid\x20#f44336;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2015px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#c62828;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.warning-notice\x20h3\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x200\x2010px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#d32f2f;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x201.2em;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.warning-notice\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x208px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201.5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.warning-notice\x20ul\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2010px\x200\x2010px\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201.6;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.test-controls\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2020px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f9f9f9;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.port-selector\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2010px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.port-selector\x20label\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.port-selector\x20select\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x205px\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ccc;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x203px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.button-group\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-wrap:\x20wrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.test-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#4CAF50;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2015px\x2032px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-decoration:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20background-color\x200.3s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.test-button:disabled\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#cccccc;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20not-allowed;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.save-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#2196F3;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2015px\x2032px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-decoration:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20background-color\x200.3s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.save-button:disabled\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#cccccc;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20not-allowed;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.save-button:not(:disabled):hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#1976D2;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.append-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#FF9800;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2015px\x2032px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-decoration:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20background-color\x200.3s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.append-button:disabled\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#cccccc;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20not-allowed;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.append-button:not(:disabled):hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#F57C00;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.edit-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#9C27B0;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2015px\x2032px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-decoration:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20background-color\x200.3s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.edit-button:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#7B1FA2;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.back-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#607D8B;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2015px\x2032px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-decoration:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20background-color\x200.3s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.back-button:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#455A64;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.save-warning\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#fff3e0;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x202px\x20solid\x20#ff9800;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#e65100;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.save-warning\x20small\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201.5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.message\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2010px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.message.success\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#d4edda;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#155724;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#c3e6cb;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.message.error\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f8d7da;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#721c24;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#f5c6cb;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.progress\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f0f0f0;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2010px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.progress-bar\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x200%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#4CAF50;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20width\x200.3s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.good-latency\x20{\x20color:\x20#4CAF50;\x20font-weight:\x20bold;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.medium-latency\x20{\x20color:\x20#FF9800;\x20font-weight:\x20bold;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.bad-latency\x20{\x20color:\x20#f44336;\x20font-weight:\x20bold;\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.show-more-section\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2010px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f0f0f0;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.show-more-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#607D8B;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x208px\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20background-color\x200.3s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.show-more-btn:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#455A64;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ip-display-info\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#666;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.save-tip\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#e8f5e8;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#4CAF50;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#2e7d32;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201.5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.save-tip\x20strong\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#1b5e20;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.warm-tips\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2020px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#fff3e0;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x202px\x20solid\x20#ff9800;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#e65100;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.warm-tips\x20h3\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x200\x2010px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#f57c00;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x201.1em;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.warm-tips\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x208px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201.6;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.warm-tips\x20ul\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2010px\x200\x2010px\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201.6;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.warm-tips\x20li\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x205px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.warm-tips\x20strong\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#e65100;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.region-buttons\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-wrap:\x20wrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.region-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x206px\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#e0e0e0;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.3s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.region-btn:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#d5d5d5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.region-btn.active\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#2196F3;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20</style>\x0a\x20\x20\x20\x20</head>\x0a\x20\x20\x20\x20<body>\x0a\x20\x20\x20\x20<h1>在线优选IP</h1>\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20','104.24.0.0/15','https://api.cloudflare.com/client/v4/accounts','X-New-URL','/bestip','subconverter','LINK','#获取订阅\x20','到期时间(UTC):\x20','tls','setHours','json','getUint16','MB），超过KV存储限制（24MB）','\x27\x20target=\x22_blank\x22\x20rel=\x22noopener\x20noreferrer\x22>','text/html;charset=utf-8','找不到有效的账户ID，请检查API权限',',\x20server:\x20','SOCKS5\x20连接已建立','invalid\x20user\x20','\x20(来源行:\x20'];_0x3734=function(){return _0x5d6850;};return _0x3734();}function base64ToArrayBuffer(_0x462554){const _0x9d4af0=_0xa62ad6;if(!_0x462554)return{'earlyData':undefined,'error':null};try{_0x462554=_0x462554[_0x9d4af0(0x1e9)](/-/g,'+')[_0x9d4af0(0x1e9)](/_/g,'/');const _0xfbc277=atob(_0x462554),_0x3342ad=Uint8Array[_0x9d4af0(0x198)](_0xfbc277,_0x4b761f=>_0x4b761f['charCodeAt'](0x0));return{'earlyData':_0x3342ad[_0x9d4af0(0x339)],'error':null};}catch(_0x1d07dc){return{'earlyData':undefined,'error':_0x1d07dc};}}function isValidUUID(_0x58c4f1){const _0x34f040=_0xa62ad6,_0x26177a=/^[0-9a-f]{8}-[0-9a-f]{4}-[4][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;return _0x26177a[_0x34f040(0x236)](_0x58c4f1);}const WS_READY_STATE_OPEN=0x1,WS_READY_STATE_CLOSING=0x2;function safeCloseWebSocket(_0xead9b8){const _0x4c25ee=_0xa62ad6;try{(_0xead9b8[_0x4c25ee(0x2dc)]===WS_READY_STATE_OPEN||_0xead9b8[_0x4c25ee(0x2dc)]===WS_READY_STATE_CLOSING)&&_0xead9b8[_0x4c25ee(0x150)]();}catch(_0x230d6d){console['error'](_0x4c25ee(0x13a),_0x230d6d);}}const byteToHex=[];for(let i=0x0;i<0x100;++i){byteToHex['push']((i+0x100)[_0xa62ad6(0x32b)](0x10)[_0xa62ad6(0x1e8)](0x1));}function unsafeStringify(_0x10c800,_0xe48e2b=0x0){return(byteToHex[_0x10c800[_0xe48e2b+0x0]]+byteToHex[_0x10c800[_0xe48e2b+0x1]]+byteToHex[_0x10c800[_0xe48e2b+0x2]]+byteToHex[_0x10c800[_0xe48e2b+0x3]]+'-'+byteToHex[_0x10c800[_0xe48e2b+0x4]]+byteToHex[_0x10c800[_0xe48e2b+0x5]]+'-'+byteToHex[_0x10c800[_0xe48e2b+0x6]]+byteToHex[_0x10c800[_0xe48e2b+0x7]]+'-'+byteToHex[_0x10c800[_0xe48e2b+0x8]]+byteToHex[_0x10c800[_0xe48e2b+0x9]]+'-'+byteToHex[_0x10c800[_0xe48e2b+0xa]]+byteToHex[_0x10c800[_0xe48e2b+0xb]]+byteToHex[_0x10c800[_0xe48e2b+0xc]]+byteToHex[_0x10c800[_0xe48e2b+0xd]]+byteToHex[_0x10c800[_0xe48e2b+0xe]]+byteToHex[_0x10c800[_0xe48e2b+0xf]])['toLowerCase']();}function stringify(_0x305dc5,_0x34a450=0x0){const _0x592260=unsafeStringify(_0x305dc5,_0x34a450);if(!isValidUUID(_0x592260))throw TypeError('生成的\x20UUID\x20不符合规范\x20'+_0x592260);return _0x592260;}async function handleUDPOutBound(_0x42491a,_0x1fc2a6,_0x29c77c){const _0x31a94f=_0xa62ad6;let _0xe57e47=![];const _0x18ba06=new TransformStream({'start'(_0x10e216){},'transform'(_0x5c9baa,_0x2c386e){const _0x451c78=_0x1bed;for(let _0x59a563=0x0;_0x59a563<_0x5c9baa['byteLength'];){const _0x31ee19=_0x5c9baa[_0x451c78(0x1e8)](_0x59a563,_0x59a563+0x2),_0x2f099d=new DataView(_0x31ee19)['getUint16'](0x0),_0x4ff77e=new Uint8Array(_0x5c9baa[_0x451c78(0x1e8)](_0x59a563+0x2,_0x59a563+0x2+_0x2f099d));_0x59a563=_0x59a563+0x2+_0x2f099d,_0x2c386e[_0x451c78(0x209)](_0x4ff77e);}},'flush'(_0x11b863){}});_0x18ba06['readable']['pipeTo'](new WritableStream({async 'write'(_0x5a8af2){const _0x573e0a=_0x1bed,_0x455c32=await fetch('https://1.1.1.1/dns-query',{'method':_0x573e0a(0x15c),'headers':{'content-type':_0x573e0a(0x271)},'body':_0x5a8af2}),_0xf2b28a=await _0x455c32[_0x573e0a(0x2fa)](),_0x12fcb2=_0xf2b28a['byteLength'],_0x92a670=new Uint8Array([_0x12fcb2>>0x8&0xff,_0x12fcb2&0xff]);_0x42491a[_0x573e0a(0x2dc)]===WS_READY_STATE_OPEN&&(_0x29c77c(_0x573e0a(0x184)+_0x12fcb2),_0xe57e47?_0x42491a[_0x573e0a(0x1df)](await new Blob([_0x92a670,_0xf2b28a])[_0x573e0a(0x2fa)]()):(_0x42491a['send'](await new Blob([_0x1fc2a6,_0x92a670,_0xf2b28a])[_0x573e0a(0x2fa)]()),_0xe57e47=!![]));}}))[_0x31a94f(0x33d)](_0x531b93=>{const _0x34fbb1=_0x31a94f;_0x29c77c(_0x34fbb1(0x283)+_0x531b93);});const _0x484c08=_0x18ba06[_0x31a94f(0x27b)]['getWriter']();return{'write'(_0x2ada69){const _0x43021d=_0x31a94f;_0x484c08[_0x43021d(0x185)](_0x2ada69);}};}async function handleDNSQuery(_0x1dad94,_0x1aa0e0,_0x187ca4,_0x404ca5){const _0x2e1ed3=_0xa62ad6;try{const _0x3be810=_0x2e1ed3(0x183),_0x2b3dbf=0x35;let _0x1c78c7=_0x187ca4;const _0x52bcc5=connect({'hostname':_0x3be810,'port':_0x2b3dbf});_0x404ca5(_0x2e1ed3(0x194)+_0x3be810+':'+_0x2b3dbf);const _0xc18001=_0x52bcc5['writable'][_0x2e1ed3(0x171)]();await _0xc18001[_0x2e1ed3(0x185)](_0x1dad94),_0xc18001[_0x2e1ed3(0x2af)](),await _0x52bcc5[_0x2e1ed3(0x2ef)][_0x2e1ed3(0x327)](new WritableStream({async 'write'(_0x588477){const _0x164317=_0x2e1ed3;_0x1aa0e0[_0x164317(0x2dc)]===WS_READY_STATE_OPEN&&(_0x1c78c7?(_0x1aa0e0['send'](await new Blob([_0x1c78c7,_0x588477])['arrayBuffer']()),_0x1c78c7=null):_0x1aa0e0[_0x164317(0x1df)](_0x588477));},'close'(){const _0x4af67e=_0x2e1ed3;_0x404ca5(_0x4af67e(0x13f)+_0x3be810+')\x20TCP\x20连接已关闭');},'abort'(_0x2872dc){const _0x2e7065=_0x2e1ed3;console['error'](_0x2e7065(0x13f)+_0x3be810+_0x2e7065(0x1e2),_0x2872dc);}}));}catch(_0x212c0a){console['error'](_0x2e1ed3(0x237)+_0x212c0a[_0x2e1ed3(0x201)]);}}async function socks5Connect(_0x3cadd6,_0x4f2a6c,_0xc01299,_0x509996){const _0x38dfb8=_0xa62ad6,{username:_0x28f3fc,password:_0x476919,hostname:_0xb4d74f,port:_0x4aa496}=parsedSocks5Address,_0x5dde7d=connect({'hostname':_0xb4d74f,'port':_0x4aa496}),_0x2d5628=new Uint8Array([0x5,0x2,0x0,0x2]),_0x21109a=_0x5dde7d['writable'][_0x38dfb8(0x171)]();await _0x21109a['write'](_0x2d5628),_0x509996(_0x38dfb8(0x23e));const _0x5f5d27=_0x5dde7d[_0x38dfb8(0x2ef)][_0x38dfb8(0x33c)](),_0x584602=new TextEncoder();let _0x1bcb98=(await _0x5f5d27[_0x38dfb8(0x1cf)]())[_0x38dfb8(0x1ff)];if(_0x1bcb98[0x0]!==0x5){_0x509996(_0x38dfb8(0x20e)+_0x1bcb98[0x0]+_0x38dfb8(0x1c9));return;}if(_0x1bcb98[0x1]===0xff){_0x509996(_0x38dfb8(0x30f));return;}if(_0x1bcb98[0x1]===0x2){_0x509996('SOCKS5\x20服务器需要认证');if(!_0x28f3fc||!_0x476919){_0x509996(_0x38dfb8(0x1c1));return;}const _0x59d58c=new Uint8Array([0x1,_0x28f3fc[_0x38dfb8(0x27e)],..._0x584602[_0x38dfb8(0x268)](_0x28f3fc),_0x476919['length'],..._0x584602['encode'](_0x476919)]);await _0x21109a[_0x38dfb8(0x185)](_0x59d58c),_0x1bcb98=(await _0x5f5d27[_0x38dfb8(0x1cf)]())[_0x38dfb8(0x1ff)];if(_0x1bcb98[0x0]!==0x1||_0x1bcb98[0x1]!==0x0){_0x509996(_0x38dfb8(0x2ad));return;}}let _0x461d14;switch(_0x3cadd6){case 0x1:_0x461d14=new Uint8Array([0x1,..._0x4f2a6c[_0x38dfb8(0x1bf)]('.')[_0x38dfb8(0x2d0)](Number)]);break;case 0x2:_0x461d14=new Uint8Array([0x3,_0x4f2a6c['length'],..._0x584602['encode'](_0x4f2a6c)]);break;case 0x3:_0x461d14=new Uint8Array([0x4,..._0x4f2a6c[_0x38dfb8(0x1bf)](':')[_0x38dfb8(0x173)](_0x182629=>[parseInt(_0x182629['slice'](0x0,0x2),0x10),parseInt(_0x182629['slice'](0x2),0x10)])]);break;default:_0x509996(_0x38dfb8(0x2ba)+_0x3cadd6);return;}const _0x5a4581=new Uint8Array([0x5,0x1,0x0,..._0x461d14,_0xc01299>>0x8,_0xc01299&0xff]);await _0x21109a[_0x38dfb8(0x185)](_0x5a4581),_0x509996('已发送\x20SOCKS5\x20请求'),_0x1bcb98=(await _0x5f5d27[_0x38dfb8(0x1cf)]())[_0x38dfb8(0x1ff)];if(_0x1bcb98[0x1]===0x0)_0x509996(_0x38dfb8(0x299));else{_0x509996(_0x38dfb8(0x312));return;}return _0x21109a[_0x38dfb8(0x2af)](),_0x5f5d27['releaseLock'](),_0x5dde7d;}async function httpConnect(_0x511370,_0x1c367d,_0x18da7f){const _0xe69b41=_0xa62ad6,{username:_0x5a58dd,password:_0x1a225c,hostname:_0x2270a5,port:_0x16713c}=parsedSocks5Address,_0x2d07cf=await connect({'hostname':_0x2270a5,'port':_0x16713c});let _0x585138='CONNECT\x20'+_0x511370+':'+_0x1c367d+_0xe69b41(0x169);_0x585138+=_0xe69b41(0x1f4)+_0x511370+':'+_0x1c367d+'\x0d\x0a';if(_0x5a58dd&&_0x1a225c){const _0x45b05c=_0x5a58dd+':'+_0x1a225c,_0x5ea064=btoa(_0x45b05c);_0x585138+=_0xe69b41(0x22c)+_0x5ea064+'\x0d\x0a';}_0x585138+=_0xe69b41(0x2f5),_0x585138+=_0xe69b41(0x232),_0x585138+=_0xe69b41(0x2b4),_0x585138+='\x0d\x0a',_0x18da7f('正在连接到\x20'+_0x511370+':'+_0x1c367d+_0xe69b41(0x18f)+_0x2270a5+':'+_0x16713c);try{const _0x31108d=_0x2d07cf['writable'][_0xe69b41(0x171)]();await _0x31108d['write'](new TextEncoder()[_0xe69b41(0x268)](_0x585138)),_0x31108d[_0xe69b41(0x2af)]();}catch(_0x45fc6a){console['error'](_0xe69b41(0x2a5),_0x45fc6a);throw new Error(_0xe69b41(0x284)+_0x45fc6a[_0xe69b41(0x201)]);}const _0x1f6d50=_0x2d07cf[_0xe69b41(0x2ef)][_0xe69b41(0x33c)]();let _0x530522='',_0x7e10a8=![],_0x53da4f=new Uint8Array(0x0);try{while(!![]){const {value:_0x362628,done:_0x1345f2}=await _0x1f6d50[_0xe69b41(0x1cf)]();if(_0x1345f2){console[_0xe69b41(0x2d5)](_0xe69b41(0x21d));throw new Error(_0xe69b41(0x21d));}const _0x1253f0=new Uint8Array(_0x53da4f[_0xe69b41(0x27e)]+_0x362628['length']);_0x1253f0[_0xe69b41(0x21f)](_0x53da4f),_0x1253f0[_0xe69b41(0x21f)](_0x362628,_0x53da4f['length']),_0x53da4f=_0x1253f0,_0x530522=new TextDecoder()[_0xe69b41(0x223)](_0x53da4f);if(_0x530522[_0xe69b41(0x2fb)]('\x0d\x0a\x0d\x0a')){const _0x370ad5=_0x530522[_0xe69b41(0x274)](_0xe69b41(0x13c))+0x4,_0x4e15b5=_0x530522[_0xe69b41(0x272)](0x0,_0x370ad5);_0x18da7f('收到HTTP代理响应:\x20'+_0x4e15b5[_0xe69b41(0x1bf)]('\x0d\x0a')[0x0]);if(_0x4e15b5[_0xe69b41(0x234)]('HTTP/1.1\x20200')||_0x4e15b5[_0xe69b41(0x234)](_0xe69b41(0x197))){_0x7e10a8=!![];if(_0x370ad5<_0x53da4f[_0xe69b41(0x27e)]){const _0x2bd633=_0x53da4f[_0xe69b41(0x1e8)](_0x370ad5),_0x358187=new ReadableStream({'start'(_0x202f8d){const _0x49a370=_0xe69b41;_0x202f8d[_0x49a370(0x209)](_0x2bd633);}}),{readable:_0x25544e,writable:_0x16dedb}=new TransformStream();_0x358187[_0xe69b41(0x327)](_0x16dedb)[_0xe69b41(0x33d)](_0xd73bba=>console[_0xe69b41(0x2d5)]('处理剩余数据错误:',_0xd73bba)),_0x2d07cf['readable']=_0x25544e;}}else{const _0x14b1e1=_0xe69b41(0x304)+_0x4e15b5[_0xe69b41(0x1bf)]('\x0d\x0a')[0x0];console['error'](_0x14b1e1);throw new Error(_0x14b1e1);}break;}}}catch(_0x26711f){_0x1f6d50[_0xe69b41(0x2af)]();throw new Error(_0xe69b41(0x19a)+_0x26711f[_0xe69b41(0x201)]);}_0x1f6d50[_0xe69b41(0x2af)]();if(!_0x7e10a8)throw new Error(_0xe69b41(0x256));return _0x18da7f(_0xe69b41(0x133)+_0x511370+':'+_0x1c367d),_0x2d07cf;}function socks5AddressParser(_0x2eb9df){const _0x540f5a=_0xa62ad6,_0x1804bb=_0x2eb9df['lastIndexOf']('@');let [_0xb38e63,_0x630783]=_0x1804bb===-0x1?[_0x2eb9df,undefined]:[_0x2eb9df['substring'](_0x1804bb+0x1),_0x2eb9df[_0x540f5a(0x272)](0x0,_0x1804bb)],_0x4a0879,_0x1cb7c8,_0x1359a7,_0x215dc7;if(_0x630783){const _0x184526=_0x630783[_0x540f5a(0x1bf)](':');if(_0x184526[_0x540f5a(0x27e)]!==0x2)throw new Error(_0x540f5a(0x215));[_0x4a0879,_0x1cb7c8]=_0x184526;}const _0x2f51f7=_0xb38e63[_0x540f5a(0x1bf)](':');if(_0x2f51f7['length']>0x2&&_0xb38e63[_0x540f5a(0x2fb)](']:'))_0x215dc7=Number(_0xb38e63['split'](']:')[0x1][_0x540f5a(0x1e9)](/[^\d]/g,'')),_0x1359a7=_0xb38e63[_0x540f5a(0x1bf)](']:')[0x0]+']';else _0x2f51f7['length']===0x2?(_0x215dc7=Number(_0x2f51f7['pop']()[_0x540f5a(0x1e9)](/[^\d]/g,'')),_0x1359a7=_0x2f51f7['join'](':')):(_0x215dc7=0x50,_0x1359a7=_0xb38e63);if(isNaN(_0x215dc7))throw new Error(_0x540f5a(0x153));const _0x32b164=/^\[.*\]$/;if(_0x1359a7[_0x540f5a(0x2fb)](':')&&!_0x32b164['test'](_0x1359a7))throw new Error(_0x540f5a(0x1ba));return{'username':_0x4a0879,'password':_0x1cb7c8,'hostname':_0x1359a7,'port':_0x215dc7};}function 恢复伪装信息(_0x2748cf,_0x30f08f,_0x5df61f,_0x3f701c,_0x4c82fd,_0x27bb24){if(_0x27bb24)_0x2748cf=atob(_0x2748cf);_0x2748cf=_0x2748cf['replace'](new RegExp(_0x3f701c,'g'),_0x30f08f)['replace'](new RegExp(_0x4c82fd,'g'),_0x5df61f);if(_0x27bb24)_0x2748cf=btoa(_0x2748cf);return _0x2748cf;}async function 双重哈希(_0x2626dd){const _0x3a0c5b=_0xa62ad6,_0x52a7a5=new TextEncoder(),_0x2dd62e=await crypto['subtle'][_0x3a0c5b(0x335)](_0x3a0c5b(0x22d),_0x52a7a5['encode'](_0x2626dd)),_0x211c26=Array['from'](new Uint8Array(_0x2dd62e)),_0x1d41e3=_0x211c26[_0x3a0c5b(0x2d0)](_0x38bcf6=>_0x38bcf6['toString'](0x10)['padStart'](0x2,'0'))[_0x3a0c5b(0x17c)](''),_0x6c9815=await crypto[_0x3a0c5b(0x21b)]['digest'](_0x3a0c5b(0x22d),_0x52a7a5[_0x3a0c5b(0x268)](_0x1d41e3['slice'](0x7,0x1b))),_0x547664=Array[_0x3a0c5b(0x198)](new Uint8Array(_0x6c9815)),_0x2c016f=_0x547664['map'](_0x3bec03=>_0x3bec03['toString'](0x10)[_0x3a0c5b(0x160)](0x2,'0'))['join']('');return _0x2c016f['toLowerCase']();}async function 代理URL(_0x55794f,_0x3cb3c9){const _0x4a04aa=_0xa62ad6,_0x39677b=await 整理(_0x55794f),_0x48a468=_0x39677b[Math[_0x4a04aa(0x205)](Math['random']()*_0x39677b[_0x4a04aa(0x27e)])];let _0x259076=new URL(_0x48a468);console[_0x4a04aa(0x167)](_0x259076);let _0x4603f3=_0x259076[_0x4a04aa(0x22f)][_0x4a04aa(0x1e8)](0x0,-0x1)||_0x4a04aa(0x26c),_0x13b0a8=_0x259076[_0x4a04aa(0x300)],_0x459de1=_0x259076['pathname'],_0x3fe329=_0x259076[_0x4a04aa(0x303)];_0x459de1[_0x4a04aa(0x1f2)](_0x459de1['length']-0x1)=='/'&&(_0x459de1=_0x459de1[_0x4a04aa(0x1e8)](0x0,-0x1));_0x459de1+=_0x3cb3c9[_0x4a04aa(0x2ca)];let _0x20fe33=_0x4603f3+_0x4a04aa(0x328)+_0x13b0a8+_0x459de1+_0x3fe329,_0x51e952=await fetch(_0x20fe33),_0x106fce=new Response(_0x51e952[_0x4a04aa(0x158)],{'status':_0x51e952['status'],'statusText':_0x51e952[_0x4a04aa(0x19c)],'headers':_0x51e952[_0x4a04aa(0x345)]});return _0x106fce['headers'][_0x4a04aa(0x21f)](_0x4a04aa(0x28a),_0x20fe33),_0x106fce;}const 啥啥啥_写的这是啥啊=atob(_0xa62ad6(0x1b8));function 配置信息(_0x1af537,_0x48a715){const _0x412686=_0xa62ad6,_0x4ca4b4=atob(啥啥啥_写的这是啥啊),_0x36bfa7=FileName;let _0x243ac9=_0x48a715,_0xa0292=0x1bb;const _0x5f1c11=_0x1af537,_0x805a73=_0x412686(0x1a3),_0x467f5d='ws',_0x2974ec=_0x48a715,_0x2c036d=path;let _0x309658=[_0x412686(0x290),!![]];const _0x18fc80=_0x48a715,_0x2c5036='randomized';_0x48a715['includes']('.workers.dev')&&(_0x243ac9=atob(_0x412686(0x2f8)),_0xa0292=0x50,_0x309658=['',![]]);const _0x3fb1c4=_0x4ca4b4+_0x412686(0x328)+_0x5f1c11+'@'+_0x243ac9+':'+_0xa0292+_0x412686(0x229)+'p'+(atob(_0x412686(0x207))+_0x805a73+_0x412686(0x1f0)+_0x309658[0x0]+_0x412686(0x2f3)+_0x18fc80+'&fp='+_0x2c5036+_0x412686(0x191)+_0x467f5d+_0x412686(0x2c3)+_0x2974ec+'&path='+(encodeURIComponent(_0x2c036d)+allowInsecure)+_0x412686(0x2fe)+encodeURIComponent(_0x36bfa7)),_0x5e24e5=_0x412686(0x31f)+FileName+_0x412686(0x298)+_0x243ac9+_0x412686(0x15b)+_0xa0292+_0x412686(0x27a)+_0x4ca4b4+_0x412686(0x175)+_0x5f1c11+_0x412686(0x326)+_0x309658[0x1]+_0x412686(0x1bd)+_0x18fc80+',\x20tfo:\x20false,\x20skip-cert-verify:\x20'+SCV+_0x412686(0x317)+_0x2974ec+_0x412686(0x16d)+_0x2c5036+_0x412686(0x2a7)+_0x467f5d+_0x412686(0x263)+_0x2c036d+_0x412686(0x1aa)+_0x2974ec+_0x412686(0x321);return[_0x3fb1c4,_0x5e24e5];}let subParams=[_0xa62ad6(0x2e8),'base64',_0xa62ad6(0x1fc),_0xa62ad6(0x21c),'singbox','sb'];const cmad=decodeURIComponent(atob('dGVsZWdyYW0lMjAlRTQlQkElQTQlRTYlQjUlODElRTclQkUlQTQlMjAlRTYlOEElODAlRTYlOUMlQUYlRTUlQTQlQTclRTQlQkQlQUMlN0UlRTUlOUMlQTglRTclQkElQkYlRTUlOEYlOTElRTclODklOEMhJTNDYnIlM0UKJTNDYSUyMGhyZWYlM0QlMjdodHRwcyUzQSUyRiUyRnQubWUlMkZDTUxpdXNzc3MlMjclM0VodHRwcyUzQSUyRiUyRnQubWUlMkZDTUxpdXNzc3MlM0MlMkZhJTNFJTNDYnIlM0UKLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tJTNDYnIlM0UKZ2l0aHViJTIwJUU5JUExJUI5JUU3JTlCJUFFJUU1JTlDJUIwJUU1JTlEJTgwJTIwU3RhciFTdGFyIVN0YXIhISElM0NiciUzRQolM0NhJTIwaHJlZiUzRCUyN2h0dHBzJTNBJTJGJTJGZ2l0aHViLmNvbSUyRmNtbGl1JTJGZWRnZXR1bm5lbCUyNyUzRWh0dHBzJTNBJTJGJTJGZ2l0aHViLmNvbSUyRmNtbGl1JTJGZWRnZXR1bm5lbCUzQyUyRmElM0UlM0NiciUzRQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0lM0NiciUzRQolMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjM='));async function 生成配置信息(_0x406390,_0x15330d,_0x304e12,_0x5327fe,_0x30451f,_0x1a129f,_0x2a6d8c,_0x7c28b5,_0x809ec3){const _0x912a25=_0xa62ad6;if(_0x304e12){const _0x2b634=_0x304e12[_0x912a25(0x247)](/^(?:https?:\/\/)?([^\/]+)/);_0x2b634&&(_0x304e12=_0x2b634[0x1]);const _0x436795=await 整理(_0x304e12);if(_0x436795[_0x912a25(0x27e)]>0x1)_0x304e12=_0x436795[0x0];}else{if(_0x809ec3['KV']){await 迁移地址列表(_0x809ec3);const _0x130fa7=await _0x809ec3['KV'][_0x912a25(0x231)](_0x912a25(0x25c));if(_0x130fa7){const _0x158e96=await 整理(_0x130fa7),_0x3db90d={'接口地址':new Set(),'链接地址':new Set(),'优选地址':new Set()};for(const _0x50930d of _0x158e96){if(_0x50930d['startsWith'](_0x912a25(0x141)))_0x3db90d[_0x912a25(0x258)][_0x912a25(0x278)](_0x50930d);else _0x50930d[_0x912a25(0x2fb)](_0x912a25(0x328))?_0x3db90d['链接地址'][_0x912a25(0x278)](_0x50930d):_0x3db90d[_0x912a25(0x163)][_0x912a25(0x278)](_0x50930d);}addressesapi=[..._0x3db90d[_0x912a25(0x258)]],link=[..._0x3db90d['链接地址']],addresses=[..._0x3db90d[_0x912a25(0x163)]];}}if(addresses['length']+addressesapi[_0x912a25(0x27e)]+addressesnotls[_0x912a25(0x27e)]+addressesnotlsapi[_0x912a25(0x27e)]+addressescsv['length']==0x0){let _0x2c20ec=[_0x912a25(0x203),_0x912a25(0x15f),_0x912a25(0x190),_0x912a25(0x1b7),_0x912a25(0x309),_0x912a25(0x288),_0x912a25(0x1c3),'172.64.0.0/14',_0x912a25(0x2d3),_0x912a25(0x2ee),_0x912a25(0x2b9),_0x912a25(0x15f),_0x912a25(0x190),_0x912a25(0x1b7),_0x912a25(0x309),_0x912a25(0x288),'141.101.64.0/19',_0x912a25(0x1b7),_0x912a25(0x2d3),_0x912a25(0x2ee)];function _0x3121e5(_0x1ba693){const _0x588cbd=_0x912a25,[_0x27eca9,_0x20b15d]=_0x1ba693[_0x588cbd(0x1bf)]('/'),_0x58805a=_0x27eca9[_0x588cbd(0x1bf)]('.')[_0x588cbd(0x2d0)](Number),_0x58cd72=0x20-parseInt(_0x20b15d,0xa),_0x5e0bc4=Math[_0x588cbd(0x2e3)](0x2,_0x58cd72)-0x1,_0x5220f5=Math['floor'](Math[_0x588cbd(0x1cc)]()*_0x5e0bc4),_0x323181=_0x58805a['map']((_0x12fdff,_0x57230f)=>{if(_0x57230f<0x2)return _0x12fdff;if(_0x57230f===0x2)return(_0x12fdff&0xff<<_0x58cd72-0x8)+(_0x5220f5>>0x8&0xff);return(_0x12fdff&0xff<<_0x58cd72)+(_0x5220f5&0xff);});return _0x323181[_0x588cbd(0x17c)]('.');}addresses=addresses[_0x912a25(0x341)](_0x912a25(0x1fb));let _0x5a8df0=0x1;if(_0x15330d['includes'](_0x912a25(0x1a4))||_0x15330d[_0x912a25(0x2fb)](_0x912a25(0x2b7))){const _0xea2676=httpPorts[_0x912a25(0x341)]('80');addressesnotls=addressesnotls[_0x912a25(0x341)](_0x2c20ec[_0x912a25(0x2d0)](_0x3da7bb=>_0x3121e5(_0x3da7bb)+':'+_0xea2676[Math['floor'](Math['random']()*_0xea2676[_0x912a25(0x27e)])]+'#CF随机节点'+String(_0x5a8df0++)['padStart'](0x2,'0')));}else{const _0x2f94f4=httpsPorts['concat'](_0x912a25(0x238));addresses=addresses[_0x912a25(0x341)](_0x2c20ec[_0x912a25(0x2d0)](_0x5504d0=>_0x3121e5(_0x5504d0)+':'+_0x2f94f4[Math[_0x912a25(0x205)](Math[_0x912a25(0x1cc)]()*_0x2f94f4[_0x912a25(0x27e)])]+_0x912a25(0x2ac)+String(_0x5a8df0++)[_0x912a25(0x160)](0x2,'0')));}}}const _0x24804f=_0x1a129f[_0x912a25(0x2ca)]=='/'+动态UUID?动态UUID:_0x406390,_0x49d982=_0x5327fe[_0x912a25(0x23c)](),_0x22505b=配置信息(_0x406390,_0x15330d),_0x45ff04=_0x22505b[0x0],_0x14ccf5=_0x22505b[0x1];let _0x2e8344='';if(_0x15330d['includes'](_0x912a25(0x2a6))){if(proxyhostsURL&&(!proxyhosts||proxyhosts['length']==0x0))try{const _0x3bb5b6=await fetch(proxyhostsURL);if(!_0x3bb5b6['ok']){console[_0x912a25(0x2d5)](_0x912a25(0x20b),_0x3bb5b6[_0x912a25(0x240)],_0x3bb5b6[_0x912a25(0x19c)]);return;}const _0xdb1f9e=await _0x3bb5b6[_0x912a25(0x2c8)](),_0x3c2f81=_0xdb1f9e['split']('\x0a'),_0x36fe60=_0x3c2f81[_0x912a25(0x1da)](_0x8cff52=>_0x8cff52['trim']()!=='');proxyhosts=proxyhosts['concat'](_0x36fe60);}catch(_0x49774a){}if(proxyhosts['length']!=0x0)_0x2e8344=proxyhosts[Math[_0x912a25(0x205)](Math[_0x912a25(0x1cc)]()*proxyhosts[_0x912a25(0x27e)])]+'/';}if(_0x49d982[_0x912a25(0x2fb)]('mozilla')&&!subParams[_0x912a25(0x1b2)](_0x988335=>_0x1a129f[_0x912a25(0x2eb)][_0x912a25(0x331)](_0x988335))){const _0x158092=socks5s['map'](_0x313711=>{const _0x42d2c0=_0x912a25;if(_0x313711['includes']('@'))return _0x313711[_0x42d2c0(0x1bf)]('@')[0x1];else{if(_0x313711['includes']('//'))return _0x313711[_0x42d2c0(0x1bf)]('//')[0x1];else return _0x313711;}});let _0x52e283='';if(go2Socks5s[_0x912a25(0x27e)]>0x0&&enableSocks){_0x52e283=''+((enableHttp?'HTTP':'Socks5')+decodeURIComponent(_0x912a25(0x26d)));if(go2Socks5s[_0x912a25(0x2fb)](atob(_0x912a25(0x2c4)))||go2Socks5s[_0x912a25(0x2fb)](atob(_0x912a25(0x2d8))))_0x52e283+=decodeURIComponent('%E6%89%80%E6%9C%89%E6%B5%81%E9%87%8F')+_0x912a25(0x165);else _0x52e283+='<br>&nbsp;&nbsp;'+go2Socks5s[_0x912a25(0x17c)]('<br>&nbsp;&nbsp;')+_0x912a25(0x165);}let _0x5881a9='<br>';if(_0x304e12){if(enableSocks)_0x5881a9+=_0x912a25(0x275)+(enableHttp?_0x912a25(0x16c):_0x912a25(0x251))+_0x912a25(0x1a8)+_0x158092['join'](_0x912a25(0x1a8))+'<br>'+_0x52e283;else{if(proxyIP&&proxyIP!='')_0x5881a9+=_0x912a25(0x2a4)+proxyIPs[_0x912a25(0x17c)]('<br>&nbsp;&nbsp;')+_0x912a25(0x165);else{if(_0x30451f=='true')_0x5881a9+='CFCDN（访问方式）:\x20自动获取ProxyIP<br>';else _0x5881a9+='CFCDN（访问方式）:\x20内置兜底,\x20您也可以设置\x20proxyIP/PROXYIP\x20。<br>';}}_0x5881a9+=_0x912a25(0x20a)+_0x304e12;}else{if(enableSocks)_0x5881a9+=_0x912a25(0x275)+(enableHttp?'HTTP':_0x912a25(0x251))+_0x912a25(0x1a8)+_0x158092[_0x912a25(0x17c)](_0x912a25(0x1a8))+_0x912a25(0x165)+_0x52e283;else{if(proxyIP&&proxyIP!='')_0x5881a9+=_0x912a25(0x2a4)+proxyIPs[_0x912a25(0x17c)](_0x912a25(0x1a8))+_0x912a25(0x165);else _0x5881a9+=_0x912a25(0x21a);}let _0xbb44a0='';if(_0x809ec3['KV'])_0xbb44a0=_0x912a25(0x2aa)+_0x1a129f['pathname']+_0x912a25(0x308)+_0x1a129f['pathname']+_0x912a25(0x22b);_0x5881a9+=_0x912a25(0x24c)+_0xbb44a0+_0x912a25(0x165);if(addresses['length']>0x0)_0x5881a9+=_0x912a25(0x26e)+addresses['join'](_0x912a25(0x1a8))+_0x912a25(0x165);if(addressesnotls[_0x912a25(0x27e)]>0x0)_0x5881a9+='ADDNOTLS（noTLS优选域名&IP）:\x20<br>&nbsp;&nbsp;'+addressesnotls[_0x912a25(0x17c)]('<br>&nbsp;&nbsp;')+_0x912a25(0x165);if(addressesapi[_0x912a25(0x27e)]>0x0)_0x5881a9+=_0x912a25(0x1d4)+addressesapi['join'](_0x912a25(0x1a8))+_0x912a25(0x165);if(addressesnotlsapi[_0x912a25(0x27e)]>0x0)_0x5881a9+=_0x912a25(0x15d)+addressesnotlsapi['join']('<br>&nbsp;&nbsp;')+_0x912a25(0x165);if(addressescsv[_0x912a25(0x27e)]>0x0)_0x5881a9+=_0x912a25(0x306)+DLS+'\x20）:\x20<br>&nbsp;&nbsp;'+addressescsv[_0x912a25(0x17c)](_0x912a25(0x1a8))+_0x912a25(0x165);}if(动态UUID&&_0x1a129f['pathname']!=='/'+动态UUID)_0x5881a9='';else _0x5881a9+=_0x912a25(0x1e5)+subProtocol+_0x912a25(0x328)+subConverter+_0x912a25(0x2c0)+subProtocol+_0x912a25(0x328)+subConverter+_0x912a25(0x20c)+subConfig+_0x912a25(0x295)+subConfig+_0x912a25(0x239);const _0x40f89f=_0x24804f!=_0x406390?_0x912a25(0x20f)+_0x24804f+'<br>UUIDNow:\x20'+_0x406390+_0x912a25(0x2e7)+userIDLow+_0x912a25(0x165)+userIDTime+_0x912a25(0x195)+有效时间+_0x912a25(0x226)+更新时间+_0x912a25(0x140):''+userIDTime,_0x179c12=_0x912a25(0x200)+_0x2e8344+_0x15330d+'/'+_0x24804f+_0x912a25(0x29d)+_0x2e8344+_0x15330d+'/'+_0x24804f+_0x912a25(0x227)+_0x2e8344+_0x15330d+'/'+_0x24804f+_0x912a25(0x21e)+_0x2e8344+_0x15330d+'/'+_0x24804f+_0x912a25(0x1c4)+_0x2e8344+_0x15330d+'/'+_0x24804f+'?clash\x27,\x27qrcode_2\x27)\x22\x20style=\x22color:blue;text-decoration:underline;cursor:pointer;\x22>https://'+_0x2e8344+_0x15330d+'/'+_0x24804f+_0x912a25(0x1cd)+_0x2e8344+_0x15330d+'/'+_0x24804f+_0x912a25(0x206)+_0x2e8344+_0x15330d+'/'+_0x24804f+_0x912a25(0x14b)+_0x2e8344+_0x15330d+'/'+_0x24804f+_0x912a25(0x1ce)+_0x2e8344+_0x15330d+'/'+_0x24804f+_0x912a25(0x19f)+atob(_0x912a25(0x1b0))+_0x912a25(0x252)+_0x2e8344+_0x15330d+'/'+_0x24804f+'<strong>?sub=sub.google.com</strong><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>4.</strong>\x20快速更换\x20PROXYIP\x20至：proxyip.cmliussss.net:443，您可将\x22?proxyip=proxyip.cmliussss.net:443\x22参数添加到链接末尾，例如：<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20&nbsp;&nbsp;\x20https://'+_0x2e8344+_0x15330d+'/'+_0x24804f+'<strong>?proxyip=proxyip.cmliussss.net:443</strong><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>5.</strong>\x20快速更换\x20SOCKS5\x20至：user:password@127.0.0.1:1080，您可将\x22?socks5=user:password@127.0.0.1:1080\x22参数添加到链接末尾，例如：<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20&nbsp;&nbsp;https://'+_0x2e8344+_0x15330d+'/'+_0x24804f+_0x912a25(0x2e5)+_0x2e8344+_0x15330d+'/'+_0x24804f+_0x912a25(0x1d6)+FileName+_0x912a25(0x179)+_0x40f89f+_0x912a25(0x1a5)+_0x15330d+_0x912a25(0x1ef)+_0x406390+_0x912a25(0x1be)+_0x2a6d8c+_0x912a25(0x144)+_0x5327fe+_0x912a25(0x181)+SCV+_0x912a25(0x266)+_0x5881a9+'<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20---------------------------------------------------------------<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20################################################################<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20v2ray<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20---------------------------------------------------------------<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22javascript:void(0)\x22\x20onclick=\x22copyToClipboard(\x27'+_0x45ff04+_0x912a25(0x1a2)+_0x45ff04+'</a><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22qrcode_v2ray\x22\x20style=\x22margin:\x2010px\x2010px\x2010px\x2010px;\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20---------------------------------------------------------------<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20################################################################<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20clash-meta<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20---------------------------------------------------------------<br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x14ccf5+_0x912a25(0x2b5)+cmad+_0x912a25(0x264);return _0x912a25(0x180)+_0x179c12+_0x912a25(0x30c);}else{if(typeof fetch!=_0x912a25(0x17e))return _0x912a25(0x343);let _0x2daec9=[],_0x34eae9=[],_0x45bba1=[],_0x1c0ab9=[];if(_0x15330d[_0x912a25(0x2fb)](_0x912a25(0x2a6)))noTLS=_0x912a25(0x250),_0x7c28b5=_0x7c28b5+_0x912a25(0x2a6),_0x45bba1=await 整理优选列表(addressesnotlsapi),_0x1c0ab9=await 整理测速结果(_0x912a25(0x285));else{if(_0x15330d[_0x912a25(0x2fb)](_0x912a25(0x17a)))_0x7c28b5=_0x7c28b5+_0x912a25(0x17a);else _0x15330d['includes'](_0x912a25(0x1a4))||_0x15330d['includes'](_0x912a25(0x2b7))||noTLS==_0x912a25(0x250)?(noTLS=_0x912a25(0x250),_0x7c28b5=_0x912a25(0x2b7)+_0x7c28b5+_0x912a25(0x1ec),_0x45bba1=await 整理优选列表(addressesnotlsapi),_0x1c0ab9=await 整理测速结果(_0x912a25(0x285))):_0x7c28b5=_0x7c28b5+_0x912a25(0x1b5);}console[_0x912a25(0x167)](_0x912a25(0x2b8)+_0x7c28b5);let _0x10fb83=subProtocol+_0x912a25(0x328)+_0x304e12+'/sub?host='+_0x7c28b5+'&uuid='+(_0x2a6d8c+atob('JmVkZ2V0dW5uZWw9Y21saXUmcHJveHlpcD0=')+_0x30451f)+_0x912a25(0x29f)+encodeURIComponent(path),_0xebaed7=!![];if(!_0x304e12||_0x304e12==''){if(_0x15330d[_0x912a25(0x2fb)](_0x912a25(0x33b))){if(proxyhostsURL&&(!proxyhosts||proxyhosts['length']==0x0))try{const _0x3c3988=await fetch(proxyhostsURL);if(!_0x3c3988['ok']){console[_0x912a25(0x2d5)](_0x912a25(0x20b),_0x3c3988[_0x912a25(0x240)],_0x3c3988[_0x912a25(0x19c)]);return;}const _0x24419b=await _0x3c3988['text'](),_0x1f8cb6=_0x24419b['split']('\x0a'),_0x27487d=_0x1f8cb6[_0x912a25(0x1da)](_0x488152=>_0x488152['trim']()!=='');proxyhosts=proxyhosts[_0x912a25(0x341)](_0x27487d);}catch(_0x57ac9a){console[_0x912a25(0x2d5)](_0x912a25(0x20b),_0x57ac9a);}proxyhosts=[...new Set(proxyhosts)];}_0x2daec9=await 整理优选列表(addressesapi),_0x34eae9=await 整理测速结果(_0x912a25(0x26b)),_0x10fb83=_0x912a25(0x141)+_0x15330d+'/'+(_0x2a6d8c+_0x1a129f[_0x912a25(0x303)]);if(_0x15330d['includes'](_0x912a25(0x1a4))||_0x15330d['includes'](_0x912a25(0x2b7))||noTLS==_0x912a25(0x250)){if(_0x1a129f[_0x912a25(0x303)])_0x10fb83+='&notls';else _0x10fb83+=_0x912a25(0x347);}console[_0x912a25(0x167)](_0x912a25(0x199)+_0x10fb83);}if(!_0x49d982[_0x912a25(0x2fb)](_0x912a25(0x188)[_0x912a25(0x23c)]())&&!_0x1a129f[_0x912a25(0x2eb)][_0x912a25(0x331)](_0x912a25(0x1fc))&&!_0x1a129f['searchParams'][_0x912a25(0x331)]('base64')){if(_0x49d982[_0x912a25(0x2fb)](_0x912a25(0x21c))&&!_0x49d982[_0x912a25(0x2fb)](_0x912a25(0x2cb))||_0x1a129f[_0x912a25(0x2eb)][_0x912a25(0x331)](_0x912a25(0x21c))&&!_0x49d982[_0x912a25(0x2fb)](_0x912a25(0x28c)))_0x10fb83=subProtocol+'://'+subConverter+_0x912a25(0x1c7)+encodeURIComponent(_0x10fb83)+_0x912a25(0x15e)+encodeURIComponent(subConfig)+_0x912a25(0x217)+subEmoji+'&list=false&tfo=false&scv='+SCV+_0x912a25(0x1a6),_0xebaed7=![];else{if(_0x49d982['includes'](_0x912a25(0x23a))||_0x49d982[_0x912a25(0x2fb)](_0x912a25(0x24a))||(_0x1a129f[_0x912a25(0x2eb)][_0x912a25(0x331)](_0x912a25(0x24a))||_0x1a129f[_0x912a25(0x2eb)]['has']('sb'))&&!_0x49d982[_0x912a25(0x2fb)]('subconverter'))_0x10fb83=subProtocol+_0x912a25(0x328)+subConverter+'/sub?target=singbox&url='+encodeURIComponent(_0x10fb83)+'&insert=false&config='+encodeURIComponent(subConfig)+'&emoji='+subEmoji+_0x912a25(0x18c)+SCV+_0x912a25(0x1a6),_0xebaed7=![];else(_0x49d982['includes'](_0x912a25(0x2bb))||_0x1a129f['searchParams'][_0x912a25(0x331)](_0x912a25(0x2bb))&&!_0x49d982[_0x912a25(0x2fb)](_0x912a25(0x28c)))&&(_0x10fb83=subProtocol+_0x912a25(0x328)+subConverter+'/sub?target=loon&url='+encodeURIComponent(_0x10fb83)+'&insert=false&config='+encodeURIComponent(subConfig)+_0x912a25(0x217)+subEmoji+_0x912a25(0x18c)+SCV+_0x912a25(0x1a6),_0xebaed7=![]);}}try{let _0x4f50d9;if((!_0x304e12||_0x304e12=='')&&_0xebaed7==!![])_0x4f50d9=await 生成本地订阅(_0x7c28b5,_0x2a6d8c,noTLS,_0x2daec9,_0x34eae9,_0x45bba1,_0x1c0ab9);else{const _0x5825f0=await fetch(_0x10fb83,{'headers':{'User-Agent':(_0xebaed7?_0x912a25(0x1c8):_0x5327fe)+atob(_0x912a25(0x1eb))}});_0x4f50d9=await _0x5825f0['text']();}if(_0x1a129f['pathname']=='/'+_0x2a6d8c)return _0x4f50d9;return 恢复伪装信息(_0x4f50d9,_0x406390,_0x15330d,_0x2a6d8c,_0x7c28b5,_0xebaed7);}catch(_0x4d3023){return console[_0x912a25(0x2d5)]('Error\x20fetching\x20content:',_0x4d3023),_0x912a25(0x2d6)+_0x4d3023[_0x912a25(0x201)];}}}async function 整理优选列表(_0x3a0995){const _0x2c6376=_0xa62ad6;if(!_0x3a0995||_0x3a0995[_0x2c6376(0x27e)]===0x0)return[];let _0x1e41b4='';const _0x4c26a0=new AbortController(),_0xe9e473=setTimeout(()=>{const _0x30061f=_0x2c6376;_0x4c26a0[_0x30061f(0x192)]();},0x7d0);try{const _0x171555=await Promise[_0x2c6376(0x1c0)](_0x3a0995[_0x2c6376(0x2d0)](_0x261649=>fetch(_0x261649,{'method':_0x2c6376(0x231),'headers':{'Accept':_0x2c6376(0x204),'User-Agent':atob('Q0YtV29ya2Vycy1lZGdldHVubmVsL2NtbGl1')},'signal':_0x4c26a0[_0x2c6376(0x2d1)]})[_0x2c6376(0x1dd)](_0x3974bf=>_0x3974bf['ok']?_0x3974bf[_0x2c6376(0x2c8)]():Promise['reject']())));for(const [_0x4cf51e,_0x3e7ecb]of _0x171555[_0x2c6376(0x2b3)]()){if(_0x3e7ecb[_0x2c6376(0x240)]===_0x2c6376(0x2fc)){const _0x5273d6=await _0x3e7ecb[_0x2c6376(0x1ff)],_0x16e12a=_0x5273d6['split'](/\r?\n/);let _0x270230='',_0x1e652f='443';if(_0x16e12a[0x0][_0x2c6376(0x1bf)](',')['length']>0x3){const _0x1c4875=_0x3a0995[_0x4cf51e][_0x2c6376(0x247)](/id=([^&]*)/);if(_0x1c4875)_0x270230=_0x1c4875[0x1];const _0x557493=_0x3a0995[_0x4cf51e]['match'](/port=([^&]*)/);if(_0x557493)_0x1e652f=_0x557493[0x1];for(let _0x4da910=0x1;_0x4da910<_0x16e12a[_0x2c6376(0x27e)];_0x4da910++){const _0x6f68f2=_0x16e12a[_0x4da910][_0x2c6376(0x1bf)](',')[0x0];if(_0x6f68f2){_0x1e41b4+=_0x6f68f2+':'+_0x1e652f+(_0x270230?'#'+_0x270230:'')+'\x0a';if(_0x3a0995[_0x4cf51e][_0x2c6376(0x2fb)](_0x2c6376(0x2b2)))proxyIPPool[_0x2c6376(0x225)](_0x6f68f2+':'+_0x1e652f);}}}else _0x3a0995[_0x4cf51e][_0x2c6376(0x2fb)](_0x2c6376(0x2b2))&&(proxyIPPool=proxyIPPool['concat']((await 整理(_0x5273d6))[_0x2c6376(0x2d0)](_0x349ae6=>{const _0x5a3dd5=_0x2c6376,_0x579885=_0x349ae6[_0x5a3dd5(0x1bf)]('#')[0x0]||_0x349ae6;if(_0x579885[_0x5a3dd5(0x2fb)](':')){const _0x115bb2=_0x579885[_0x5a3dd5(0x1bf)](':')[0x1];if(!httpsPorts[_0x5a3dd5(0x2fb)](_0x115bb2))return _0x579885;}else return _0x579885+_0x5a3dd5(0x2cf);return null;})[_0x2c6376(0x1da)](Boolean))),_0x1e41b4+=_0x5273d6+'\x0a';}}}catch(_0x242feb){console['error'](_0x242feb);}finally{clearTimeout(_0xe9e473);}const _0x534d5e=await 整理(_0x1e41b4);return _0x534d5e;}async function 整理测速结果(_0x5c7e2d){const _0x1a2be4=_0xa62ad6;if(!addressescsv||addressescsv['length']===0x0)return[];let _0x176969=[];for(const _0x105f34 of addressescsv){try{const _0x51ad5a=await fetch(_0x105f34);if(!_0x51ad5a['ok']){console['error'](_0x1a2be4(0x1cb),_0x51ad5a[_0x1a2be4(0x240)],_0x51ad5a[_0x1a2be4(0x19c)]);continue;}const _0x40bbb9=await _0x51ad5a[_0x1a2be4(0x2c8)]();let _0xe3f7ab;_0x40bbb9[_0x1a2be4(0x2fb)]('\x0d\x0a')?_0xe3f7ab=_0x40bbb9[_0x1a2be4(0x1bf)]('\x0d\x0a'):_0xe3f7ab=_0x40bbb9[_0x1a2be4(0x1bf)]('\x0a');const _0x3bf70=_0xe3f7ab[0x0][_0x1a2be4(0x1bf)](','),_0x3e8880=_0x3bf70['indexOf'](_0x1a2be4(0x259)),_0x4e2cc2=0x0,_0x5a27f3=0x1,_0x384b51=_0x3e8880+remarkIndex;if(_0x3e8880===-0x1){console[_0x1a2be4(0x2d5)](_0x1a2be4(0x1db));continue;}for(let _0xc13db2=0x1;_0xc13db2<_0xe3f7ab[_0x1a2be4(0x27e)];_0xc13db2++){const _0x5c91fd=_0xe3f7ab[_0xc13db2][_0x1a2be4(0x1bf)](','),_0x2fae16=_0x5c91fd['length']-0x1;if(_0x5c91fd[_0x3e8880]['toUpperCase']()===_0x5c7e2d&&parseFloat(_0x5c91fd[_0x2fae16])>DLS){const _0xda86cd=_0x5c91fd[_0x4e2cc2],_0x2c4b6e=_0x5c91fd[_0x5a27f3],_0x4cb565=_0x5c91fd[_0x384b51],_0xbf8186=_0xda86cd+':'+_0x2c4b6e+'#'+_0x4cb565;_0x176969['push'](_0xbf8186),_0x105f34[_0x1a2be4(0x2fb)](_0x1a2be4(0x2b2))&&_0x5c91fd[_0x3e8880][_0x1a2be4(0x27f)]()==_0x1a2be4(0x250)&&!httpsPorts[_0x1a2be4(0x2fb)](_0x2c4b6e)&&proxyIPPool[_0x1a2be4(0x225)](_0xda86cd+':'+_0x2c4b6e);}}}catch(_0x2aa0e4){console[_0x1a2be4(0x2d5)](_0x1a2be4(0x1cb),_0x2aa0e4);continue;}}return _0x176969;}function 生成本地订阅(_0x37ae38,_0x5d210c,_0x8d583,_0x3e218f,_0x31283e,_0x488bb6,_0x5943be){const _0x228534=_0xa62ad6,_0x544b6f=/^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|\[.*\]):?(\d+)?#?(.*)?$/;addresses=addresses[_0x228534(0x341)](_0x3e218f),addresses=addresses[_0x228534(0x341)](_0x31283e);let _0x43cffa;if(_0x8d583==_0x228534(0x250)){addressesnotls=addressesnotls['concat'](_0x488bb6),addressesnotls=addressesnotls[_0x228534(0x341)](_0x5943be);const _0x553ae2=[...new Set(addressesnotls)];_0x43cffa=_0x553ae2['map'](_0x15d3f9=>{const _0x2217f0=_0x228534;let _0x575950='-1',_0x2148d9=_0x15d3f9;const _0x2b5749=_0x2148d9[_0x2217f0(0x247)](_0x544b6f);if(!_0x2b5749){if(_0x15d3f9['includes'](':')&&_0x15d3f9[_0x2217f0(0x2fb)]('#')){const _0x175d58=_0x15d3f9[_0x2217f0(0x1bf)](':');_0x15d3f9=_0x175d58[0x0];const _0x1cbb78=_0x175d58[0x1][_0x2217f0(0x1bf)]('#');_0x575950=_0x1cbb78[0x0],_0x2148d9=_0x1cbb78[0x1];}else{if(_0x15d3f9['includes'](':')){const _0xa35219=_0x15d3f9['split'](':');_0x15d3f9=_0xa35219[0x0],_0x575950=_0xa35219[0x1];}else{if(_0x15d3f9[_0x2217f0(0x2fb)]('#')){const _0x503439=_0x15d3f9[_0x2217f0(0x1bf)]('#');_0x15d3f9=_0x503439[0x0],_0x2148d9=_0x503439[0x1];}}}_0x2148d9[_0x2217f0(0x2fb)](':')&&(_0x2148d9=_0x2148d9[_0x2217f0(0x1bf)](':')[0x0]);}else _0x15d3f9=_0x2b5749[0x1],_0x575950=_0x2b5749[0x2]||_0x575950,_0x2148d9=_0x2b5749[0x3]||_0x15d3f9;if(!isValidIPv4(_0x15d3f9)&&_0x575950=='-1')for(let _0x20e2c4 of httpPorts){if(_0x15d3f9[_0x2217f0(0x2fb)](_0x20e2c4)){_0x575950=_0x20e2c4;break;}}if(_0x575950=='-1')_0x575950='80';let _0x2baeee=_0x37ae38,_0x42f6e9=path,_0x299628='';const _0x5f1304=atob(啥啥啥_写的这是啥啊),_0xabe522=_0x5f1304+_0x2217f0(0x328)+_0x5d210c+'@'+_0x15d3f9+':'+(_0x575950+atob(_0x2217f0(0x176))+_0x2baeee)+_0x2217f0(0x29f)+encodeURIComponent(_0x42f6e9)+'#'+encodeURIComponent(_0x2148d9+_0x299628);return _0xabe522;})[_0x228534(0x17c)]('\x0a');}const _0x667fa2=[...new Set(addresses)],_0x1ec7e4=_0x667fa2['map'](_0x2a6e9f=>{const _0x586996=_0x228534;let _0x9af356='-1',_0x4a48c7=_0x2a6e9f;const _0x5c576a=_0x4a48c7['match'](_0x544b6f);if(!_0x5c576a){if(_0x2a6e9f[_0x586996(0x2fb)](':')&&_0x2a6e9f[_0x586996(0x2fb)]('#')){const _0x9e4bc=_0x2a6e9f[_0x586996(0x1bf)](':');_0x2a6e9f=_0x9e4bc[0x0];const _0x4047dc=_0x9e4bc[0x1][_0x586996(0x1bf)]('#');_0x9af356=_0x4047dc[0x0],_0x4a48c7=_0x4047dc[0x1];}else{if(_0x2a6e9f['includes'](':')){const _0xcf8d88=_0x2a6e9f[_0x586996(0x1bf)](':');_0x2a6e9f=_0xcf8d88[0x0],_0x9af356=_0xcf8d88[0x1];}else{if(_0x2a6e9f[_0x586996(0x2fb)]('#')){const _0x11e29f=_0x2a6e9f[_0x586996(0x1bf)]('#');_0x2a6e9f=_0x11e29f[0x0],_0x4a48c7=_0x11e29f[0x1];}}}_0x4a48c7['includes'](':')&&(_0x4a48c7=_0x4a48c7['split'](':')[0x0]);}else _0x2a6e9f=_0x5c576a[0x1],_0x9af356=_0x5c576a[0x2]||_0x9af356,_0x4a48c7=_0x5c576a[0x3]||_0x2a6e9f;if(!isValidIPv4(_0x2a6e9f)&&_0x9af356=='-1')for(let _0x3dad29 of httpsPorts){if(_0x2a6e9f[_0x586996(0x2fb)](_0x3dad29)){_0x9af356=_0x3dad29;break;}}if(_0x9af356=='-1')_0x9af356=_0x586996(0x238);let _0x2f6fe0=_0x37ae38,_0x538893=path,_0x2d0c2e='';const _0x2bc2d2=proxyIPPool['find'](_0x5ebba0=>_0x5ebba0[_0x586996(0x2fb)](_0x2a6e9f));if(_0x2bc2d2)_0x538893=_0x586996(0x1d3)+_0x2bc2d2;proxyhosts[_0x586996(0x27e)]>0x0&&_0x2f6fe0['includes']('.workers.dev')&&(_0x538893='/'+_0x2f6fe0+_0x538893,_0x2f6fe0=proxyhosts[Math[_0x586996(0x205)](Math[_0x586996(0x1cc)]()*proxyhosts['length'])],_0x2d0c2e=_0x586996(0x315));const _0x31f057=atob(啥啥啥_写的这是啥啊),_0x1f710c=_0x31f057+_0x586996(0x328)+_0x5d210c+'@'+_0x2a6e9f+':'+(_0x9af356+atob(_0x586996(0x155))+_0x2f6fe0)+_0x586996(0x2ea)+_0x2f6fe0+'&path='+(encodeURIComponent(_0x538893)+allowInsecure)+_0x586996(0x2fe)+encodeURIComponent(_0x4a48c7+_0x2d0c2e);return _0x1f710c;})[_0x228534(0x17c)]('\x0a');let _0x5a3c3a=_0x1ec7e4;if(_0x8d583==_0x228534(0x250))_0x5a3c3a+='\x0a'+_0x43cffa;if(link[_0x228534(0x27e)]>0x0)_0x5a3c3a+='\x0a'+link['join']('\x0a');return btoa(_0x5a3c3a);}async function 整理(_0x50985e){const _0x23a199=_0xa62ad6;var _0x1baacb=_0x50985e[_0x23a199(0x1e9)](/[	|"'\r\n]+/g,',')['replace'](/,+/g,',');if(_0x1baacb[_0x23a199(0x1f2)](0x0)==',')_0x1baacb=_0x1baacb[_0x23a199(0x1e8)](0x1);if(_0x1baacb[_0x23a199(0x1f2)](_0x1baacb[_0x23a199(0x27e)]-0x1)==',')_0x1baacb=_0x1baacb[_0x23a199(0x1e8)](0x0,_0x1baacb['length']-0x1);const _0x45bdb8=_0x1baacb[_0x23a199(0x1bf)](',');return _0x45bdb8;}async function sendMessage(_0x478346,_0x38c43b,_0x479ab0=''){const _0x1ad78f=_0xa62ad6;if(!BotToken||!ChatID)return;try{let _0x25365f='';const _0x5659d4=await fetch(_0x1ad78f(0x2b6)+_0x38c43b+_0x1ad78f(0x2ff));if(_0x5659d4['ok']){const _0x4df2a9=await _0x5659d4[_0x1ad78f(0x292)]();_0x25365f=_0x478346+_0x1ad78f(0x24f)+_0x38c43b+_0x1ad78f(0x276)+_0x4df2a9[_0x1ad78f(0x30e)]+_0x1ad78f(0x330)+_0x4df2a9[_0x1ad78f(0x147)]+_0x1ad78f(0x159)+_0x4df2a9[_0x1ad78f(0x265)]+_0x1ad78f(0x29c)+_0x4df2a9['as']+'\x0a'+_0x479ab0;}else _0x25365f=_0x478346+_0x1ad78f(0x24f)+_0x38c43b+_0x1ad78f(0x17f)+_0x479ab0;const _0x36fc8c=_0x1ad78f(0x1e1)+BotToken+_0x1ad78f(0x323)+ChatID+'&parse_mode=HTML&text='+encodeURIComponent(_0x25365f);return fetch(_0x36fc8c,{'method':_0x1ad78f(0x222),'headers':{'Accept':'text/html,application/xhtml+xml,application/xml;','Accept-Encoding':_0x1ad78f(0x23d),'User-Agent':'Mozilla/5.0\x20Chrome/90.0.4430.72'}});}catch(_0x202256){console[_0x1ad78f(0x2d5)]('Error\x20sending\x20message:',_0x202256);}}function isValidIPv4(_0x1a5a4b){const _0x43640b=_0xa62ad6,_0x3b2c6a=/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;return _0x3b2c6a[_0x43640b(0x236)](_0x1a5a4b);}function 生成动态UUID(_0x10515d){const _0x6ab13f=_0xa62ad6,_0xce999a=0x8,_0x5a2fdc=new Date(0x7d7,0x6,0x7,更新时间,0x0,0x0),_0x2f97a7=0x3e8*0x3c*0x3c*0x18*有效时间;function _0x2fb4a2(){const _0x4d7fff=_0x1bed,_0x3b9813=new Date(),_0x55d8f3=new Date(_0x3b9813[_0x4d7fff(0x1e3)]()+_0xce999a*0x3c*0x3c*0x3e8),_0x327391=Number(_0x55d8f3)-Number(_0x5a2fdc);return Math[_0x4d7fff(0x14a)](_0x327391/_0x2f97a7);}function _0x5897f4(_0x1b25c5){const _0x720d58=_0x1bed,_0x347051=new TextEncoder()[_0x720d58(0x268)](_0x1b25c5);return crypto['subtle'][_0x720d58(0x335)]('SHA-256',_0x347051)[_0x720d58(0x1dd)](_0x4f2835=>{const _0x3690af=_0x720d58,_0x2634e4=Array['from'](new Uint8Array(_0x4f2835)),_0x29d9ad=_0x2634e4[_0x3690af(0x2d0)](_0x4444be=>_0x4444be[_0x3690af(0x32b)](0x10)['padStart'](0x2,'0'))[_0x3690af(0x17c)]('');return _0x29d9ad[_0x3690af(0x1b6)](0x0,0x8)+'-'+_0x29d9ad['substr'](0x8,0x4)+'-4'+_0x29d9ad[_0x3690af(0x1b6)](0xd,0x3)+'-'+(parseInt(_0x29d9ad[_0x3690af(0x1b6)](0x10,0x2),0x10)&0x3f|0x80)[_0x3690af(0x32b)](0x10)+_0x29d9ad['substr'](0x12,0x2)+'-'+_0x29d9ad[_0x3690af(0x1b6)](0x14,0xc);});}const _0x3aa42a=_0x2fb4a2(),_0x9095be=new Date(_0x5a2fdc['getTime']()+_0x3aa42a*_0x2f97a7),_0x487d3d=_0x5897f4(_0x10515d+_0x3aa42a),_0x3e86a7=_0x5897f4(_0x10515d+(_0x3aa42a-0x1)),_0x247b52=new Date(_0x9095be[_0x6ab13f(0x1e3)]()-_0xce999a*0x3c*0x3c*0x3e8),_0x186fdf=_0x6ab13f(0x28f)+_0x247b52['toISOString']()[_0x6ab13f(0x1e8)](0x0,0x13)[_0x6ab13f(0x1e9)]('T','\x20')+_0x6ab13f(0x2f6)+_0x9095be['toISOString']()[_0x6ab13f(0x1e8)](0x0,0x13)[_0x6ab13f(0x1e9)]('T','\x20')+'\x0a';return Promise[_0x6ab13f(0x2e6)]([_0x487d3d,_0x3e86a7,_0x186fdf]);}async function 迁移地址列表(_0x5a5381,_0x3be6e2=_0xa62ad6(0x25c)){const _0x114c33=_0xa62ad6,_0x358914=await _0x5a5381['KV'][_0x114c33(0x231)]('/'+_0x3be6e2),_0x259410=await _0x5a5381['KV'][_0x114c33(0x231)](_0x3be6e2);if(_0x358914&&!_0x259410)return await _0x5a5381['KV']['put'](_0x3be6e2,_0x358914),await _0x5a5381['KV'][_0x114c33(0x25f)]('/'+_0x3be6e2),!![];return![];}async function KV(_0x33b034,_0x344314,_0x246454=_0xa62ad6(0x25c)){const _0x2527c5=_0xa62ad6;try{if(_0x33b034[_0x2527c5(0x2de)]===_0x2527c5(0x15c)){if(!_0x344314['KV'])return new Response(_0x2527c5(0x32c),{'status':0x190});try{const _0x4a969b=await _0x33b034[_0x2527c5(0x2c8)]();return await _0x344314['KV'][_0x2527c5(0x224)](_0x246454,_0x4a969b),new Response(_0x2527c5(0x189));}catch(_0x2e9899){return console['error'](_0x2527c5(0x18e),_0x2e9899),new Response(_0x2527c5(0x154)+_0x2e9899[_0x2527c5(0x201)],{'status':0x1f4});}}let _0x1306fc='',_0x3f2c61=!!_0x344314['KV'];if(_0x3f2c61)try{_0x1306fc=await _0x344314['KV'][_0x2527c5(0x231)](_0x246454)||'';}catch(_0x2cd1e3){console['error'](_0x2527c5(0x22e),_0x2cd1e3),_0x1306fc='读取数据时发生错误:\x20'+_0x2cd1e3[_0x2527c5(0x201)];}const _0x32db82=_0x2527c5(0x254)+FileName+_0x2527c5(0x17b)+decodeURIComponent(atob(_0x2527c5(0x16e)))+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22editor-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x3f2c61?'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20class=\x22editor\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20placeholder=\x22'+decodeURIComponent(atob(_0x2527c5(0x334)))+_0x2527c5(0x1e6)+_0x1306fc+_0x2527c5(0x1fe)+cmad+_0x2527c5(0x1c2):'<p>未绑定KV空间</p>')+_0x2527c5(0x1a1);return new Response(_0x32db82,{'headers':{'Content-Type':_0x2527c5(0x296)}});}catch(_0x3e17a2){return console[_0x2527c5(0x2d5)]('处理请求时发生错误:',_0x3e17a2),new Response('服务器错误:\x20'+_0x3e17a2[_0x2527c5(0x201)],{'status':0x1f4,'headers':{'Content-Type':_0x2527c5(0x1f8)}});}}async function resolveToIPv6(_0x59296e){const _0x152d07=_0xa62ad6;if(!DNS64Server){const _0x625a16=atob('cHJveHlpcC5jbWxpdXNzc3MubmV0');try{const _0x339813=await fetch(atob('aHR0cHM6Ly8xLjEuMS4xL2Rucy1xdWVyeT9uYW1lPW5hdDY0LmNtbGl1c3Nzcy5uZXQmdHlwZT1UWFQ='),{'headers':{'Accept':_0x152d07(0x2c2)}});if(!_0x339813['ok'])return _0x625a16;const _0x25f3ec=await _0x339813[_0x152d07(0x292)](),_0x5aea7e=(_0x25f3ec[_0x152d07(0x214)]||[])[_0x152d07(0x1da)](_0x223ef9=>_0x223ef9[_0x152d07(0x235)]===0x10)[_0x152d07(0x2d0)](_0xf22639=>_0xf22639[_0x152d07(0x1b4)]);if(_0x5aea7e[_0x152d07(0x27e)]===0x0)return _0x625a16;let _0x4b2e69=_0x5aea7e[0x0];if(_0x4b2e69[_0x152d07(0x234)]('\x22')&&_0x4b2e69[_0x152d07(0x2f2)]('\x22'))_0x4b2e69=_0x4b2e69['slice'](0x1,-0x1);const _0x1f36fd=_0x4b2e69[_0x152d07(0x1e9)](/\\010/g,'\x0a')[_0x152d07(0x1bf)]('\x0a')['filter'](_0x1a6878=>_0x1a6878[_0x152d07(0x1f7)]());if(_0x1f36fd[_0x152d07(0x27e)]===0x0)return _0x625a16;DNS64Server=_0x1f36fd[Math[_0x152d07(0x205)](Math[_0x152d07(0x1cc)]()*_0x1f36fd['length'])];}catch(_0x317050){return console[_0x152d07(0x2d5)](_0x152d07(0x2cd),_0x317050),_0x625a16;}}function _0x1cee6f(_0x20362b){const _0x2876fb=_0x152d07,_0x469d65=_0x20362b[_0x2876fb(0x1bf)]('.');return _0x469d65['length']===0x4&&_0x469d65[_0x2876fb(0x1c5)](_0x13f1ae=>{const _0x25ae75=_0x2876fb,_0x329522=parseInt(_0x13f1ae,0xa);return _0x329522>=0x0&&_0x329522<=0xff&&_0x13f1ae===_0x329522[_0x25ae75(0x32b)]();});}function _0x8dacf1(_0x7425f0){const _0x297b16=_0x152d07;return _0x7425f0[_0x297b16(0x2fb)](':')&&/^[0-9a-fA-F:]+$/[_0x297b16(0x236)](_0x7425f0);}async function _0x23154d(_0x10e000){const _0x5c315e=_0x152d07,_0x1b32d8='https://1.1.1.1/dns-query?name='+_0x10e000+'&type=A',_0x45558f=await fetch(_0x1b32d8,{'headers':{'Accept':_0x5c315e(0x2c2)}});if(!_0x45558f['ok'])throw new Error(_0x5c315e(0x2ab));const _0x1700e1=await _0x45558f['json'](),_0xd9d7bb=(_0x1700e1[_0x5c315e(0x214)]||[])[_0x5c315e(0x1da)](_0x4d04cb=>_0x4d04cb[_0x5c315e(0x235)]===0x1)[_0x5c315e(0x2d0)](_0x40523d=>_0x40523d[_0x5c315e(0x1b4)]);if(_0xd9d7bb[_0x5c315e(0x27e)]===0x0)throw new Error(_0x5c315e(0x31d));return _0xd9d7bb[Math[_0x5c315e(0x205)](Math[_0x5c315e(0x1cc)]()*_0xd9d7bb[_0x5c315e(0x27e)])];}async function _0xfb9c11(_0x184af6){const _0x336b08=_0x152d07,_0x39d492=connect({'hostname':_0x8dacf1(DNS64Server)?'['+DNS64Server+']':DNS64Server,'port':0x35}),_0x230e48=_0x39d492[_0x336b08(0x27b)][_0x336b08(0x171)](),_0x2db0a8=_0x39d492[_0x336b08(0x2ef)][_0x336b08(0x33c)]();try{const _0x42d2c4=_0x4ef12e(_0x184af6),_0x517579=new Uint8Array(_0x42d2c4[_0x336b08(0x27e)]+0x2);_0x517579[0x0]=_0x42d2c4[_0x336b08(0x27e)]>>0x8,_0x517579[0x1]=_0x42d2c4[_0x336b08(0x27e)]&0xff,_0x517579['set'](_0x42d2c4,0x2),await _0x230e48[_0x336b08(0x185)](_0x517579);const _0x55ab5c=await _0x53e3f8(_0x2db0a8),_0x4bad7d=_0x523253(_0x55ab5c);return _0x4bad7d[_0x336b08(0x27e)]>0x0?_0x4bad7d[0x0]:_0x336b08(0x14e);}finally{await _0x230e48[_0x336b08(0x150)](),await _0x2db0a8['cancel']();}}function _0x4ef12e(_0x295d1f){const _0x3975d3=_0x152d07,_0x292488=new ArrayBuffer(0x200),_0x4b393d=new DataView(_0x292488);let _0x2c8d8f=0x0;_0x4b393d[_0x3975d3(0x25d)](_0x2c8d8f,Math[_0x3975d3(0x205)](Math[_0x3975d3(0x1cc)]()*0x10000)),_0x2c8d8f+=0x2,_0x4b393d[_0x3975d3(0x25d)](_0x2c8d8f,0x100),_0x2c8d8f+=0x2,_0x4b393d[_0x3975d3(0x25d)](_0x2c8d8f,0x1),_0x2c8d8f+=0x2,_0x4b393d[_0x3975d3(0x25d)](_0x2c8d8f,0x0),_0x2c8d8f+=0x6;for(const _0x5795e3 of _0x295d1f[_0x3975d3(0x1bf)]('.')){_0x4b393d[_0x3975d3(0x1d9)](_0x2c8d8f++,_0x5795e3['length']);for(let _0x33779a=0x0;_0x33779a<_0x5795e3[_0x3975d3(0x27e)];_0x33779a++){_0x4b393d['setUint8'](_0x2c8d8f++,_0x5795e3[_0x3975d3(0x2df)](_0x33779a));}}return _0x4b393d['setUint8'](_0x2c8d8f++,0x0),_0x4b393d[_0x3975d3(0x25d)](_0x2c8d8f,0x1c),_0x2c8d8f+=0x2,_0x4b393d[_0x3975d3(0x25d)](_0x2c8d8f,0x1),_0x2c8d8f+=0x2,new Uint8Array(_0x292488,0x0,_0x2c8d8f);}async function _0x53e3f8(_0x1931e5){const _0x10f9fa=_0x152d07,_0x3e1ca2=[];let _0x1f44e6=0x0,_0x160330=null;while(!![]){const {value:_0x2ff754,done:_0x5c6912}=await _0x1931e5[_0x10f9fa(0x1cf)]();if(_0x5c6912)break;_0x3e1ca2[_0x10f9fa(0x225)](_0x2ff754),_0x1f44e6+=_0x2ff754[_0x10f9fa(0x27e)];_0x160330===null&&_0x1f44e6>=0x2&&(_0x160330=_0x3e1ca2[0x0][0x0]<<0x8|_0x3e1ca2[0x0][0x1]);if(_0x160330!==null&&_0x1f44e6>=_0x160330+0x2)break;}const _0x336748=new Uint8Array(_0x1f44e6);let _0x286e47=0x0;for(const _0x5e3fbb of _0x3e1ca2){_0x336748[_0x10f9fa(0x21f)](_0x5e3fbb,_0x286e47),_0x286e47+=_0x5e3fbb['length'];}return _0x336748[_0x10f9fa(0x1e8)](0x2);}function _0x523253(_0x1df3a8){const _0xf12ff5=_0x152d07,_0x1d7f32=new DataView(_0x1df3a8[_0xf12ff5(0x339)]);let _0x1a396f=0xc;while(_0x1d7f32[_0xf12ff5(0x208)](_0x1a396f)!==0x0){_0x1a396f+=_0x1d7f32[_0xf12ff5(0x208)](_0x1a396f)+0x1;}_0x1a396f+=0x5;const _0x19a53f=[],_0x481d37=_0x1d7f32[_0xf12ff5(0x293)](0x6);for(let _0xff7d08=0x0;_0xff7d08<_0x481d37;_0xff7d08++){if((_0x1d7f32[_0xf12ff5(0x208)](_0x1a396f)&0xc0)===0xc0)_0x1a396f+=0x2;else{while(_0x1d7f32[_0xf12ff5(0x208)](_0x1a396f)!==0x0){_0x1a396f+=_0x1d7f32[_0xf12ff5(0x208)](_0x1a396f)+0x1;}_0x1a396f++;}const _0x6ac494=_0x1d7f32[_0xf12ff5(0x293)](_0x1a396f);_0x1a396f+=0x2,_0x1a396f+=0x6;const _0x438b6c=_0x1d7f32[_0xf12ff5(0x293)](_0x1a396f);_0x1a396f+=0x2;if(_0x6ac494===0x1c&&_0x438b6c===0x10){const _0xbbe5f0=[];for(let _0x421432=0x0;_0x421432<0x8;_0x421432++){_0xbbe5f0['push'](_0x1d7f32[_0xf12ff5(0x293)](_0x1a396f+_0x421432*0x2)['toString'](0x10));}_0x19a53f[_0xf12ff5(0x225)](_0xbbe5f0[_0xf12ff5(0x17c)](':'));}_0x1a396f+=_0x438b6c;}return _0x19a53f;}function _0x326dc7(_0x57c2f9){const _0x2a2ee2=_0x152d07,_0x850111=_0x57c2f9[_0x2a2ee2(0x1bf)]('.');if(_0x850111[_0x2a2ee2(0x27e)]!==0x4)throw new Error(_0x2a2ee2(0x178));const _0x5036b1=_0x850111['map'](_0x144261=>{const _0x2c9dc4=_0x2a2ee2,_0x4fce21=parseInt(_0x144261,0xa);if(_0x4fce21<0x0||_0x4fce21>0xff)throw new Error(_0x2c9dc4(0x31b));return _0x4fce21[_0x2c9dc4(0x32b)](0x10)[_0x2c9dc4(0x160)](0x2,'0');});return DNS64Server['split'](_0x2a2ee2(0x270))[0x0]+_0x5036b1[0x0]+_0x5036b1[0x1]+':'+_0x5036b1[0x2]+_0x5036b1[0x3];}try{if(_0x8dacf1(_0x59296e))return _0x59296e;const _0x5124da=_0x1cee6f(_0x59296e)?_0x59296e:await _0x23154d(_0x59296e),_0x46d828=DNS64Server[_0x152d07(0x2f2)](_0x152d07(0x270))?_0x326dc7(_0x5124da):await _0xfb9c11(_0x5124da+atob(_0x152d07(0x2c9)));return _0x8dacf1(_0x46d828)?_0x46d828:atob(_0x152d07(0x333));}catch(_0x531b54){return console['error'](_0x152d07(0x30b),_0x531b54),atob(_0x152d07(0x333));}}async function bestIP(_0x24b8bf,_0x3cc821,_0x159f8e='ADD.txt'){const _0x80b0b2=_0xa62ad6,_0x339573=_0x24b8bf['cf']?.[_0x80b0b2(0x30e)]||'CN',_0x575809=new URL(_0x24b8bf[_0x80b0b2(0x2f7)]);async function _0xe3f5b6(){const _0x7df303=_0x80b0b2;try{const _0x3aa42e=await fetch(atob('aHR0cHM6Ly9jbG91ZGZsYXJlLWRucy5jb20vZG5zLXF1ZXJ5P25hbWU9bmlwLjA5MDIyNy54eXomdHlwZT1UWFQ='),{'headers':{'Accept':'application/dns-json'}});if(_0x3aa42e['ok']){const _0x354194=await _0x3aa42e[_0x7df303(0x292)]();if(_0x354194[_0x7df303(0x273)]===0x0&&_0x354194[_0x7df303(0x214)]&&_0x354194[_0x7df303(0x214)][_0x7df303(0x27e)]>0x0){const _0x518940=_0x354194['Answer'][0x0][_0x7df303(0x1b4)],_0x2d86c1=_0x518940[_0x7df303(0x1e9)](/^"(.*)"$/,'$1');return console[_0x7df303(0x167)](_0x7df303(0x211)+_0x2d86c1),_0x2d86c1;}}return console[_0x7df303(0x13e)](_0x7df303(0x2d2)),atob(_0x7df303(0x1e4));}catch(_0x1339fc){return console[_0x7df303(0x2d5)](_0x7df303(0x338),_0x1339fc),atob(_0x7df303(0x2da));}}const _0x1dceb0=await _0xe3f5b6();async function _0xa43190(_0x56d506=_0x80b0b2(0x2c7),_0x1b7725=_0x80b0b2(0x238)){const _0x22fcc6=_0x80b0b2;try{let _0x345871;if(_0x56d506===_0x22fcc6(0x2c1))_0x345871=await fetch('https://raw.githubusercontent.com/ipverse/asn-ip/master/as/13335/ipv4-aggregated.txt');else{if(_0x56d506===_0x22fcc6(0x1a9))_0x345871=await fetch(_0x22fcc6(0x24d));else{if(_0x56d506===_0x22fcc6(0x15a))_0x345871=await fetch(_0x22fcc6(0x1d2));else{if(_0x56d506===_0x22fcc6(0x1f6))_0x345871=await fetch(_0x22fcc6(0x2a9));else{if(_0x56d506===_0x22fcc6(0x337))_0x345871=await fetch(_0x22fcc6(0x221));else{if(_0x56d506==='cm')_0x345871=await fetch('https://raw.githubusercontent.com/cmliu/cmliu/main/CF-CIDR.txt');else{if(_0x56d506===_0x22fcc6(0x216)){_0x345871=await fetch(_0x22fcc6(0x19d));const _0x1dbd82=_0x345871['ok']?await _0x345871['text']():'',_0x2fff6b=_0x1dbd82['split']('\x0a')['map'](_0x11f1fb=>_0x11f1fb[_0x22fcc6(0x1f7)]())[_0x22fcc6(0x1da)](_0x4bd5f0=>_0x4bd5f0&&!_0x4bd5f0[_0x22fcc6(0x234)]('#')),_0x3eddc4=[];for(const _0x2a187e of _0x2fff6b){const _0x48afb7=_0x4a41c4(_0x2a187e,_0x1b7725);_0x48afb7&&_0x3eddc4[_0x22fcc6(0x225)](_0x48afb7);}console[_0x22fcc6(0x167)]('反代IP列表解析完成，端口'+_0x1b7725+_0x22fcc6(0x2fd)+_0x3eddc4['length']+_0x22fcc6(0x2e2));if(_0x3eddc4[_0x22fcc6(0x27e)]>0x200){const _0x227bd2=[..._0x3eddc4]['sort'](()=>0.5-Math[_0x22fcc6(0x1cc)]()),_0x1d1773=_0x227bd2[_0x22fcc6(0x1e8)](0x0,0x200);return console[_0x22fcc6(0x167)]('IP数量超过512个，随机选择了'+_0x1d1773[_0x22fcc6(0x27e)]+_0x22fcc6(0x346)),_0x1d1773;}else return _0x3eddc4;}else _0x345871=await fetch(_0x22fcc6(0x2b1));}}}}}}const _0x4d9345=_0x345871['ok']?await _0x345871[_0x22fcc6(0x2c8)]():_0x22fcc6(0x342),_0x4abb68=_0x4d9345[_0x22fcc6(0x1bf)]('\x0a')['filter'](_0xe354b=>_0xe354b[_0x22fcc6(0x1f7)]()&&!_0xe354b[_0x22fcc6(0x234)]('#')),_0x4d6b70=new Set(),_0x4ab9a5=0x200;let _0x37f5c0=0x1;while(_0x4d6b70[_0x22fcc6(0x32e)]<_0x4ab9a5){console[_0x22fcc6(0x167)]('第'+_0x37f5c0+_0x22fcc6(0x31a)+_0x4d6b70[_0x22fcc6(0x32e)]+'个');for(const _0x5a19d5 of _0x4abb68){if(_0x4d6b70[_0x22fcc6(0x32e)]>=_0x4ab9a5)break;const _0x2f0cd1=_0x5f0d28(_0x5a19d5[_0x22fcc6(0x1f7)](),_0x37f5c0);_0x2f0cd1[_0x22fcc6(0x152)](_0x7864a9=>_0x4d6b70[_0x22fcc6(0x278)](_0x7864a9)),console[_0x22fcc6(0x167)](_0x22fcc6(0x253)+_0x5a19d5+'\x20第'+_0x37f5c0+_0x22fcc6(0x31e)+_0x2f0cd1[_0x22fcc6(0x27e)]+'个IP，总计'+_0x4d6b70[_0x22fcc6(0x32e)]+'个');}_0x37f5c0++;if(_0x37f5c0>0x64){console[_0x22fcc6(0x13e)]('达到最大轮次限制，停止生成');break;}}return console[_0x22fcc6(0x167)](_0x22fcc6(0x25b)+_0x4d6b70[_0x22fcc6(0x32e)]+'个不重复IP'),Array['from'](_0x4d6b70)[_0x22fcc6(0x1e8)](0x0,_0x4ab9a5);}catch(_0x40861a){return console[_0x22fcc6(0x2d5)](_0x22fcc6(0x318),_0x40861a),[];}}function _0x4a41c4(_0x2b91a9,_0x585cfc){const _0x3c44a2=_0x80b0b2;try{_0x2b91a9=_0x2b91a9[_0x3c44a2(0x1f7)]();if(!_0x2b91a9)return null;let _0x34aaf6='',_0x32b066='',_0x9b0853='';if(_0x2b91a9[_0x3c44a2(0x2fb)]('#')){const _0x4490a1=_0x2b91a9[_0x3c44a2(0x1bf)]('#'),_0x2de9d9=_0x4490a1[0x0][_0x3c44a2(0x1f7)]();_0x9b0853=_0x4490a1[0x1]['trim']();if(_0x2de9d9[_0x3c44a2(0x2fb)](':')){const _0x147b4d=_0x2de9d9[_0x3c44a2(0x1bf)](':');if(_0x147b4d[_0x3c44a2(0x27e)]===0x2)_0x34aaf6=_0x147b4d[0x0][_0x3c44a2(0x1f7)](),_0x32b066=_0x147b4d[0x1][_0x3c44a2(0x1f7)]();else return console[_0x3c44a2(0x13e)](_0x3c44a2(0x14d)+_0x2b91a9),null;}else _0x34aaf6=_0x2de9d9,_0x32b066=_0x3c44a2(0x238);}else{if(_0x2b91a9['includes'](':')){const _0x732f46=_0x2b91a9['split'](':');if(_0x732f46[_0x3c44a2(0x27e)]===0x2)_0x34aaf6=_0x732f46[0x0]['trim'](),_0x32b066=_0x732f46[0x1][_0x3c44a2(0x1f7)]();else return console[_0x3c44a2(0x13e)](_0x3c44a2(0x14d)+_0x2b91a9),null;}else _0x34aaf6=_0x2b91a9,_0x32b066=_0x3c44a2(0x238);}if(!_0x27502b(_0x34aaf6))return console[_0x3c44a2(0x13e)](_0x3c44a2(0x13d)+_0x34aaf6+_0x3c44a2(0x29b)+_0x2b91a9+')'),null;const _0x19d509=parseInt(_0x32b066);if(isNaN(_0x19d509)||_0x19d509<0x1||_0x19d509>0xffff)return console[_0x3c44a2(0x13e)](_0x3c44a2(0x2be)+_0x32b066+_0x3c44a2(0x29b)+_0x2b91a9+')'),null;if(_0x32b066!==_0x585cfc)return null;return _0x9b0853?_0x34aaf6+':'+_0x32b066+'#'+_0x9b0853:_0x34aaf6+':'+_0x32b066;}catch(_0xd30bc3){return console[_0x3c44a2(0x2d5)](_0x3c44a2(0x1d1)+_0x2b91a9,_0xd30bc3),null;}}function _0x27502b(_0x2614dc){const _0x3db6fd=/^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/,_0x52ef6d=_0x2614dc['match'](_0x3db6fd);if(!_0x52ef6d)return![];for(let _0x1f9bd2=0x1;_0x1f9bd2<=0x4;_0x1f9bd2++){const _0x3c804b=parseInt(_0x52ef6d[_0x1f9bd2]);if(_0x3c804b<0x0||_0x3c804b>0xff)return![];}return!![];}function _0x5f0d28(_0x34c97e,_0x44d39b=0x1){const _0x3cb780=_0x80b0b2,[_0x4528f9,_0x40663f]=_0x34c97e[_0x3cb780(0x1bf)]('/'),_0x2d0e38=parseInt(_0x40663f),_0x3be4aa=_0x477539=>{const _0x455dd2=_0x3cb780;return _0x477539[_0x455dd2(0x1bf)]('.')[_0x455dd2(0x26f)]((_0x697796,_0x1d9496)=>(_0x697796<<0x8)+parseInt(_0x1d9496),0x0)>>>0x0;},_0x116661=_0x45c928=>{const _0x4f2add=_0x3cb780;return[_0x45c928>>>0x18&0xff,_0x45c928>>>0x10&0xff,_0x45c928>>>0x8&0xff,_0x45c928&0xff][_0x4f2add(0x17c)]('.');},_0x4735c5=_0x3be4aa(_0x4528f9),_0x401236=0x20-_0x2d0e38,_0x4965fa=Math[_0x3cb780(0x2e3)](0x2,_0x401236),_0xab933b=_0x4965fa-0x2,_0xa99fc2=Math[_0x3cb780(0x134)](_0x44d39b,_0xab933b),_0x4a3176=new Set();if(_0xab933b<=0x0)return[];let _0x3d83ac=0x0;const _0x59914d=_0xa99fc2*0xa;while(_0x4a3176[_0x3cb780(0x32e)]<_0xa99fc2&&_0x3d83ac<_0x59914d){const _0x548a5d=Math[_0x3cb780(0x205)](Math[_0x3cb780(0x1cc)]()*_0xab933b)+0x1,_0x143b08=_0x116661(_0x4735c5+_0x548a5d);_0x4a3176[_0x3cb780(0x278)](_0x143b08),_0x3d83ac++;}return Array[_0x3cb780(0x198)](_0x4a3176);}if(_0x24b8bf[_0x80b0b2(0x2de)]===_0x80b0b2(0x15c)){if(!_0x3cc821['KV'])return new Response(_0x80b0b2(0x32c),{'status':0x190});try{const _0x1006da=_0x24b8bf[_0x80b0b2(0x345)][_0x80b0b2(0x231)](_0x80b0b2(0x241));if(_0x1006da&&_0x1006da[_0x80b0b2(0x2fb)](_0x80b0b2(0x135))){const _0x58062c=await _0x24b8bf[_0x80b0b2(0x292)](),_0x403fb7=_0x575809[_0x80b0b2(0x2eb)][_0x80b0b2(0x231)]('action')||_0x80b0b2(0x324);if(!_0x58062c[_0x80b0b2(0x1ed)]||!Array[_0x80b0b2(0x2f4)](_0x58062c[_0x80b0b2(0x1ed)]))return new Response(JSON[_0x80b0b2(0x244)]({'error':_0x80b0b2(0x332)}),{'status':0x190,'headers':{'Content-Type':_0x80b0b2(0x135)}});if(_0x403fb7===_0x80b0b2(0x243)){const _0x5a9257=await _0x3cc821['KV'][_0x80b0b2(0x231)](_0x159f8e)||'',_0x524e14=_0x58062c[_0x80b0b2(0x1ed)]['join']('\x0a'),_0x1a858d=_0x5a9257?_0x5a9257[_0x80b0b2(0x1bf)]('\x0a')[_0x80b0b2(0x2d0)](_0x5ef2e8=>_0x5ef2e8[_0x80b0b2(0x1f7)]())[_0x80b0b2(0x1da)](_0x17d236=>_0x17d236):[],_0x4e0b60=_0x524e14['split']('\x0a')['map'](_0x28c2b8=>_0x28c2b8[_0x80b0b2(0x1f7)]())[_0x80b0b2(0x1da)](_0x2f2902=>_0x2f2902),_0x240b43=[..._0x1a858d,..._0x4e0b60],_0x58a581=[...new Set(_0x240b43)],_0x1b30e4=_0x58a581[_0x80b0b2(0x17c)]('\x0a');if(_0x1b30e4['length']>0x18*0x400*0x400)return new Response(JSON[_0x80b0b2(0x244)]({'error':_0x80b0b2(0x18d)+(_0x1b30e4['length']/0x400/0x400)[_0x80b0b2(0x2a8)](0x2)+_0x80b0b2(0x294)}),{'status':0x190,'headers':{'Content-Type':_0x80b0b2(0x135)}});await _0x3cc821['KV'][_0x80b0b2(0x224)](_0x159f8e,_0x1b30e4);const _0x150e8f=_0x58a581[_0x80b0b2(0x27e)]-_0x1a858d[_0x80b0b2(0x27e)],_0x29c4be=_0x4e0b60[_0x80b0b2(0x27e)]-_0x150e8f;let _0x53db1d=_0x80b0b2(0x32d)+_0x150e8f+_0x80b0b2(0x319)+_0x1a858d['length']+_0x80b0b2(0x2a2)+_0x58a581[_0x80b0b2(0x27e)]+'\x20个）';return _0x29c4be>0x0&&(_0x53db1d+='，已去重\x20'+_0x29c4be+_0x80b0b2(0x146)),new Response(JSON[_0x80b0b2(0x244)]({'success':!![],'message':_0x53db1d}),{'headers':{'Content-Type':_0x80b0b2(0x135)}});}else{const _0x33d173=_0x58062c[_0x80b0b2(0x1ed)][_0x80b0b2(0x17c)]('\x0a');if(_0x33d173[_0x80b0b2(0x27e)]>0x18*0x400*0x400)return new Response(JSON[_0x80b0b2(0x244)]({'error':_0x80b0b2(0x228)}),{'status':0x190,'headers':{'Content-Type':_0x80b0b2(0x135)}});return await _0x3cc821['KV'][_0x80b0b2(0x224)](_0x159f8e,_0x33d173),new Response(JSON[_0x80b0b2(0x244)]({'success':!![],'message':_0x80b0b2(0x2e0)+_0x58062c[_0x80b0b2(0x1ed)][_0x80b0b2(0x27e)]+'\x20个优选IP'}),{'headers':{'Content-Type':'application/json'}});}}else{const _0xd75ece=await _0x24b8bf[_0x80b0b2(0x2c8)]();return await _0x3cc821['KV'][_0x80b0b2(0x224)](_0x159f8e,_0xd75ece),new Response(_0x80b0b2(0x189));}}catch(_0x1aee3a){return console['error']('处理POST请求时发生错误:',_0x1aee3a),new Response(JSON[_0x80b0b2(0x244)]({'error':'操作失败:\x20'+_0x1aee3a['message']}),{'status':0x1f4,'headers':{'Content-Type':_0x80b0b2(0x135)}});}}let _0x3ac822='',_0x1288de=!!_0x3cc821['KV'];if(_0x1288de)try{_0x3ac822=await _0x3cc821['KV'][_0x80b0b2(0x231)](_0x159f8e)||'';}catch(_0x4a8350){console[_0x80b0b2(0x2d5)](_0x80b0b2(0x22e),_0x4a8350),_0x3ac822=_0x80b0b2(0x1ca)+_0x4a8350['message'];}const _0x385d73=[],_0x1d5e96=_0x339573==='CN',_0x341356=_0x1d5e96?'':_0x80b0b2(0x2cc),_0x326b09=_0x1d5e96?''+_0x339573:_0x339573+_0x80b0b2(0x257),_0x5a6ac8=_0x80b0b2(0x287)+(!_0x1d5e96?_0x80b0b2(0x2f1):'')+'\x0a\x0a\x20\x20\x20\x20<div\x20class=\x22stats\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h2>统计信息</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p><strong>您的国家：</strong><span\x20class=\x22'+_0x341356+'\x22>'+_0x326b09+_0x80b0b2(0x174)+_0x1dceb0+_0x80b0b2(0x2a3)+_0x1dceb0+_0x80b0b2(0x13b);if(_0x575809[_0x80b0b2(0x2eb)]['get'](_0x80b0b2(0x1c6))){const _0x8eb1d6=_0x575809[_0x80b0b2(0x2eb)][_0x80b0b2(0x231)](_0x80b0b2(0x1c6)),_0x3765ba=_0x575809[_0x80b0b2(0x2eb)][_0x80b0b2(0x231)]('port')||_0x80b0b2(0x238),_0x25864e=await _0xa43190(_0x8eb1d6,_0x3765ba);return new Response(JSON[_0x80b0b2(0x244)]({'ips':_0x25864e}),{'headers':{'Content-Type':_0x80b0b2(0x135)}});}return new Response(_0x5a6ac8,{'headers':{'Content-Type':_0x80b0b2(0x302)}});}async function getUsage(_0x114584,_0x30b584,_0x3d179f,_0x577401,_0x2718aa=0x186a0){const _0x28ef9d=_0xa62ad6;async function _0x551ea1(_0x154595,_0x332dba){const _0xc291a0=_0x1bed;console[_0xc291a0(0x167)](_0xc291a0(0x1a0));const _0x1eb3b2=await fetch(_0xc291a0(0x289),{'method':_0xc291a0(0x222),'headers':{'Content-Type':_0xc291a0(0x135),'X-AUTH-EMAIL':_0x154595,'X-AUTH-KEY':_0x332dba}});if(!_0x1eb3b2['ok']){const _0x130ed7=await _0x1eb3b2[_0xc291a0(0x2c8)]();console['error'](_0xc291a0(0x210)+_0x1eb3b2[_0xc291a0(0x240)]+'\x20'+_0x1eb3b2['statusText'],_0x130ed7);throw new Error('Cloudflare\x20API\x20请求失败:\x20'+_0x1eb3b2['status']+'\x20'+_0x1eb3b2[_0xc291a0(0x19c)]+_0xc291a0(0x202)+_0x130ed7);}const _0x496733=await _0x1eb3b2[_0xc291a0(0x292)]();let _0x3cd6a6=0x0,_0x474ba4=![];if(_0x496733?.[_0xc291a0(0x325)]&&_0x496733['result']['length']>0x1){console['log'](_0xc291a0(0x27c)+_0x496733['result'][_0xc291a0(0x27e)]+_0xc291a0(0x186));const _0x5e2107=_0x154595[_0xc291a0(0x23c)]();console[_0xc291a0(0x167)](_0xc291a0(0x26a)+_0x5e2107);for(let _0x6640e0=0x0;_0x6640e0<_0x496733[_0xc291a0(0x325)][_0xc291a0(0x27e)];_0x6640e0++){const _0x51f931=_0x496733[_0xc291a0(0x325)][_0x6640e0]?.[_0xc291a0(0x2a0)]?.[_0xc291a0(0x23c)]()||'';console[_0xc291a0(0x167)](_0xc291a0(0x145)+_0x6640e0+':\x20'+_0x496733[_0xc291a0(0x325)][_0x6640e0]?.[_0xc291a0(0x2a0)]);if(_0x51f931[_0xc291a0(0x234)](_0x5e2107)){_0x3cd6a6=_0x6640e0,_0x474ba4=!![],console[_0xc291a0(0x167)](_0xc291a0(0x18a)+_0x6640e0+_0xc291a0(0x230));break;}}!_0x474ba4&&console[_0xc291a0(0x167)](_0xc291a0(0x280));}else _0x496733?.[_0xc291a0(0x325)]&&_0x496733[_0xc291a0(0x325)][_0xc291a0(0x27e)]===0x1&&(console[_0xc291a0(0x167)]('只有一个账户，使用第\x200\x20个账户'),_0x474ba4=!![]);const _0x385cf2=_0x496733?.['result']?.[_0x3cd6a6]?.[_0xc291a0(0x2a0)],_0x19b96a=_0x496733?.['result']?.[_0x3cd6a6]?.['id'];console['log'](_0xc291a0(0x193)+_0x3cd6a6+_0xc291a0(0x313)+_0x385cf2+_0xc291a0(0x1d0)+_0x19b96a);if(!_0x19b96a)throw new Error(_0xc291a0(0x297));return _0x19b96a;}try{!_0x114584&&(console[_0x28ef9d(0x167)](_0x28ef9d(0x33f)),_0x114584=await _0x551ea1(_0x30b584,_0x3d179f));const _0xd6eac9=new Date(),_0x2f579f=_0xd6eac9[_0x28ef9d(0x248)]();_0xd6eac9['setUTCHours'](0x0,0x0,0x0,0x0);const _0x5304b5=_0xd6eac9['toISOString']();console[_0x28ef9d(0x167)](_0x28ef9d(0x262)+_0x5304b5+_0x28ef9d(0x261)+_0x2f579f);let _0x48c39a={};_0x3d179f&&(_0x48c39a={'Content-Type':'application/json','X-AUTH-EMAIL':_0x30b584,'X-AUTH-KEY':_0x3d179f});_0x577401&&(_0x48c39a={'Content-Type':_0x28ef9d(0x135),'Authorization':_0x28ef9d(0x344)+_0x577401});const _0x4efb9d=await fetch(_0x28ef9d(0x1d5),{'method':_0x28ef9d(0x15c),'headers':_0x48c39a,'body':JSON['stringify']({'query':'query\x20getBillingMetrics($accountId:\x20String!,\x20$filter:\x20AccountWorkersInvocationsAdaptiveFilter_InputObject)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20viewer\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20accounts(filter:\x20{accountTag:\x20$accountId})\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pagesFunctionsInvocationsAdaptiveGroups(limit:\x201000,\x20filter:\x20$filter)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20sum\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20requests\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20workersInvocationsAdaptive(limit:\x2010000,\x20filter:\x20$filter)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20sum\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20requests\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}','variables':{'accountId':_0x114584,'filter':{'datetime_geq':_0x5304b5,'datetime_leq':_0x2f579f}}})});if(!_0x4efb9d['ok']){const _0x5613ee=await _0x4efb9d['text']();return console[_0x28ef9d(0x2d5)](_0x28ef9d(0x139)+_0x4efb9d[_0x28ef9d(0x240)]+'\x20'+_0x4efb9d['statusText'],_0x5613ee),console[_0x28ef9d(0x167)]('返回默认值：全部为0'),[_0x2718aa,0x0,0x0,0x0];}const _0x110ee7=await _0x4efb9d[_0x28ef9d(0x292)]();if(_0x110ee7[_0x28ef9d(0x168)]&&_0x110ee7[_0x28ef9d(0x168)]['length']>0x0)return console['error']('GraphQL查询错误:',_0x110ee7[_0x28ef9d(0x168)][0x0][_0x28ef9d(0x201)]),console[_0x28ef9d(0x167)](_0x28ef9d(0x1ac)),[_0x2718aa,0x0,0x0,0x0];const _0x5ac56e=_0x110ee7?.[_0x28ef9d(0x1b4)]?.['viewer']?.[_0x28ef9d(0x2ec)]?.[0x0];if(!_0x5ac56e)return console[_0x28ef9d(0x13e)](_0x28ef9d(0x27d)),[_0x2718aa,0x0,0x0,0x0];const _0x3d3f20=_0x5ac56e?.[_0x28ef9d(0x1bc)]||[],_0xd028d8=_0x3d3f20['reduce']((_0x19cf49,_0x33d809)=>{const _0x516d96=_0x28ef9d;return _0x19cf49+(_0x33d809?.[_0x516d96(0x301)]?.[_0x516d96(0x269)]||0x0);},0x0),_0x1edf18=_0x5ac56e?.[_0x28ef9d(0x286)]||[],_0xe027=_0x1edf18['reduce']((_0x33d875,_0x3120b5)=>{const _0x5915ce=_0x28ef9d;return _0x33d875+(_0x3120b5?.['sum']?.[_0x5915ce(0x269)]||0x0);},0x0),_0x57f0f8=_0xd028d8+_0xe027;return console[_0x28ef9d(0x167)](_0x28ef9d(0x314)+_0xd028d8+_0x28ef9d(0x151)+_0xe027+_0x28ef9d(0x1ab)+_0x57f0f8),[_0x2718aa,_0xd028d8||0x0,_0xe027||0x0,_0x57f0f8||0x0];}catch(_0x21b6fa){return console['error'](_0x28ef9d(0x25a),_0x21b6fa[_0x28ef9d(0x201)]),[_0x2718aa,0x0,0x0,0x0];}}async function nginx(){const _0x169189=_0xa62ad6,_0x10a3c3=_0x169189(0x1fa);return _0x10a3c3;}
+
+import { connect } from 'cloudflare:sockets';
+
+let userID = '';
+let proxyIP = '';
+let DNS64Server = '';
+  
+let subConverter = atob('U1VCQVBJLkNNTGl1c3Nzcy5uZXQ=');
+let subConfig = atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvY29uZmlnL0FDTDRTU1JfT25saW5lX01pbmlfTXVsdGlNb2RlLmluaQ==');
+let subProtocol = 'https';
+let subEmoji = 'true';
+let socks5Address = '';
+let parsedSocks5Address = {};
+let enableSocks = false;
+let enableHttp = false;
+let noTLS = 'false';
+const expire = 4102329600;
+let proxyIPs;
+let socks5s;
+let go2Socks5s = [
+    '*ttvnw.net',
+    '*tapecontent.net',
+    '*cloudatacdn.com',
+    '*.loadshare.org',
+];
+let addresses = [];
+let addressesapi = [];
+let addressesnotls = [];
+let addressesnotlsapi = [];
+let addressescsv = [];
+let DLS = 8;
+let remarkIndex = 1;
+let FileName = atob('ZWRnZXR1bm5lbA==');
+let BotToken;
+let ChatID;
+let proxyhosts = [];
+let proxyhostsURL = '';
+let RproxyIP = 'false';
+const httpPorts = ["8080", "8880", "2052", "2082", "2086", "2095"];
+let httpsPorts = ["2053", "2083", "2087", "2096", "8443"];
+let 有效时间 = 7;
+let 更新时间 = 3;
+let userIDLow;
+let userIDTime = "";
+let proxyIPPool = [];
+let path = '/?ed=2560';
+let 动态UUID = userID;
+let link = [];
+let banHosts = [atob('c3BlZWQuY2xvdWRmbGFyZS5jb20=')];
+let SCV = 'true';
+let allowInsecure = '&allowInsecure=1';
+export default {
+    async fetch(request, env, ctx) {
+        try {
+            const UA = request.headers.get('User-Agent') || 'null';
+            const userAgent = UA.toLowerCase();
+            userID = env.UUID || env.uuid || env.PASSWORD || env.pswd || userID;
+            if (env.KEY || env.TOKEN || (userID && !isValidUUID(userID))) {
+                动态UUID = env.KEY || env.TOKEN || userID;
+                有效时间 = Number(env.TIME) || 有效时间;
+                更新时间 = Number(env.UPTIME) || 更新时间;
+                const userIDs = await 生成动态UUID(动态UUID);
+                userID = userIDs[0];
+                userIDLow = userIDs[1];
+            } else 动态UUID = userID;
+
+            if (!userID) {
+                return new Response('请设置你的UUID变量，或尝试重试部署，检查变量是否生效？', {
+                    status: 404,
+                    headers: {
+                        "Content-Type": "text/plain;charset=utf-8",
+                    }
+                });
+            }
+            const currentDate = new Date();
+            currentDate.setHours(0, 0, 0, 0);
+            const timestamp = Math.ceil(currentDate.getTime() / 1000);
+            const fakeUserIDMD5 = await 双重哈希(`${userID}${timestamp}`);
+            const fakeUserID = [
+                fakeUserIDMD5.slice(0, 8),
+                fakeUserIDMD5.slice(8, 12),
+                fakeUserIDMD5.slice(12, 16),
+                fakeUserIDMD5.slice(16, 20),
+                fakeUserIDMD5.slice(20)
+            ].join('-');
+
+            const fakeHostName = `${fakeUserIDMD5.slice(6, 9)}.${fakeUserIDMD5.slice(13, 19)}`;
+
+            proxyIP = env.PROXYIP || env.proxyip || proxyIP;
+            proxyIPs = await 整理(proxyIP);
+            proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
+            DNS64Server = env.DNS64 || env.NAT64 || DNS64Server;
+            socks5Address = env.HTTP || env.SOCKS5 || socks5Address;
+            socks5s = await 整理(socks5Address);
+            socks5Address = socks5s[Math.floor(Math.random() * socks5s.length)];
+            enableHttp = env.HTTP ? true : socks5Address.toLowerCase().includes('http://');
+            socks5Address = socks5Address.split('//')[1] || socks5Address;
+            if (env.GO2SOCKS5) go2Socks5s = await 整理(env.GO2SOCKS5);
+            if (env.CFPORTS) httpsPorts = await 整理(env.CFPORTS);
+            if (env.BAN) banHosts = await 整理(env.BAN);
+            if (socks5Address) {
+                try {
+                    parsedSocks5Address = socks5AddressParser(socks5Address);
+                    RproxyIP = env.RPROXYIP || 'false';
+                    enableSocks = true;
+                } catch (err) {
+                    let e = err;
+                    console.log(e.toString());
+                    RproxyIP = env.RPROXYIP || !proxyIP ? 'true' : 'false';
+                    enableSocks = false;
+                }
+            } else {
+                RproxyIP = env.RPROXYIP || !proxyIP ? 'true' : 'false';
+            }
+
+            const upgradeHeader = request.headers.get('Upgrade');
+            const url = new URL(request.url);
+            if (!upgradeHeader || upgradeHeader !== 'websocket') {
+                if (env.ADD) addresses = await 整理(env.ADD);
+                if (env.ADDAPI) addressesapi = await 整理(env.ADDAPI);
+                if (env.ADDNOTLS) addressesnotls = await 整理(env.ADDNOTLS);
+                if (env.ADDNOTLSAPI) addressesnotlsapi = await 整理(env.ADDNOTLSAPI);
+                if (env.ADDCSV) addressescsv = await 整理(env.ADDCSV);
+                DLS = Number(env.DLS) || DLS;
+                remarkIndex = Number(env.CSVREMARK) || remarkIndex;
+                BotToken = env.TGTOKEN || BotToken;
+                ChatID = env.TGID || ChatID;
+                FileName = env.SUBNAME || FileName;
+                subEmoji = env.SUBEMOJI || env.EMOJI || subEmoji;
+                if (subEmoji == '0') subEmoji = 'false';
+                if (env.LINK) link = await 整理(env.LINK);
+                let sub = env.SUB || '';
+                subConverter = env.SUBAPI || subConverter;
+                if (subConverter.includes("http://")) {
+                    subConverter = subConverter.split("//")[1];
+                    subProtocol = 'http';
+                } else {
+                    subConverter = subConverter.split("//")[1] || subConverter;
+                }
+                subConfig = env.SUBCONFIG || subConfig;
+                if (url.searchParams.has('sub') && url.searchParams.get('sub') !== '') sub = url.searchParams.get('sub').toLowerCase();
+                if (url.searchParams.has('notls')) noTLS = 'true';
+
+                if (url.searchParams.has('proxyip')) {
+                    path = `/proxyip=${url.searchParams.get('proxyip')}`;
+                    RproxyIP = 'false';
+                } else if (url.searchParams.has('socks5')) {
+                    path = `/?socks5=${url.searchParams.get('socks5')}`;
+                    RproxyIP = 'false';
+                } else if (url.searchParams.has('socks')) {
+                    path = `/?socks5=${url.searchParams.get('socks')}`;
+                    RproxyIP = 'false';
+                }
+
+                SCV = env.SCV || SCV;
+                if (!SCV || SCV == '0' || SCV == 'false') allowInsecure = '';
+                else SCV = 'true';
+                const 路径 = url.pathname.toLowerCase();
+                if (路径 == '/') {
+                    if (env.URL302) return Response.redirect(env.URL302, 302);
+                    else if (env.URL) return await 代理URL(env.URL, url);
+                    else return new Response(await nginx(), {
+                        status: 200,
+                        headers: {
+                            'Content-Type': 'text/html; charset=UTF-8',
+                        },
+                    });
+                } else if (路径 == `/${fakeUserID}`) {
+                    const fakeConfig = await 生成配置信息(userID, request.headers.get('Host'), sub, 'CF-Workers-SUB', RproxyIP, url, fakeUserID, fakeHostName, env);
+                    return new Response(`${fakeConfig}`, { status: 200 });
+                } else if (url.pathname == `/${动态UUID}/edit` || 路径 == `/${userID}/edit`) {
+                    return await KV(request, env);
+                } else if (url.pathname == `/${动态UUID}/bestip` || 路径 == `/${userID}/bestip`) {
+                    return await bestIP(request, env);
+                } else if (url.pathname == `/${动态UUID}` || 路径 == `/${userID}`) {
+                    await sendMessage(`#获取订阅 ${FileName}`, request.headers.get('CF-Connecting-IP'), `UA: ${UA}</tg-spoiler>\n域名: ${url.hostname}\n<tg-spoiler>入口: ${url.pathname + url.search}</tg-spoiler>`);
+                    const 维列斯Config = await 生成配置信息(userID, request.headers.get('Host'), sub, UA, RproxyIP, url, fakeUserID, fakeHostName, env);
+                    const now = Date.now();
+  
+                    const today = new Date(now);
+                    today.setHours(0, 0, 0, 0);
+                    const UD = Math.floor(((now - today.getTime()) / 86400000) * 24 * 1099511627776 / 2);
+                    let pagesSum = UD;
+                    let workersSum = UD;
+                    let total = 24 * 1099511627776;
+                    if ((env.CF_EMAIL && env.CF_APIKEY) || (env.CF_ID && env.CF_APITOKEN)) {
+                        const usage = await getUsage(env.CF_ID, env.CF_EMAIL, env.CF_APIKEY, env.CF_APITOKEN, env.CF_ALL);
+                        pagesSum = usage[1];
+                        workersSum = usage[2];
+                        total = env.CF_ALL ? Number(env.CF_ALL) : (1024 * 100); // 100K
+                    }
+                    if (userAgent && userAgent.includes('mozilla')) {
+                        return new Response(维列斯Config, {
+                            status: 200,
+                            headers: {
+                                "Content-Type": "text/html;charset=utf-8",
+                                "Profile-Update-Interval": "6",
+                                "Subscription-Userinfo": `upload=${pagesSum}; download=${workersSum}; total=${total}; expire=${expire}`,
+                                "Cache-Control": "no-store",
+                            }
+                        });
+                    } else {
+                        return new Response(维列斯Config, {
+                            status: 200,
+                            headers: {
+                                "Content-Disposition": `attachment; filename=${FileName}; filename*=utf-8''${encodeURIComponent(FileName)}`,
+  
+                                "Profile-Update-Interval": "6",
+                                "Profile-web-page-url": request.url.includes('?') ? request.url.split('?')[0] : request.url,
+                                "Subscription-Userinfo": `upload=${pagesSum}; download=${workersSum}; total=${total}; expire=${expire}`,
+                            }
+                        });
+                    }
+                } else {
+                    if (env.URL302) return Response.redirect(env.URL302, 302);
+                    else if (env.URL) return await 代理URL(env.URL, url);
+                    else return new Response('不用怀疑！你UUID就是错的！！！', { status: 404 });
+                }
+            } else {
+                socks5Address = url.searchParams.get('socks5') || socks5Address;
+                if (new RegExp('/socks5=', 'i').test(url.pathname)) socks5Address = url.pathname.split('5=')[1];
+                else if (new RegExp('/socks://', 'i').test(url.pathname) || new RegExp('/socks5://', 'i').test(url.pathname) || new RegExp('/http://', 'i').test(url.pathname)) {
+                    enableHttp = url.pathname.includes('http://');
+                    socks5Address = url.pathname.split('://')[1].split('#')[0];
+                    if (socks5Address.includes('@')) {
+                        const lastAtIndex = socks5Address.lastIndexOf('@');
+                        let userPassword = socks5Address.substring(0, lastAtIndex).replaceAll('%3D', '=');
+                        const base64Regex = /^(?:[A-Z0-9+/]{4})*(?:[A-Z0-9+/]{2}==|[A-Z0-9+/]{3}=)?$/i;
+                        if (base64Regex.test(userPassword) && !userPassword.includes(':')) userPassword = atob(userPassword);
+                        socks5Address = `${userPassword}@${socks5Address.substring(lastAtIndex + 1)}`;
+                    }
+                    go2Socks5s = ['all in'];
+                }
+
+                if (socks5Address) {
+                    try {
+                        parsedSocks5Address = socks5AddressParser(socks5Address);
+                        enableSocks = true;
+                    } catch (err) {
+                        let e = err;
+                        console.log(e.toString());
+                        enableSocks = false;
+                    }
+                } else {
+                    enableSocks = false;
+                }
+
+                if (url.searchParams.has('proxyip')) {
+                    proxyIP = url.searchParams.get('proxyip');
+                    enableSocks = false;
+                } else if (new RegExp('/proxyip=', 'i').test(url.pathname)) {
+                    proxyIP = url.pathname.toLowerCase().split('/proxyip=')[1];
+                    enableSocks = false;
+                } else if (new RegExp('/proxyip.', 'i').test(url.pathname)) {
+                    proxyIP = `proxyip.${url.pathname.toLowerCase().split("/proxyip.")[1]}`;
+                    enableSocks = false;
+                } else if (new RegExp('/pyip=', 'i').test(url.pathname)) {
+                    proxyIP = url.pathname.toLowerCase().split('/pyip=')[1];
+                    enableSocks = false;
+                }
+
+                return await 维列斯OverWSHandler(request);
+            }
+        } catch (err) {
+            let e = err;
+            return new Response(e.toString());
+        }
+    },
+};
+
+async function 维列斯OverWSHandler(request) {
+
+  
+    const webSocketPair = new WebSocketPair();
+    const [client, webSocket] = Object.values(webSocketPair);
+
+  
+    webSocket.accept();
+
+    let address = '';
+    let portWithRandomLog = '';
+  
+    const log = (/** @type {string} */ info,    event) => {
+        console.log(`[${address}:${portWithRandomLog}] ${info}`, event || '');
+    };
+  
+    const earlyDataHeader = request.headers.get('sec-websocket-protocol') || '';
+
+  
+    const readableWebSocketStream = makeReadableWebSocketStream(webSocket, earlyDataHeader, log);
+
+  
+    let remoteSocketWapper = {
+        value: null,
+    };
+  
+    let udpStreamWrite = null;
+    let isDns = false;
+
+  
+    readableWebSocketStream.pipeTo(new WritableStream({
+        async write(chunk, controller) {
+            if (isDns && udpStreamWrite) {
+  
+  
+                return udpStreamWrite(chunk);
+            }
+            if (remoteSocketWapper.value) {
+  
+                const writer = remoteSocketWapper.value.writable.getWriter()
+                await writer.write(chunk);
+                writer.releaseLock();
+                return;
+            }
+
+  
+            const {
+                hasError,
+                message,
+                addressType,
+                portRemote = 443,
+                addressRemote = '',
+                rawDataIndex,
+                维列斯Version = new Uint8Array([0, 0]),
+                isUDP,
+            } = process维列斯Header(chunk, userID);
+  
+            address = addressRemote;
+            portWithRandomLog = `${portRemote}--${Math.random()} ${isUDP ? 'udp ' : 'tcp '} `;
+            if (hasError) {
+  
+                throw new Error(message);
+                return;
+            }
+  
+            if (isUDP) {
+                if (portRemote === 53) {
+                    isDns = true;
+                } else {
+                    throw new Error('UDP 代理仅对 DNS（53 端口）启用');
+                    return;
+                }
+            }
+  
+            const 维列斯ResponseHeader = new Uint8Array([维列斯Version[0], 0]);
+  
+            const rawClientData = chunk.slice(rawDataIndex);
+
+            if (isDns) {
+  
+  
+                const { write } = await handleUDPOutBound(webSocket, 维列斯ResponseHeader, log);
+                udpStreamWrite = write;
+                udpStreamWrite(rawClientData);
+                return;
+            }
+  
+            if (!banHosts.includes(addressRemote)) {
+                log(`处理 TCP 出站连接 ${addressRemote}:${portRemote}`);
+                handleTCPOutBound(remoteSocketWapper, addressType, addressRemote, portRemote, rawClientData, webSocket, 维列斯ResponseHeader, log);
+            } else {
+                throw new Error(`黑名单关闭 TCP 出站连接 ${addressRemote}:${portRemote}`);
+            }
+        },
+        close() {
+            log(`readableWebSocketStream 已关闭`);
+        },
+        abort(reason) {
+            log(`readableWebSocketStream 已中止`, JSON.stringify(reason));
+        },
+    })).catch((err) => {
+        log('readableWebSocketStream 管道错误', err);
+    });
+
+  
+    return new Response(null, {
+        status: 101,
+  
+        webSocket: client,
+    });
+}
+
+async function handleTCPOutBound(remoteSocket, addressType, addressRemote, portRemote, rawClientData, webSocket, 维列斯ResponseHeader, log,) {
+    async function useSocks5Pattern(address) {
+        if (go2Socks5s.includes(atob('YWxsIGlu')) || go2Socks5s.includes(atob('Kg=='))) return true;
+        return go2Socks5s.some(pattern => {
+            let regexPattern = pattern.replace(/\*/g, '.*');
+            let regex = new RegExp(`^${regexPattern}$`, 'i');
+            return regex.test(address);
+        });
+    }
+
+    async function connectAndWrite(address, port, socks = false, http = false) {
+        log(`connected to ${address}:${port}`);
+  
+  
+        const tcpSocket = socks
+            ? (http ? await httpConnect(address, port, log) : await socks5Connect(addressType, address, port, log))
+            : connect({ hostname: address, port: port });
+
+        remoteSocket.value = tcpSocket;
+  
+        const writer = tcpSocket.writable.getWriter();
+  
+        await writer.write(rawClientData);
+        writer.releaseLock();
+        return tcpSocket;
+    }
+
+    async function nat64() {
+        if (!useSocks) {
+            const nat64Proxyip = `[${await resolveToIPv6(addressRemote)}]`;
+            log(`NAT64 代理连接到 ${nat64Proxyip}:443`);
+            tcpSocket = await connectAndWrite(nat64Proxyip, '443');
+        }
+        tcpSocket.closed.catch(error => {
+            console.log('retry tcpSocket closed error', error);
+        }).finally(() => {
+            safeCloseWebSocket(webSocket);
+        })
+        remoteSocketToWS(tcpSocket, webSocket, 维列斯ResponseHeader, null, log);
+    }
+
+    /**
+     * 重试函数：当 Cloudflare 的 TCP Socket 没有传入数据时，我们尝试重定向 IP
+     * 这可能是因为某些网络问题导致的连接失败
+     */
+    async function retry() {
+        if (enableSocks) {
+  
+            tcpSocket = await connectAndWrite(addressRemote, portRemote, true, enableHttp);
+        } else {
+  
+            if (!proxyIP || proxyIP == '') {
+                proxyIP = atob('UFJPWFlJUC50cDEuMDkwMjI3Lnh5eg==');
+            } else if (proxyIP.includes(']:')) {
+                portRemote = proxyIP.split(']:')[1] || portRemote;
+                proxyIP = proxyIP.split(']:')[0] + "]" || proxyIP;
+            } else if (proxyIP.split(':').length === 2) {
+                portRemote = proxyIP.split(':')[1] || portRemote;
+                proxyIP = proxyIP.split(':')[0] || proxyIP;
+            }
+            if (proxyIP.includes('.tp')) portRemote = proxyIP.split('.tp')[1].split('.')[0] || portRemote;
+            tcpSocket = await connectAndWrite(proxyIP.toLowerCase() || addressRemote, portRemote);
+        }
+        /* 无论重试是否成功，都要关闭 WebSocket（可能是为了重新建立连接）
+        tcpSocket.closed.catch(error => {
+            console.log('retry tcpSocket closed error', error);
+        }).finally(() => {
+            safeCloseWebSocket(webSocket);
+        })
+        */
+  
+        remoteSocketToWS(tcpSocket, webSocket, 维列斯ResponseHeader, nat64, log);
+    }
+
+    let useSocks = false;
+    if (go2Socks5s.length > 0 && enableSocks) useSocks = await useSocks5Pattern(addressRemote);
+  
+    let tcpSocket = await connectAndWrite(addressRemote, portRemote, useSocks, enableHttp);
+
+  
+  
+  
+    remoteSocketToWS(tcpSocket, webSocket, 维列斯ResponseHeader, retry, log);
+}
+
+function makeReadableWebSocketStream(webSocketServer, earlyDataHeader, log) {
+  
+    let readableStreamCancel = false;
+
+  
+    const stream = new ReadableStream({
+  
+        start(controller) {
+  
+            webSocketServer.addEventListener('message', (event) => {
+  
+                if (readableStreamCancel) {
+                    return;
+                }
+                const message = event.data;
+  
+                controller.enqueue(message);
+            });
+
+  
+  
+  
+  
+            webSocketServer.addEventListener('close', () => {
+  
+                safeCloseWebSocket(webSocketServer);
+  
+                if (readableStreamCancel) {
+                    return;
+                }
+                controller.close();
+            });
+
+  
+            webSocketServer.addEventListener('error', (err) => {
+                log('WebSocket 服务器发生错误');
+  
+                controller.error(err);
+            });
+
+  
+  
+            const { earlyData, error } = base64ToArrayBuffer(earlyDataHeader);
+            if (error) {
+  
+                controller.error(error);
+            } else if (earlyData) {
+  
+                controller.enqueue(earlyData);
+            }
+        },
+
+  
+        pull(controller) {
+  
+  
+  
+        },
+
+  
+        cancel(reason) {
+  
+  
+  
+  
+            if (readableStreamCancel) {
+                return;
+            }
+            log(`可读流被取消，原因是 ${reason}`);
+            readableStreamCancel = true;
+  
+            safeCloseWebSocket(webSocketServer);
+        }
+    });
+
+    return stream;
+}
+
+  
+  
+
+/**
+ * 解析 维列斯 协议的头部数据
+ * @param { ArrayBuffer} 维列斯Buffer 维列斯 协议的原始头部数据
+ * @param {string} userID 用于验证的用户 ID
+ * @returns {Object} 解析结果，包括是否有错误、错误信息、远程地址信息等
+ */
+function process维列斯Header(维列斯Buffer, userID) {
+  
+    if (维列斯Buffer.byteLength < 24) {
+        return {
+            hasError: true,
+            message: 'invalid data',
+        };
+    }
+
+  
+    const version = new Uint8Array(维列斯Buffer.slice(0, 1));
+
+    let isValidUser = false;
+    let isUDP = false;
+
+  
+    function isUserIDValid(userID, userIDLow, buffer) {
+        const userIDArray = new Uint8Array(buffer.slice(1, 17));
+        const userIDString = stringify(userIDArray);
+        return userIDString === userID || userIDString === userIDLow;
+    }
+
+  
+    isValidUser = isUserIDValid(userID, userIDLow, 维列斯Buffer);
+
+  
+    if (!isValidUser) {
+        return {
+            hasError: true,
+            message: `invalid user ${(new Uint8Array(维列斯Buffer.slice(1, 17)))}`,
+        };
+    }
+
+  
+    const optLength = new Uint8Array(维列斯Buffer.slice(17, 18))[0];
+  
+
+  
+  
+    const command = new Uint8Array(
+        维列斯Buffer.slice(18 + optLength, 18 + optLength + 1)
+    )[0];
+
+  
+  
+  
+    if (command === 1) {
+  
+    } else if (command === 2) {
+  
+        isUDP = true;
+    } else {
+  
+        return {
+            hasError: true,
+            message: `command ${command} is not support, command 01-tcp,02-udp,03-mux`,
+        };
+    }
+
+  
+    const portIndex = 18 + optLength + 1;
+    const portBuffer = 维列斯Buffer.slice(portIndex, portIndex + 2);
+  
+    const portRemote = new DataView(portBuffer).getUint16(0);
+
+  
+    let addressIndex = portIndex + 2;
+    const addressBuffer = new Uint8Array(
+        维列斯Buffer.slice(addressIndex, addressIndex + 1)
+    );
+
+  
+    const addressType = addressBuffer[0];
+    let addressLength = 0;
+    let addressValueIndex = addressIndex + 1;
+    let addressValue = '';
+
+    switch (addressType) {
+        case 1:
+  
+            addressLength = 4;
+  
+            addressValue = new Uint8Array(
+                维列斯Buffer.slice(addressValueIndex, addressValueIndex + addressLength)
+            ).join('.');
+            break;
+        case 2:
+  
+  
+            addressLength = new Uint8Array(
+                维列斯Buffer.slice(addressValueIndex, addressValueIndex + 1)
+            )[0];
+            addressValueIndex += 1;
+  
+            addressValue = new TextDecoder().decode(
+                维列斯Buffer.slice(addressValueIndex, addressValueIndex + addressLength)
+            );
+            break;
+        case 3:
+  
+            addressLength = 16;
+            const dataView = new DataView(
+                维列斯Buffer.slice(addressValueIndex, addressValueIndex + addressLength)
+            );
+  
+            const ipv6 = [];
+            for (let i = 0; i < 8; i++) {
+                ipv6.push(dataView.getUint16(i * 2).toString(16));
+            }
+            addressValue = ipv6.join(':');
+  
+            break;
+        default:
+  
+            return {
+                hasError: true,
+                message: `invild addressType is ${addressType}`,
+            };
+    }
+
+  
+    if (!addressValue) {
+        return {
+            hasError: true,
+            message: `addressValue is empty, addressType is ${addressType}`,
+        };
+    }
+
+  
+    return {
+        hasError: false,
+        addressRemote: addressValue,  // 解析后的远程地址
+        addressType,				 // 地址类型
+        portRemote,				 // 远程端口
+        rawDataIndex: addressValueIndex + addressLength,  // 原始数据的实际起始位置
+        维列斯Version: version,	  // 维列斯 协议版本
+        isUDP,					 // 是否是 UDP 请求
+    };
+}
+
+async function remoteSocketToWS(remoteSocket, webSocket, 维列斯ResponseHeader, retry, log) {
+  
+    let remoteChunkCount = 0;
+    let chunks = [];
+    /** @type {ArrayBuffer | null} */
+    let 维列斯Header = 维列斯ResponseHeader;
+    let hasIncomingData = false; // 检查远程 Socket 是否有传入数据
+
+  
+    await remoteSocket.readable
+        .pipeTo(
+            new WritableStream({
+                start() {
+  
+                },
+                /**
+                 * 处理每个数据块
+                 * @param {Uint8Array} chunk 数据块
+                 * @param {*} controller 控制器
+                 */
+                async write(chunk, controller) {
+                    hasIncomingData = true; // 标记已收到数据
+  
+
+  
+                    if (webSocket.readyState !== WS_READY_STATE_OPEN) {
+                        controller.error(
+                            'webSocket.readyState is not open, maybe close'
+                        );
+                    }
+
+                    if (维列斯Header) {
+  
+                        webSocket.send(await new Blob([维列斯Header, chunk]).arrayBuffer());
+                        维列斯Header = null; // 清空头部，之后不再发送
+                    } else {
+  
+  
+  
+  
+  
+  
+  
+                        webSocket.send(chunk);
+                    }
+                },
+                close() {
+  
+                    log(`remoteConnection!.readable is close with hasIncomingData is ${hasIncomingData}`);
+  
+  
+  
+                },
+                abort(reason) {
+  
+                    console.error(`remoteConnection!.readable abort`, reason);
+                },
+            })
+        )
+        .catch((error) => {
+  
+            console.error(
+                `remoteSocketToWS has exception `,
+                error.stack || error
+            );
+  
+            safeCloseWebSocket(webSocket);
+        });
+
+  
+  
+  
+    if (hasIncomingData === false && retry) {
+        log(`retry`);
+        retry(); // 调用重试函数，尝试重新建立连接
+    }
+}
+
+/**
+ * 将 Base64 编码的字符串转换为 ArrayBuffer
+ * 
+ * @param {string} base64Str Base64 编码的输入字符串
+ * @returns {{ earlyData: ArrayBuffer | undefined, error: Error | null }} 返回解码后的 ArrayBuffer 或错误
+ */
+function base64ToArrayBuffer(base64Str) {
+  
+    if (!base64Str) {
+        return { earlyData: undefined, error: null };
+    }
+    try {
+  
+  
+  
+        base64Str = base64Str.replace(/-/g, '+').replace(/_/g, '/');
+
+  
+  
+        const decode = atob(base64Str);
+
+  
+  
+        const arryBuffer = Uint8Array.from(decode, (c) => c.charCodeAt(0));
+
+  
+  
+        return { earlyData: arryBuffer.buffer, error: null };
+    } catch (error) {
+  
+        return { earlyData: undefined, error };
+    }
+}
+
+/**
+ * 这不是真正的 UUID 验证，而是一个简化的版本
+ * @param {string} uuid 要验证的 UUID 字符串
+ * @returns {boolean} 如果字符串匹配 UUID 格式则返回 true，否则返回 false
+ */
+function isValidUUID(uuid) {
+  
+    const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[4][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+
+  
+    return uuidRegex.test(uuid);
+}
+
+  
+const WS_READY_STATE_OPEN = 1;	 // WebSocket 处于开放状态，可以发送和接收消息
+const WS_READY_STATE_CLOSING = 2;  // WebSocket 正在关闭过程中
+
+function safeCloseWebSocket(socket) {
+    try {
+  
+  
+        if (socket.readyState === WS_READY_STATE_OPEN || socket.readyState === WS_READY_STATE_CLOSING) {
+            socket.close();
+        }
+    } catch (error) {
+  
+        console.error('safeCloseWebSocket error', error);
+    }
+}
+
+  
+const byteToHex = [];
+for (let i = 0; i < 256; ++i) {
+  
+  
+    byteToHex.push((i + 256).toString(16).slice(1));
+}
+
+/**
+ * 快速地将字节数组转换为 UUID 字符串，不进行有效性检查
+ * 这是一个底层函数，直接操作字节，不做任何验证
+ * @param {Uint8Array} arr 包含 UUID 字节的数组
+ * @param {number} offset 数组中 UUID 开始的位置，默认为 0
+ * @returns {string} UUID 字符串
+ */
+function unsafeStringify(arr, offset = 0) {
+  
+  
+  
+    return (byteToHex[arr[offset + 0]] + byteToHex[arr[offset + 1]] + byteToHex[arr[offset + 2]] + byteToHex[arr[offset + 3]] + "-" +
+        byteToHex[arr[offset + 4]] + byteToHex[arr[offset + 5]] + "-" +
+        byteToHex[arr[offset + 6]] + byteToHex[arr[offset + 7]] + "-" +
+        byteToHex[arr[offset + 8]] + byteToHex[arr[offset + 9]] + "-" +
+        byteToHex[arr[offset + 10]] + byteToHex[arr[offset + 11]] + byteToHex[arr[offset + 12]] +
+        byteToHex[arr[offset + 13]] + byteToHex[arr[offset + 14]] + byteToHex[arr[offset + 15]]).toLowerCase();
+}
+
+/**
+ * 将字节数组转换为 UUID 字符串，并验证其有效性
+ * 这是一个安全的函数，它确保返回的 UUID 格式正确
+ * @param {Uint8Array} arr 包含 UUID 字节的数组
+ * @param {number} offset 数组中 UUID 开始的位置，默认为 0
+ * @returns {string} 有效的 UUID 字符串
+ * @throws {TypeError} 如果生成的 UUID 字符串无效
+ */
+function stringify(arr, offset = 0) {
+  
+    const uuid = unsafeStringify(arr, offset);
+  
+    if (!isValidUUID(uuid)) {
+  
+        throw TypeError(`生成的 UUID 不符合规范 ${uuid}`);
+  
+    }
+    return uuid;
+}
+
+/**
+ * 
+ * @param {import("@cloudflare/workers-types").WebSocket} webSocket 
+ * @param {ArrayBuffer} 维列斯ResponseHeader 
+ * @param {(string)=> void} log 
+ */
+async function handleUDPOutBound(webSocket, 维列斯ResponseHeader, log) {
+
+    let is维列斯HeaderSent = false;
+    const transformStream = new TransformStream({
+        start(controller) {
+
+        },
+        transform(chunk, controller) {
+  
+  
+            for (let index = 0; index < chunk.byteLength;) {
+                const lengthBuffer = chunk.slice(index, index + 2);
+                const udpPakcetLength = new DataView(lengthBuffer).getUint16(0);
+                const udpData = new Uint8Array(
+                    chunk.slice(index + 2, index + 2 + udpPakcetLength)
+                );
+                index = index + 2 + udpPakcetLength;
+                controller.enqueue(udpData);
+            }
+        },
+        flush(controller) {
+        }
+    });
+
+  
+    transformStream.readable.pipeTo(new WritableStream({
+        async write(chunk) {
+            const resp = await fetch('https://1.1.1.1/dns-query',
+                {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/dns-message',
+                    },
+                    body: chunk,
+                })
+            const dnsQueryResult = await resp.arrayBuffer();
+            const udpSize = dnsQueryResult.byteLength;
+  
+            const udpSizeBuffer = new Uint8Array([(udpSize >> 8) & 0xff, udpSize & 0xff]);
+            if (webSocket.readyState === WS_READY_STATE_OPEN) {
+                log(`doh success and dns message length is ${udpSize}`);
+                if (is维列斯HeaderSent) {
+                    webSocket.send(await new Blob([udpSizeBuffer, dnsQueryResult]).arrayBuffer());
+                } else {
+                    webSocket.send(await new Blob([维列斯ResponseHeader, udpSizeBuffer, dnsQueryResult]).arrayBuffer());
+                    is维列斯HeaderSent = true;
+                }
+            }
+        }
+    })).catch((error) => {
+        log('dns udp has error' + error)
+    });
+
+    const writer = transformStream.writable.getWriter();
+
+    return {
+        /**
+         * 
+         * @param {Uint8Array} chunk 
+         */
+        write(chunk) {
+            writer.write(chunk);
+        }
+    };
+}
+
+/**
+ * 处理 DNS 查询的函数
+ * @param {ArrayBuffer} udpChunk - 客户端发送的 DNS 查询数据
+ * @param {ArrayBuffer} 维列斯ResponseHeader - 维列斯 协议的响应头部数据
+ * @param {(string)=> void} log - 日志记录函数
+ */
+async function handleDNSQuery(udpChunk, webSocket, 维列斯ResponseHeader, log) {
+  
+  
+    try {
+  
+        const dnsServer = '8.8.4.4'; // 在 Cloudflare 修复连接自身 IP 的 bug 后，将改为 1.1.1.1
+        const dnsPort = 53; // DNS 服务的标准端口
+
+        let 维列斯Header = 维列斯ResponseHeader; // 保存 维列斯 响应头部，用于后续发送
+
+  
+        const tcpSocket = connect({
+            hostname: dnsServer,
+            port: dnsPort,
+        });
+
+        log(`连接到 ${dnsServer}:${dnsPort}`); // 记录连接信息
+        const writer = tcpSocket.writable.getWriter();
+        await writer.write(udpChunk); // 将客户端的 DNS 查询数据发送给 DNS 服务器
+        writer.releaseLock(); // 释放写入器，允许其他部分使用
+
+  
+        await tcpSocket.readable.pipeTo(new WritableStream({
+            async write(chunk) {
+                if (webSocket.readyState === WS_READY_STATE_OPEN) {
+                    if (维列斯Header) {
+  
+                        webSocket.send(await new Blob([维列斯Header, chunk]).arrayBuffer());
+                        维列斯Header = null; // 头部只发送一次，之后置为 null
+                    } else {
+  
+                        webSocket.send(chunk);
+                    }
+                }
+            },
+            close() {
+                log(`DNS 服务器(${dnsServer}) TCP 连接已关闭`); // 记录连接关闭信息
+            },
+            abort(reason) {
+                console.error(`DNS 服务器(${dnsServer}) TCP 连接异常中断`, reason); // 记录异常中断原因
+            },
+        }));
+    } catch (error) {
+  
+        console.error(
+            `handleDNSQuery 函数发生异常，错误信息: ${error.message}`
+        );
+    }
+}
+
+/**
+ * 建立 SOCKS5 代理连接
+ * @param {number} addressType 目标地址类型（1: IPv4, 2: 域名, 3: IPv6）
+ * @param {string} addressRemote 目标地址（可以是 IP 或域名）
+ * @param {number} portRemote 目标端口
+ * @param {function} log 日志记录函数
+ */
+async function socks5Connect(addressType, addressRemote, portRemote, log) {
+    const { username, password, hostname, port } = parsedSocks5Address;
+  
+    const socket = connect({
+        hostname, // SOCKS5 服务器的主机名
+        port,	// SOCKS5 服务器的端口
+    });
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+    const socksGreeting = new Uint8Array([5, 2, 0, 2]);
+  
+
+    const writer = socket.writable.getWriter();
+
+    await writer.write(socksGreeting);
+    log('已发送 SOCKS5 问候消息');
+
+    const reader = socket.readable.getReader();
+    const encoder = new TextEncoder();
+    let res = (await reader.read()).value;
+  
+  
+  
+  
+  
+  
+    if (res[0] !== 0x05) {
+        log(`SOCKS5 服务器版本错误: 收到 ${res[0]}，期望是 5`);
+        return;
+    }
+    if (res[1] === 0xff) {
+        log("服务器不接受任何认证方法");
+        return;
+    }
+
+  
+    if (res[1] === 0x02) {
+        log("SOCKS5 服务器需要认证");
+        if (!username || !password) {
+            log("请提供用户名和密码");
+            return;
+        }
+  
+  
+  
+  
+  
+  
+        const authRequest = new Uint8Array([
+            1,				   // 认证子协议版本
+            username.length,	// 用户名长度
+            ...encoder.encode(username), // 用户名
+            password.length,	// 密码长度
+            ...encoder.encode(password)  // 密码
+        ]);
+        await writer.write(authRequest);
+        res = (await reader.read()).value;
+  
+        if (res[0] !== 0x01 || res[1] !== 0x00) {
+            log("SOCKS5 服务器认证失败");
+            return;
+        }
+    }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+    let DSTADDR;	// DSTADDR = ATYP + DST.ADDR
+    switch (addressType) {
+        case 1: // IPv4
+            DSTADDR = new Uint8Array(
+                [1, ...addressRemote.split('.').map(Number)]
+            );
+            break;
+        case 2: // 域名
+            DSTADDR = new Uint8Array(
+                [3, addressRemote.length, ...encoder.encode(addressRemote)]
+            );
+            break;
+        case 3: // IPv6
+            DSTADDR = new Uint8Array(
+                [4, ...addressRemote.split(':').flatMap(x => [parseInt(x.slice(0, 2), 16), parseInt(x.slice(2), 16)])]
+            );
+            break;
+        default:
+            log(`无效的地址类型: ${addressType}`);
+            return;
+    }
+    const socksRequest = new Uint8Array([5, 1, 0, ...DSTADDR, portRemote >> 8, portRemote & 0xff]);
+  
+  
+    await writer.write(socksRequest);
+    log('已发送 SOCKS5 请求');
+
+    res = (await reader.read()).value;
+  
+  
+  
+  
+  
+  
+    if (res[1] === 0x00) {
+        log("SOCKS5 连接已建立");
+    } else {
+        log("SOCKS5 连接建立失败");
+        return;
+    }
+    writer.releaseLock();
+    reader.releaseLock();
+    return socket;
+}
+
+/**
+ * 建立 HTTP 代理连接
+ * @param {string} addressRemote 目标地址（可以是 IP 或域名）
+ * @param {number} portRemote 目标端口
+ * @param {function} log 日志记录函数
+ */
+async function httpConnect(addressRemote, portRemote, log) {
+    const { username, password, hostname, port } = parsedSocks5Address;
+    const sock = await connect({
+        hostname: hostname,
+        port: port
+    });
+
+  
+    let connectRequest = `CONNECT ${addressRemote}:${portRemote} HTTP/1.1\r\n`;
+    connectRequest += `Host: ${addressRemote}:${portRemote}\r\n`;
+
+  
+    if (username && password) {
+        const authString = `${username}:${password}`;
+        const base64Auth = btoa(authString);
+        connectRequest += `Proxy-Authorization: Basic ${base64Auth}\r\n`;
+    }
+
+    connectRequest += `User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\r\n`;
+    connectRequest += `Proxy-Connection: Keep-Alive\r\n`;
+    connectRequest += `Connection: Keep-Alive\r\n`; // 添加标准 Connection 头
+    connectRequest += `\r\n`;
+
+    log(`正在连接到 ${addressRemote}:${portRemote} 通过代理 ${hostname}:${port}`);
+
+    try {
+  
+        const writer = sock.writable.getWriter();
+        await writer.write(new TextEncoder().encode(connectRequest));
+        writer.releaseLock();
+    } catch (err) {
+        console.error('发送HTTP CONNECT请求失败:', err);
+        throw new Error(`发送HTTP CONNECT请求失败: ${err.message}`);
+    }
+
+  
+    const reader = sock.readable.getReader();
+    let respText = '';
+    let connected = false;
+    let responseBuffer = new Uint8Array(0);
+
+    try {
+        while (true) {
+            const { value, done } = await reader.read();
+            if (done) {
+                console.error('HTTP代理连接中断');
+                throw new Error('HTTP代理连接中断');
+            }
+
+  
+            const newBuffer = new Uint8Array(responseBuffer.length + value.length);
+            newBuffer.set(responseBuffer);
+            newBuffer.set(value, responseBuffer.length);
+            responseBuffer = newBuffer;
+
+  
+            respText = new TextDecoder().decode(responseBuffer);
+
+  
+            if (respText.includes('\r\n\r\n')) {
+  
+                const headersEndPos = respText.indexOf('\r\n\r\n') + 4;
+                const headers = respText.substring(0, headersEndPos);
+
+                log(`收到HTTP代理响应: ${headers.split('\r\n')[0]}`);
+
+  
+                if (headers.startsWith('HTTP/1.1 200') || headers.startsWith('HTTP/1.0 200')) {
+                    connected = true;
+
+  
+                    if (headersEndPos < responseBuffer.length) {
+                        const remainingData = responseBuffer.slice(headersEndPos);
+  
+                        const dataStream = new ReadableStream({
+                            start(controller) {
+                                controller.enqueue(remainingData);
+                            }
+                        });
+
+  
+                        const { readable, writable } = new TransformStream();
+                        dataStream.pipeTo(writable).catch(err => console.error('处理剩余数据错误:', err));
+
+  
+  
+                        sock.readable = readable;
+                    }
+                } else {
+                    const errorMsg = `HTTP代理连接失败: ${headers.split('\r\n')[0]}`;
+                    console.error(errorMsg);
+                    throw new Error(errorMsg);
+                }
+                break;
+            }
+        }
+    } catch (err) {
+        reader.releaseLock();
+        throw new Error(`处理HTTP代理响应失败: ${err.message}`);
+    }
+
+    reader.releaseLock();
+
+    if (!connected) {
+        throw new Error('HTTP代理连接失败: 未收到成功响应');
+    }
+
+    log(`HTTP代理连接成功: ${addressRemote}:${portRemote}`);
+    return sock;
+}
+
+/**
+ * SOCKS5 代理地址解析器
+ * 此函数用于解析 SOCKS5 代理地址字符串，提取出用户名、密码、主机名和端口号
+ * 
+ * @param {string} address SOCKS5 代理地址，格式可以是：
+ *   - "username:password@hostname:port" （带认证）
+ *   - "hostname:port" （不需认证）
+ *   - "username:password@[ipv6]:port" （IPv6 地址需要用方括号括起来）
+ */
+function socks5AddressParser(address) {
+  
+    const lastAtIndex = address.lastIndexOf("@");
+    let [latter, former] = lastAtIndex === -1 ? [address, undefined] : [address.substring(lastAtIndex + 1), address.substring(0, lastAtIndex)];
+    let username, password, hostname, port;
+
+  
+    if (former) {
+        const formers = former.split(":");
+        if (formers.length !== 2) {
+            throw new Error('无效的 SOCKS 地址格式：认证部分必须是 "username:password" 的形式');
+        }
+        [username, password] = formers;
+    }
+
+  
+    const latters = latter.split(":");
+  
+    if (latters.length > 2 && latter.includes("]:")) {
+  
+        port = Number(latter.split("]:")[1].replace(/[^\d]/g, ''));
+        hostname = latter.split("]:")[0] + "]"; // 正确提取hostname部分
+    } else if (latters.length === 2) {
+  
+        port = Number(latters.pop().replace(/[^\d]/g, ''));
+        hostname = latters.join(":");
+    } else {
+        port = 80;
+        hostname = latter;
+    }
+
+    if (isNaN(port)) {
+        throw new Error('无效的 SOCKS 地址格式：端口号必须是数字');
+    }
+
+  
+  
+    const regex = /^\[.*\]$/;
+    if (hostname.includes(":") && !regex.test(hostname)) {
+        throw new Error('无效的 SOCKS 地址格式：IPv6 地址必须用方括号括起来，如 [2001:db8::1]');
+    }
+
+  
+  
+    return {
+        username,  // 用户名，如果没有则为 undefined
+        password,  // 密码，如果没有则为 undefined
+        hostname,  // 主机名，可以是域名、IPv4 或 IPv6 地址
+        port,	 // 端口号，已转换为数字类型
+    }
+}
+
+/**
+ * 恢复被伪装的信息
+ * 这个函数用于将内容中的假用户ID和假主机名替换回真实的值
+ * 
+ * @param {string} content 需要处理的内容
+ * @param {string} userID 真实的用户ID
+ * @param {string} hostName 真实的主机名
+ * @param {boolean} isBase64 内容是否是Base64编码的
+ * @returns {string} 恢复真实信息后的内容
+ */
+function 恢复伪装信息(content, userID, hostName, fakeUserID, fakeHostName, isBase64) {
+    if (isBase64) content = atob(content);  // 如果内容是Base64编码的，先解码
+
+  
+  
+    content = content.replace(new RegExp(fakeUserID, 'g'), userID)
+        .replace(new RegExp(fakeHostName, 'g'), hostName);
+
+    if (isBase64) content = btoa(content);  // 如果原内容是Base64编码的，处理完后再次编码
+
+    return content;
+}
+
+/**
+ * 双重MD5哈希函数
+ * 这个函数对输入文本进行两次MD5哈希，增强安全性
+ * 第二次哈希使用第一次哈希结果的一部分作为输入
+ * 
+ * @param {string} 文本 要哈希的文本
+ * @returns {Promise<string>} 双重哈希后的小写十六进制字符串
+ */
+async function 双重哈希(文本) {
+    const 编码器 = new TextEncoder();
+
+    const 第一次哈希 = await crypto.subtle.digest('MD5', 编码器.encode(文本));
+    const 第一次哈希数组 = Array.from(new Uint8Array(第一次哈希));
+    const 第一次十六进制 = 第一次哈希数组.map(字节 => 字节.toString(16).padStart(2, '0')).join('');
+
+    const 第二次哈希 = await crypto.subtle.digest('MD5', 编码器.encode(第一次十六进制.slice(7, 27)));
+    const 第二次哈希数组 = Array.from(new Uint8Array(第二次哈希));
+    const 第二次十六进制 = 第二次哈希数组.map(字节 => 字节.toString(16).padStart(2, '0')).join('');
+
+    return 第二次十六进制.toLowerCase();
+}
+
+async function 代理URL(代理网址, 目标网址) {
+    const 网址列表 = await 整理(代理网址);
+    const 完整网址 = 网址列表[Math.floor(Math.random() * 网址列表.length)];
+
+  
+    let 解析后的网址 = new URL(完整网址);
+    console.log(解析后的网址);
+  
+    let 协议 = 解析后的网址.protocol.slice(0, -1) || 'https';
+    let 主机名 = 解析后的网址.hostname;
+    let 路径名 = 解析后的网址.pathname;
+    let 查询参数 = 解析后的网址.search;
+
+  
+    if (路径名.charAt(路径名.length - 1) == '/') {
+        路径名 = 路径名.slice(0, -1);
+    }
+    路径名 += 目标网址.pathname;
+
+  
+    let 新网址 = `${协议}://${主机名}${路径名}${查询参数}`;
+
+  
+    let 响应 = await fetch(新网址);
+
+  
+    let 新响应 = new Response(响应.body, {
+        status: 响应.status,
+        statusText: 响应.statusText,
+        headers: 响应.headers
+    });
+
+  
+  
+  
+    新响应.headers.set('X-New-URL', 新网址);
+
+    return 新响应;
+}
+
+const 啥啥啥_写的这是啥啊 = atob('ZG14bGMzTT0=');
+function 配置信息(UUID, 域名地址) {
+    const 协议类型 = atob(啥啥啥_写的这是啥啊);
+
+    const 别名 = FileName;
+    let 地址 = 域名地址;
+    let 端口 = 443;
+
+    const 用户ID = UUID;
+    const 加密方式 = 'none';
+
+    const 传输层协议 = 'ws';
+    const 伪装域名 = 域名地址;
+    const 路径 = path;
+
+    let 传输层安全 = ['tls', true];
+    const SNI = 域名地址;
+    const 指纹 = 'randomized';
+
+    if (域名地址.includes('.workers.dev')) {
+        地址 = atob('dmlzYS5jbg==');
+        端口 = 80;
+        传输层安全 = ['', false];
+    }
+
+    const 威图瑞 = `${协议类型}://${用户ID}@${地址}:${端口}\u003f\u0065\u006e\u0063\u0072\u0079` + 'p' + `${atob('dGlvbj0=') + 加密方式}\u0026\u0073\u0065\u0063\u0075\u0072\u0069\u0074\u0079\u003d${传输层安全[0]}&sni=${SNI}&fp=${指纹}&type=${传输层协议}&host=${伪装域名}&path=${encodeURIComponent(路径) + allowInsecure}&fragment=1,40-60,30-50,tlshello#${encodeURIComponent(别名)}`;
+    const 猫猫猫 = `- {name: ${FileName}, server: ${地址}, port: ${端口}, type: ${协议类型}, uuid: ${用户ID}, tls: ${传输层安全[1]}, alpn: [h3], udp: false, sni: ${SNI}, tfo: false, skip-cert-verify: ${SCV}, servername: ${伪装域名}, client-fingerprint: ${指纹}, network: ${传输层协议}, ws-opts: {path: "${路径}", headers: {${伪装域名}}}}`;
+    return [威图瑞, 猫猫猫];
+}
+
+let subParams = ['sub', 'base64', 'b64', 'clash', 'singbox', 'sb'];
+const cmad = decodeURIComponent(atob('dGVsZWdyYW0lMjAlRTQlQkElQTQlRTYlQjUlODElRTclQkUlQTQlMjAlRTYlOEElODAlRTYlOUMlQUYlRTUlQTQlQTclRTQlQkQlQUMlN0UlRTUlOUMlQTglRTclQkElQkYlRTUlOEYlOTElRTclODklOEMhJTNDYnIlM0UKJTNDYSUyMGhyZWYlM0QlMjdodHRwcyUzQSUyRiUyRnQubWUlMkZDTUxpdXNzc3MlMjclM0VodHRwcyUzQSUyRiUyRnQubWUlMkZDTUxpdXNzc3MlM0MlMkZhJTNFJTNDYnIlM0UKLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tJTNDYnIlM0UKZ2l0aHViJTIwJUU5JUExJUI5JUU3JTlCJUFFJUU1JTlDJUIwJUU1JTlEJTgwJTIwU3RhciFTdGFyIVN0YXIhISElM0NiciUzRQolM0NhJTIwaHJlZiUzRCUyN2h0dHBzJTNBJTJGJTJGZ2l0aHViLmNvbSUyRmNtbGl1JTJGZWRnZXR1bm5lbCUyNyUzRWh0dHBzJTNBJTJGJTJGZ2l0aHViLmNvbSUyRmNtbGl1JTJGZWRnZXR1bm5lbCUzQyUyRmElM0UlM0NiciUzRQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0lM0NiciUzRQolMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjMlMjM='));
+/**
+ * @param {string} userID
+ * @param {string | null} hostName
+ * @param {string} sub
+ * @param {string} UA
+ * @returns {Promise<string>}
+ */
+async function 生成配置信息(userID, hostName, sub, UA, RproxyIP, _url, fakeUserID, fakeHostName, env) {
+    if (sub) {
+        const match = sub.match(/^(?:https?:\/\/)?([^\/]+)/);
+        if (match) {
+            sub = match[1];
+        }
+        const subs = await 整理(sub);
+        if (subs.length > 1) sub = subs[0];
+    } else {
+        if (env.KV) {
+            await 迁移地址列表(env);
+            const 优选地址列表 = await env.KV.get('ADD.txt');
+            if (优选地址列表) {
+                const 优选地址数组 = await 整理(优选地址列表);
+                const 分类地址 = {
+                    接口地址: new Set(),
+                    链接地址: new Set(),
+                    优选地址: new Set()
+                };
+
+                for (const 元素 of 优选地址数组) {
+                    if (元素.startsWith('https://')) {
+                        分类地址.接口地址.add(元素);
+                    } else if (元素.includes('://')) {
+                        分类地址.链接地址.add(元素);
+                    } else {
+                        分类地址.优选地址.add(元素);
+                    }
+                }
+
+                addressesapi = [...分类地址.接口地址];
+                link = [...分类地址.链接地址];
+                addresses = [...分类地址.优选地址];
+            }
+        }
+
+        if ((addresses.length + addressesapi.length + addressesnotls.length + addressesnotlsapi.length + addressescsv.length) == 0) {
+  
+            let cfips = [
+                '103.21.244.0/24',
+                '104.16.0.0/13',
+                '104.24.0.0/14',
+                '172.64.0.0/14',
+                '104.16.0.0/14',
+                '104.24.0.0/15',
+                '141.101.64.0/19',
+                '172.64.0.0/14',
+                '188.114.96.0/21',
+                '190.93.240.0/21',
+                '162.159.152.0/23',
+                '104.16.0.0/13',
+                '104.24.0.0/14',
+                '172.64.0.0/14',
+                '104.16.0.0/14',
+                '104.24.0.0/15',
+                '141.101.64.0/19',
+                '172.64.0.0/14',
+                '188.114.96.0/21',
+                '190.93.240.0/21',
+            ];
+
+  
+            function generateRandomIPFromCIDR(cidr) {
+                const [base, mask] = cidr.split('/');
+                const baseIP = base.split('.').map(Number);
+                const subnetMask = 32 - parseInt(mask, 10);
+                const maxHosts = Math.pow(2, subnetMask) - 1;
+                const randomHost = Math.floor(Math.random() * maxHosts);
+
+                const randomIP = baseIP.map((octet, index) => {
+                    if (index < 2) return octet;
+                    if (index === 2) return (octet & (255 << (subnetMask - 8))) + ((randomHost >> 8) & 255);
+                    return (octet & (255 << subnetMask)) + (randomHost & 255);
+                });
+
+                return randomIP.join('.');
+            }
+            addresses = addresses.concat('127.0.0.1:1234#CFnat');
+            let counter = 1;
+            if (hostName.includes("worker") || hostName.includes("notls")) {
+                const randomPorts = httpPorts.concat('80');
+                addressesnotls = addressesnotls.concat(
+                    cfips.map(cidr => generateRandomIPFromCIDR(cidr) + ':' + randomPorts[Math.floor(Math.random() * randomPorts.length)] + '#CF随机节点' + String(counter++).padStart(2, '0'))
+                );
+            } else {
+                const randomPorts = httpsPorts.concat('443');
+                addresses = addresses.concat(
+                    cfips.map(cidr => generateRandomIPFromCIDR(cidr) + ':' + randomPorts[Math.floor(Math.random() * randomPorts.length)] + '#CF随机节点' + String(counter++).padStart(2, '0'))
+                );
+            }
+        }
+    }
+
+    const uuid = (_url.pathname == `/${动态UUID}`) ? 动态UUID : userID;
+    const userAgent = UA.toLowerCase();
+    const Config = 配置信息(userID, hostName);
+    const v2ray = Config[0];
+    const clash = Config[1];
+    let proxyhost = "";
+    if (hostName.includes(".workers.dev")) {
+        if (proxyhostsURL && (!proxyhosts || proxyhosts.length == 0)) {
+            try {
+                const response = await fetch(proxyhostsURL);
+
+                if (!response.ok) {
+                    console.error('获取地址时出错:', response.status, response.statusText);
+                    return; // 如果有错误，直接返回
+                }
+
+                const text = await response.text();
+                const lines = text.split('\n');
+  
+                const nonEmptyLines = lines.filter(line => line.trim() !== '');
+
+                proxyhosts = proxyhosts.concat(nonEmptyLines);
+            } catch (error) {
+  
+            }
+        }
+        if (proxyhosts.length != 0) proxyhost = proxyhosts[Math.floor(Math.random() * proxyhosts.length)] + "/";
+    }
+
+    if (userAgent.includes('mozilla') && !subParams.some(_searchParams => _url.searchParams.has(_searchParams))) {
+        const newSocks5s = socks5s.map(socks5Address => {
+            if (socks5Address.includes('@')) return socks5Address.split('@')[1];
+            else if (socks5Address.includes('//')) return socks5Address.split('//')[1];
+            else return socks5Address;
+        });
+
+        let socks5List = '';
+        if (go2Socks5s.length > 0 && enableSocks) {
+            socks5List = `${(enableHttp ? "HTTP" : "Socks5") + decodeURIComponent('%EF%BC%88%E7%99%BD%E5%90%8D%E5%8D%95%EF%BC%89%3A%20')}`;
+            if (go2Socks5s.includes(atob('YWxsIGlu')) || go2Socks5s.includes(atob('Kg=='))) socks5List += `${decodeURIComponent('%E6%89%80%E6%9C%89%E6%B5%81%E9%87%8F')}<br>`;
+            else socks5List += `<br>&nbsp;&nbsp;${go2Socks5s.join('<br>&nbsp;&nbsp;')}<br>`;
+        }
+
+        let 订阅器 = '<br>';
+        if (sub) {
+            if (enableSocks) 订阅器 += `CFCDN（访问方式）: ${enableHttp ? "HTTP" : "Socks5"}<br>&nbsp;&nbsp;${newSocks5s.join('<br>&nbsp;&nbsp;')}<br>${socks5List}`;
+            else if (proxyIP && proxyIP != '') 订阅器 += `CFCDN（访问方式）: ProxyIP<br>&nbsp;&nbsp;${proxyIPs.join('<br>&nbsp;&nbsp;')}<br>`;
+            else if (RproxyIP == 'true') 订阅器 += `CFCDN（访问方式）: 自动获取ProxyIP<br>`;
+            else 订阅器 += `CFCDN（访问方式）: 内置兜底, 您也可以设置 proxyIP/PROXYIP 。<br>`
+            订阅器 += `<br>SUB（优选订阅生成器）: ${sub}`;
+        } else {
+            if (enableSocks) 订阅器 += `CFCDN（访问方式）: ${enableHttp ? "HTTP" : "Socks5"}<br>&nbsp;&nbsp;${newSocks5s.join('<br>&nbsp;&nbsp;')}<br>${socks5List}`;
+            else if (proxyIP && proxyIP != '') 订阅器 += `CFCDN（访问方式）: ProxyIP<br>&nbsp;&nbsp;${proxyIPs.join('<br>&nbsp;&nbsp;')}<br>`;
+            else 订阅器 += `CFCDN（访问方式）: 内置兜底, 您也可以设置 proxyIP/PROXYIP 。<br>`;
+            let 判断是否绑定KV空间 = '';
+            if (env.KV) 判断是否绑定KV空间 = ` [<a href='${_url.pathname}/edit'>编辑优选列表</a>]  [<a href='${_url.pathname}/bestip'>在线优选IP</a>]`;
+            订阅器 += `<br>您的订阅内容由 内置 addresses/ADD* 参数变量提供${判断是否绑定KV空间}<br>`;
+            if (addresses.length > 0) 订阅器 += `ADD（TLS优选域名&IP）: <br>&nbsp;&nbsp;${addresses.join('<br>&nbsp;&nbsp;')}<br>`;
+            if (addressesnotls.length > 0) 订阅器 += `ADDNOTLS（noTLS优选域名&IP）: <br>&nbsp;&nbsp;${addressesnotls.join('<br>&nbsp;&nbsp;')}<br>`;
+            if (addressesapi.length > 0) 订阅器 += `ADDAPI（TLS优选域名&IP 的 API）: <br>&nbsp;&nbsp;${addressesapi.join('<br>&nbsp;&nbsp;')}<br>`;
+            if (addressesnotlsapi.length > 0) 订阅器 += `ADDNOTLSAPI（noTLS优选域名&IP 的 API）: <br>&nbsp;&nbsp;${addressesnotlsapi.join('<br>&nbsp;&nbsp;')}<br>`;
+            if (addressescsv.length > 0) 订阅器 += `ADDCSV（IPTest测速csv文件 限速 ${DLS} ）: <br>&nbsp;&nbsp;${addressescsv.join('<br>&nbsp;&nbsp;')}<br>`;
+        }
+
+        if (动态UUID && _url.pathname !== `/${动态UUID}`) 订阅器 = '';
+        else 订阅器 += `<br>SUBAPI（订阅转换后端）: <a href='${subProtocol}://${subConverter}/version' target="_blank" rel="noopener noreferrer">${subProtocol}://${subConverter}</a><br>SUBCONFIG（订阅转换配置文件）: <a href='${subConfig}' target="_blank" rel="noopener noreferrer">${subConfig}</a>`;
+        const 动态UUID信息 = (uuid != userID) ? `TOKEN: ${uuid}<br>UUIDNow: ${userID}<br>UUIDLow: ${userIDLow}<br>${userIDTime}TIME（动态UUID有效时间）: ${有效时间} 天<br>UPTIME（动态UUID更新时间）: ${更新时间} 时（北京时间）<br><br>` : `${userIDTime}`;
+        const 节点配置页 = `
+            ################################################################<br>
+            Subscribe / sub 订阅地址, 点击链接自动 <strong>复制订阅链接</strong> 并 <strong>生成订阅二维码</strong> <br>
+            ---------------------------------------------------------------<br>
+            自适应订阅地址:<br>
+            <a href="javascript:void(0)" onclick="copyToClipboard('https://${proxyhost}${hostName}/${uuid}?sub','qrcode_0')" style="color:blue;text-decoration:underline;cursor:pointer;">https://${proxyhost}${hostName}/${uuid}</a><br>
+            <div id="qrcode_0" style="margin: 10px 10px 10px 10px;"></div>
+            Base64订阅地址:<br>
+            <a href="javascript:void(0)" onclick="copyToClipboard('https://${proxyhost}${hostName}/${uuid}?b64','qrcode_1')" style="color:blue;text-decoration:underline;cursor:pointer;">https://${proxyhost}${hostName}/${uuid}?b64</a><br>
+            <div id="qrcode_1" style="margin: 10px 10px 10px 10px;"></div>
+            clash订阅地址:<br>
+            <a href="javascript:void(0)" onclick="copyToClipboard('https://${proxyhost}${hostName}/${uuid}?clash','qrcode_2')" style="color:blue;text-decoration:underline;cursor:pointer;">https://${proxyhost}${hostName}/${uuid}?clash</a><br>
+            <div id="qrcode_2" style="margin: 10px 10px 10px 10px;"></div>
+            singbox订阅地址:<br>
+            <a href="javascript:void(0)" onclick="copyToClipboard('https://${proxyhost}${hostName}/${uuid}?sb','qrcode_3')" style="color:blue;text-decoration:underline;cursor:pointer;">https://${proxyhost}${hostName}/${uuid}?sb</a><br>
+            <div id="qrcode_3" style="margin: 10px 10px 10px 10px;"></div>
+            loon订阅地址:<br>
+            <a href="javascript:void(0)" onclick="copyToClipboard('https://${proxyhost}${hostName}/${uuid}?loon','qrcode_5')" style="color:blue;text-decoration:underline;cursor:pointer;">https://${proxyhost}${hostName}/${uuid}?loon</a><br>
+            <div id="qrcode_5" style="margin: 10px 10px 10px 10px;"></div>
+            <strong><a href="javascript:void(0);" id="noticeToggle" onclick="toggleNotice()">实用订阅技巧∨</a></strong><br>
+                <div id="noticeContent" class="notice-content" style="display: none;">
+                    <strong>1.</strong> 如您使用的是 PassWall、PassWall2 路由插件，订阅编辑的 <strong>用户代理(User-Agent)</strong> 设置为 <strong>PassWall</strong> 即可；<br>
+                    <br>
+                    <strong>2.</strong> 如您使用的是 SSR+ 路由插件，推荐使用 <strong>Base64订阅地址</strong> 进行订阅；<br>
+                    <br>
+                    <strong>3.</strong> 快速切换 <a href='${atob('aHR0cHM6Ly9naXRodWIuY29tL2NtbGl1L1dvcmtlclZsZXNzMnN1Yg==')}'>优选订阅生成器</a> 至：sub.google.com，您可将"?sub=sub.google.com"参数添加到链接末尾，例如：<br>
+                    &nbsp;&nbsp;https://${proxyhost}${hostName}/${uuid}<strong>?sub=sub.google.com</strong><br>
+                    <br>
+                    <strong>4.</strong> 快速更换 PROXYIP 至：proxyip.cmliussss.net:443，您可将"?proxyip=proxyip.cmliussss.net:443"参数添加到链接末尾，例如：<br>
+                    &nbsp;&nbsp; https://${proxyhost}${hostName}/${uuid}<strong>?proxyip=proxyip.cmliussss.net:443</strong><br>
+                    <br>
+                    <strong>5.</strong> 快速更换 SOCKS5 至：user:password@127.0.0.1:1080，您可将"?socks5=user:password@127.0.0.1:1080"参数添加到链接末尾，例如：<br>
+                    &nbsp;&nbsp;https://${proxyhost}${hostName}/${uuid}<strong>?socks5=user:password@127.0.0.1:1080</strong><br>
+                    <br>
+                    <strong>6.</strong> 如需指定多个参数则需要使用'&'做间隔，例如：<br>
+                    &nbsp;&nbsp;https://${proxyhost}${hostName}/${uuid}?sub=sub.google.com<strong>&</strong>proxyip=proxyip.cmliussss.net<br>
+                </div>
+            <script src="https://cdn.jsdelivr.net/npm/@keeex/qrcodejs-kx@1.0.2/qrcode.min.js"></script>
+            <script>
+            function copyToClipboard(text, qrcode) {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('已复制到剪贴板');
+                }).catch(err => {
+                    console.error('复制失败:', err);
+                });
+                const qrcodeDiv = document.getElementById(qrcode);
+                qrcodeDiv.innerHTML = '';
+                new QRCode(qrcodeDiv, {
+                    text: text,
+                    width: 220, // 调整宽度
+                    height: 220, // 调整高度
+                    colorDark: "#000000", // 二维码颜色
+                    colorLight: "#ffffff", // 背景颜色
+                    correctLevel: QRCode.CorrectLevel.Q, // 设置纠错级别
+                    scale: 1 // 调整像素颗粒度
+                });
+            }
+
+            function toggleNotice() {
+                const noticeContent = document.getElementById('noticeContent');
+                const noticeToggle = document.getElementById('noticeToggle');
+                if (noticeContent.style.display === 'none') {
+                    noticeContent.style.display = 'block';
+                    noticeToggle.textContent = '实用订阅技巧∧';
+                } else {
+                    noticeContent.style.display = 'none'; 
+                    noticeToggle.textContent = '实用订阅技巧∨';
+                }
+            }
+            </script>
+            ---------------------------------------------------------------<br>
+            ################################################################<br>
+            ${FileName} 配置信息<br>
+            ---------------------------------------------------------------<br>
+            ${动态UUID信息}HOST: ${hostName}<br>
+            UUID: ${userID}<br>
+            FKID: ${fakeUserID}<br>
+            UA: ${UA}<br>
+            SCV（跳过TLS证书验证）: ${SCV}<br>
+            ${订阅器}<br>
+            ---------------------------------------------------------------<br>
+            ################################################################<br>
+            v2ray<br>
+            ---------------------------------------------------------------<br>
+            <a href="javascript:void(0)" onclick="copyToClipboard('${v2ray}','qrcode_v2ray')" style="color:blue;text-decoration:underline;cursor:pointer;">${v2ray}</a><br>
+            <div id="qrcode_v2ray" style="margin: 10px 10px 10px 10px;"></div>
+            ---------------------------------------------------------------<br>
+            ################################################################<br>
+            clash-meta<br>
+            ---------------------------------------------------------------<br>
+            ${clash}<br>
+            ---------------------------------------------------------------<br>
+            ################################################################<br>
+            ${cmad}
+            `;
+        return `<div style="font-size:13px;">${节点配置页}</div>`;
+    } else {
+        if (typeof fetch != 'function') {
+            return 'Error: fetch is not available in this environment.';
+        }
+
+        let newAddressesapi = [];
+        let newAddressescsv = [];
+        let newAddressesnotlsapi = [];
+        let newAddressesnotlscsv = [];
+
+  
+        if (hostName.includes(".workers.dev")) {
+            noTLS = 'true';
+            fakeHostName = `${fakeHostName}.workers.dev`;
+            newAddressesnotlsapi = await 整理优选列表(addressesnotlsapi);
+            newAddressesnotlscsv = await 整理测速结果('FALSE');
+        } else if (hostName.includes(".pages.dev")) {
+            fakeHostName = `${fakeHostName}.pages.dev`;
+        } else if (hostName.includes("worker") || hostName.includes("notls") || noTLS == 'true') {
+            noTLS = 'true';
+            fakeHostName = `notls${fakeHostName}.net`;
+            newAddressesnotlsapi = await 整理优选列表(addressesnotlsapi);
+            newAddressesnotlscsv = await 整理测速结果('FALSE');
+        } else {
+            fakeHostName = `${fakeHostName}.xyz`
+        }
+        console.log(`虚假HOST: ${fakeHostName}`);
+        let url = `${subProtocol}://${sub}/sub?host=${fakeHostName}&uuid=${fakeUserID + atob('JmVkZ2V0dW5uZWw9Y21saXUmcHJveHlpcD0=') + RproxyIP}&path=${encodeURIComponent(path)}`;
+        let isBase64 = true;
+
+        if (!sub || sub == "") {
+            if (hostName.includes('workers.dev')) {
+                if (proxyhostsURL && (!proxyhosts || proxyhosts.length == 0)) {
+                    try {
+                        const response = await fetch(proxyhostsURL);
+
+                        if (!response.ok) {
+                            console.error('获取地址时出错:', response.status, response.statusText);
+                            return; // 如果有错误，直接返回
+                        }
+
+                        const text = await response.text();
+                        const lines = text.split('\n');
+  
+                        const nonEmptyLines = lines.filter(line => line.trim() !== '');
+
+                        proxyhosts = proxyhosts.concat(nonEmptyLines);
+                    } catch (error) {
+                        console.error('获取地址时出错:', error);
+                    }
+                }
+  
+                proxyhosts = [...new Set(proxyhosts)];
+            }
+
+            newAddressesapi = await 整理优选列表(addressesapi);
+            newAddressescsv = await 整理测速结果('TRUE');
+            url = `https://${hostName}/${fakeUserID + _url.search}`;
+            if (hostName.includes("worker") || hostName.includes("notls") || noTLS == 'true') {
+                if (_url.search) url += '&notls';
+                else url += '?notls';
+            }
+            console.log(`虚假订阅: ${url}`);
+        }
+
+        if (!userAgent.includes(('CF-Workers-SUB').toLowerCase()) && !_url.searchParams.has('b64') && !_url.searchParams.has('base64')) {
+            if ((userAgent.includes('clash') && !userAgent.includes('nekobox')) || (_url.searchParams.has('clash') && !userAgent.includes('subconverter'))) {
+                url = `${subProtocol}://${subConverter}/sub?target=clash&url=${encodeURIComponent(url)}&insert=false&config=${encodeURIComponent(subConfig)}&emoji=${subEmoji}&list=false&tfo=false&scv=${SCV}&fdn=false&sort=false&new_name=true`;
+                isBase64 = false;
+            } else if (userAgent.includes('sing-box') || userAgent.includes('singbox') || ((_url.searchParams.has('singbox') || _url.searchParams.has('sb')) && !userAgent.includes('subconverter'))) {
+                url = `${subProtocol}://${subConverter}/sub?target=singbox&url=${encodeURIComponent(url)}&insert=false&config=${encodeURIComponent(subConfig)}&emoji=${subEmoji}&list=false&tfo=false&scv=${SCV}&fdn=false&sort=false&new_name=true`;
+                isBase64 = false;
+            } else if (userAgent.includes('loon') || (_url.searchParams.has('loon') && !userAgent.includes('subconverter'))) {
+                url = `${subProtocol}://${subConverter}/sub?target=loon&url=${encodeURIComponent(url)}&insert=false&config=${encodeURIComponent(subConfig)}&emoji=${subEmoji}&list=false&tfo=false&scv=${SCV}&fdn=false&sort=false&new_name=true`;
+                isBase64 = false;
+            }
+        }
+
+        try {
+            let content;
+            if ((!sub || sub == "") && isBase64 == true) {
+                content = await 生成本地订阅(fakeHostName, fakeUserID, noTLS, newAddressesapi, newAddressescsv, newAddressesnotlsapi, newAddressesnotlscsv);
+            } else {
+                const response = await fetch(url, {
+                    headers: {
+                        'User-Agent': (isBase64 ? 'v2rayN' : UA) + atob('IENGLVdvcmtlcnMtZWRnZXR1bm5lbC9jbWxpdQ==')
+                    }
+                });
+                content = await response.text();
+            }
+
+            if (_url.pathname == `/${fakeUserID}`) return content;
+
+            return 恢复伪装信息(content, userID, hostName, fakeUserID, fakeHostName, isBase64);
+
+        } catch (error) {
+            console.error('Error fetching content:', error);
+            return `Error fetching content: ${error.message}`;
+        }
+    }
+}
+
+async function 整理优选列表(api) {
+    if (!api || api.length === 0) return [];
+
+    let newapi = "";
+
+  
+    const controller = new AbortController();
+
+    const timeout = setTimeout(() => {
+        controller.abort(); // 取消所有请求
+    }, 2000); // 2秒后触发
+
+    try {
+  
+  
+        const responses = await Promise.allSettled(api.map(apiUrl => fetch(apiUrl, {
+            method: 'get',
+            headers: {
+                'Accept': 'text/html,application/xhtml+xml,application/xml;',
+                'User-Agent': atob('Q0YtV29ya2Vycy1lZGdldHVubmVsL2NtbGl1')
+            },
+            signal: controller.signal // 将AbortController的信号量添加到fetch请求中，以便于需要时可以取消请求
+        }).then(response => response.ok ? response.text() : Promise.reject())));
+
+  
+        for (const [index, response] of responses.entries()) {
+  
+            if (response.status === 'fulfilled') {
+  
+                const content = await response.value;
+
+                const lines = content.split(/\r?\n/);
+                let 节点备注 = '';
+                let 测速端口 = '443';
+
+                if (lines[0].split(',').length > 3) {
+                    const idMatch = api[index].match(/id=([^&]*)/);
+                    if (idMatch) 节点备注 = idMatch[1];
+
+                    const portMatch = api[index].match(/port=([^&]*)/);
+                    if (portMatch) 测速端口 = portMatch[1];
+
+                    for (let i = 1; i < lines.length; i++) {
+                        const columns = lines[i].split(',')[0];
+                        if (columns) {
+                            newapi += `${columns}:${测速端口}${节点备注 ? `#${节点备注}` : ''}\n`;
+                            if (api[index].includes('proxyip=true')) proxyIPPool.push(`${columns}:${测速端口}`);
+                        }
+                    }
+                } else {
+  
+                    if (api[index].includes('proxyip=true')) {
+  
+                        proxyIPPool = proxyIPPool.concat((await 整理(content)).map(item => {
+                            const baseItem = item.split('#')[0] || item;
+                            if (baseItem.includes(':')) {
+                                const port = baseItem.split(':')[1];
+                                if (!httpsPorts.includes(port)) {
+                                    return baseItem;
+                                }
+                            } else {
+                                return `${baseItem}:443`;
+                            }
+                            return null; // 不符合条件时返回 null
+                        }).filter(Boolean)); // 过滤掉 null 值
+                    }
+  
+                    newapi += content + '\n';
+                }
+            }
+        }
+    } catch (error) {
+        console.error(error);
+    } finally {
+  
+        clearTimeout(timeout);
+    }
+
+    const newAddressesapi = await 整理(newapi);
+
+  
+    return newAddressesapi;
+}
+
+async function 整理测速结果(tls) {
+    if (!addressescsv || addressescsv.length === 0) {
+        return [];
+    }
+
+    let newAddressescsv = [];
+
+    for (const csvUrl of addressescsv) {
+        try {
+            const response = await fetch(csvUrl);
+
+            if (!response.ok) {
+                console.error('获取CSV地址时出错:', response.status, response.statusText);
+                continue;
+            }
+
+            const text = await response.text();// 使用正确的字符编码解析文本内容
+            let lines;
+            if (text.includes('\r\n')) {
+                lines = text.split('\r\n');
+            } else {
+                lines = text.split('\n');
+            }
+
+  
+            const header = lines[0].split(',');
+            const tlsIndex = header.indexOf('TLS');
+
+            const ipAddressIndex = 0;// IP地址在 CSV 头部的位置
+            const portIndex = 1;// 端口在 CSV 头部的位置
+            const dataCenterIndex = tlsIndex + remarkIndex; // 数据中心是 TLS 的后一个字段
+
+            if (tlsIndex === -1) {
+                console.error('CSV文件缺少必需的字段');
+                continue;
+            }
+
+  
+            for (let i = 1; i < lines.length; i++) {
+                const columns = lines[i].split(',');
+                const speedIndex = columns.length - 1; // 最后一个字段
+  
+                if (columns[tlsIndex].toUpperCase() === tls && parseFloat(columns[speedIndex]) > DLS) {
+                    const ipAddress = columns[ipAddressIndex];
+                    const port = columns[portIndex];
+                    const dataCenter = columns[dataCenterIndex];
+
+                    const formattedAddress = `${ipAddress}:${port}#${dataCenter}`;
+                    newAddressescsv.push(formattedAddress);
+                    if (csvUrl.includes('proxyip=true') && columns[tlsIndex].toUpperCase() == 'true' && !httpsPorts.includes(port)) {
+  
+                        proxyIPPool.push(`${ipAddress}:${port}`);
+                    }
+                }
+            }
+        } catch (error) {
+            console.error('获取CSV地址时出错:', error);
+            continue;
+        }
+    }
+
+    return newAddressescsv;
+}
+
+function 生成本地订阅(host, UUID, noTLS, newAddressesapi, newAddressescsv, newAddressesnotlsapi, newAddressesnotlscsv) {
+    const regex = /^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|\[.*\]):?(\d+)?#?(.*)?$/;
+    addresses = addresses.concat(newAddressesapi);
+    addresses = addresses.concat(newAddressescsv);
+    let notlsresponseBody;
+    if (noTLS == 'true') {
+        addressesnotls = addressesnotls.concat(newAddressesnotlsapi);
+        addressesnotls = addressesnotls.concat(newAddressesnotlscsv);
+        const uniqueAddressesnotls = [...new Set(addressesnotls)];
+
+        notlsresponseBody = uniqueAddressesnotls.map(address => {
+            let port = "-1";
+            let addressid = address;
+
+            const match = addressid.match(regex);
+            if (!match) {
+                if (address.includes(':') && address.includes('#')) {
+                    const parts = address.split(':');
+                    address = parts[0];
+                    const subParts = parts[1].split('#');
+                    port = subParts[0];
+                    addressid = subParts[1];
+                } else if (address.includes(':')) {
+                    const parts = address.split(':');
+                    address = parts[0];
+                    port = parts[1];
+                } else if (address.includes('#')) {
+                    const parts = address.split('#');
+                    address = parts[0];
+                    addressid = parts[1];
+                }
+
+                if (addressid.includes(':')) {
+                    addressid = addressid.split(':')[0];
+                }
+            } else {
+                address = match[1];
+                port = match[2] || port;
+                addressid = match[3] || address;
+            }
+
+            if (!isValidIPv4(address) && port == "-1") {
+                for (let httpPort of httpPorts) {
+                    if (address.includes(httpPort)) {
+                        port = httpPort;
+                        break;
+                    }
+                }
+            }
+            if (port == "-1") port = "80";
+
+            let 伪装域名 = host;
+            let 最终路径 = path;
+            let 节点备注 = '';
+            const 协议类型 = atob(啥啥啥_写的这是啥啊);
+
+            const 维列斯Link = `${协议类型}://${UUID}@${address}:${port + atob('P2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT0mdHlwZT13cyZob3N0PQ==') + 伪装域名}&path=${encodeURIComponent(最终路径)}#${encodeURIComponent(addressid + 节点备注)}`;
+
+            return 维列斯Link;
+
+        }).join('\n');
+
+    }
+
+  
+    const uniqueAddresses = [...new Set(addresses)];
+
+    const responseBody = uniqueAddresses.map(address => {
+        let port = "-1";
+        let addressid = address;
+
+        const match = addressid.match(regex);
+        if (!match) {
+            if (address.includes(':') && address.includes('#')) {
+                const parts = address.split(':');
+                address = parts[0];
+                const subParts = parts[1].split('#');
+                port = subParts[0];
+                addressid = subParts[1];
+            } else if (address.includes(':')) {
+                const parts = address.split(':');
+                address = parts[0];
+                port = parts[1];
+            } else if (address.includes('#')) {
+                const parts = address.split('#');
+                address = parts[0];
+                addressid = parts[1];
+            }
+
+            if (addressid.includes(':')) {
+                addressid = addressid.split(':')[0];
+            }
+        } else {
+            address = match[1];
+            port = match[2] || port;
+            addressid = match[3] || address;
+        }
+
+        if (!isValidIPv4(address) && port == "-1") {
+            for (let httpsPort of httpsPorts) {
+                if (address.includes(httpsPort)) {
+                    port = httpsPort;
+                    break;
+                }
+            }
+        }
+        if (port == "-1") port = "443";
+
+        let 伪装域名 = host;
+        let 最终路径 = path;
+        let 节点备注 = '';
+        const matchingProxyIP = proxyIPPool.find(proxyIP => proxyIP.includes(address));
+        if (matchingProxyIP) 最终路径 = `/proxyip=${matchingProxyIP}`;
+
+        if (proxyhosts.length > 0 && (伪装域名.includes('.workers.dev'))) {
+            最终路径 = `/${伪装域名}${最终路径}`;
+            伪装域名 = proxyhosts[Math.floor(Math.random() * proxyhosts.length)];
+            节点备注 = ` 已启用临时域名中转服务，请尽快绑定自定义域！`;
+        }
+
+        const 协议类型 = atob(啥啥啥_写的这是啥啊);
+        const 维列斯Link = `${协议类型}://${UUID}@${address}:${port + atob('P2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT10bHMmc25pPQ==') + 伪装域名}&fp=random&type=ws&host=${伪装域名}&path=${encodeURIComponent(最终路径) + allowInsecure}&fragment=1,40-60,30-50,tlshello#${encodeURIComponent(addressid + 节点备注)}`;
+
+        return 维列斯Link;
+    }).join('\n');
+
+    let base64Response = responseBody; // 重新进行 Base64 编码
+    if (noTLS == 'true') base64Response += `\n${notlsresponseBody}`;
+    if (link.length > 0) base64Response += '\n' + link.join('\n');
+    return btoa(base64Response);
+}
+
+async function 整理(内容) {
+  
+  
+    var 替换后的内容 = 内容.replace(/[	|"'\r\n]+/g, ',').replace(/,+/g, ',');
+
+  
+    if (替换后的内容.charAt(0) == ',') 替换后的内容 = 替换后的内容.slice(1);
+    if (替换后的内容.charAt(替换后的内容.length - 1) == ',') 替换后的内容 = 替换后的内容.slice(0, 替换后的内容.length - 1);
+
+  
+    const 地址数组 = 替换后的内容.split(',');
+
+    return 地址数组;
+}
+
+async function sendMessage(type, ip, add_data = "") {
+    if (!BotToken || !ChatID) return;
+
+    try {
+        let msg = "";
+        const response = await fetch(`http://ip-api.com/json/${ip}?lang=zh-CN`);
+        if (response.ok) {
+            const ipInfo = await response.json();
+            msg = `${type}\nIP: ${ip}\n国家: ${ipInfo.country}\n<tg-spoiler>城市: ${ipInfo.city}\n组织: ${ipInfo.org}\nASN: ${ipInfo.as}\n${add_data}`;
+        } else {
+            msg = `${type}\nIP: ${ip}\n<tg-spoiler>${add_data}`;
+        }
+
+        const url = `https://api.telegram.org/bot${BotToken}/sendMessage?chat_id=${ChatID}&parse_mode=HTML&text=${encodeURIComponent(msg)}`;
+        return fetch(url, {
+            method: 'GET',
+            headers: {
+                'Accept': 'text/html,application/xhtml+xml,application/xml;',
+                'Accept-Encoding': 'gzip, deflate, br',
+                'User-Agent': 'Mozilla/5.0 Chrome/90.0.4430.72'
+            }
+        });
+    } catch (error) {
+        console.error('Error sending message:', error);
+    }
+}
+
+function isValidIPv4(address) {
+    const ipv4Regex = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+    return ipv4Regex.test(address);
+}
+
+function 生成动态UUID(密钥) {
+    const 时区偏移 = 8; // 北京时间相对于UTC的时区偏移+8小时
+    const 起始日期 = new Date(2007, 6, 7, 更新时间, 0, 0); // 固定起始日期为2007年7月7日的凌晨3点
+    const 一周的毫秒数 = 1000 * 60 * 60 * 24 * 有效时间;
+
+    function 获取当前周数() {
+        const 现在 = new Date();
+        const 调整后的现在 = new Date(现在.getTime() + 时区偏移 * 60 * 60 * 1000);
+        const 时间差 = Number(调整后的现在) - Number(起始日期);
+        return Math.ceil(时间差 / 一周的毫秒数);
+    }
+
+    function 生成UUID(基础字符串) {
+        const 哈希缓冲区 = new TextEncoder().encode(基础字符串);
+        return crypto.subtle.digest('SHA-256', 哈希缓冲区).then((哈希) => {
+            const 哈希数组 = Array.from(new Uint8Array(哈希));
+            const 十六进制哈希 = 哈希数组.map(b => b.toString(16).padStart(2, '0')).join('');
+            return `${十六进制哈希.substr(0, 8)}-${十六进制哈希.substr(8, 4)}-4${十六进制哈希.substr(13, 3)}-${(parseInt(十六进制哈希.substr(16, 2), 16) & 0x3f | 0x80).toString(16)}${十六进制哈希.substr(18, 2)}-${十六进制哈希.substr(20, 12)}`;
+        });
+    }
+
+    const 当前周数 = 获取当前周数(); // 获取当前周数
+    const 结束时间 = new Date(起始日期.getTime() + 当前周数 * 一周的毫秒数);
+
+  
+    const 当前UUIDPromise = 生成UUID(密钥 + 当前周数);
+    const 上一个UUIDPromise = 生成UUID(密钥 + (当前周数 - 1));
+
+  
+    const 到期时间UTC = new Date(结束时间.getTime() - 时区偏移 * 60 * 60 * 1000); // UTC时间
+    const 到期时间字符串 = `到期时间(UTC): ${到期时间UTC.toISOString().slice(0, 19).replace('T', ' ')} (UTC+8): ${结束时间.toISOString().slice(0, 19).replace('T', ' ')}\n`;
+
+    return Promise.all([当前UUIDPromise, 上一个UUIDPromise, 到期时间字符串]);
+}
+
+async function 迁移地址列表(env, txt = 'ADD.txt') {
+    const 旧数据 = await env.KV.get(`/${txt}`);
+    const 新数据 = await env.KV.get(txt);
+
+    if (旧数据 && !新数据) {
+  
+        await env.KV.put(txt, 旧数据);
+  
+        await env.KV.delete(`/${txt}`);
+        return true;
+    }
+    return false;
+}
+
+async function KV(request, env, txt = 'ADD.txt') {
+    try {
+  
+        if (request.method === "POST") {
+            if (!env.KV) return new Response("未绑定KV空间", { status: 400 });
+            try {
+                const content = await request.text();
+                await env.KV.put(txt, content);
+                return new Response("保存成功");
+            } catch (error) {
+                console.error('保存KV时发生错误:', error);
+                return new Response("保存失败: " + error.message, { status: 500 });
+            }
+        }
+
+  
+        let content = '';
+        let hasKV = !!env.KV;
+
+        if (hasKV) {
+            try {
+                content = await env.KV.get(txt) || '';
+            } catch (error) {
+                console.error('读取KV时发生错误:', error);
+                content = '读取数据时发生错误: ' + error.message;
+            }
+        }
+
+        const html = `
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>优选订阅列表</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <style>
+                    body {
+                        margin: 0;
+                        padding: 15px;   
+                        box-sizing: border-box;
+                        font-size: 13px;   
+                    }
+                    .editor-container {
+                        width: 100%;
+                        max-width: 100%;
+                        margin: 0 auto;
+                    }
+                    .editor {
+                        width: 100%;
+                        height: 520px;   
+                        margin: 15px 0;   
+                        padding: 10px;   
+                        box-sizing: border-box;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        font-size: 13px;
+                        line-height: 1.5;
+                        overflow-y: auto;
+                        resize: none;
+                    }
+                    .save-container {
+                        margin-top: 8px;   
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;   
+                    }
+                    .save-btn, .back-btn {
+                        padding: 6px 15px;   
+                        color: white;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                    .save-btn {
+                        background: #4CAF50;
+                    }
+                    .save-btn:hover {
+                        background: #45a049;
+                    }
+                    .back-btn {
+                        background: #666;
+                    }
+                    .back-btn:hover {
+                        background: #555;
+                    }
+                    .bestip-btn {
+                        background: #2196F3;
+                        padding: 6px 15px;
+                        color: white;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                    .bestip-btn:hover {
+                        background: #1976D2;
+                    }
+                    .save-status {
+                        color: #666;
+                    }
+                    .notice-content {
+                        display: none;
+                        margin-top: 10px;
+                        font-size: 13px;
+                        color: #333;
+                    }
+                </style>
+            </head>
+            <body>
+                ################################################################<br>
+                ${FileName} 优选订阅列表:<br>
+                ---------------------------------------------------------------<br>
+                &nbsp;&nbsp;<strong><a href="javascript:void(0);" id="noticeToggle" onclick="toggleNotice()">注意事项∨</a></strong><br>
+                <div id="noticeContent" class="notice-content">
+                    ${decodeURIComponent(atob('JTA5JTA5JTA5JTA5JTA5JTNDc3Ryb25nJTNFMS4lM0MlMkZzdHJvbmclM0UlMjBBRERBUEklMjAlRTUlQTYlODIlRTYlOUUlOUMlRTYlOTglQUYlRTUlOEYlOEQlRTQlQkIlQTNJUCVFRiVCQyU4QyVFNSU4RiVBRiVFNCVCRCU5QyVFNCVCOCVCQVBST1hZSVAlRTclOUElODQlRTglQUYlOUQlRUYlQkMlOEMlRTUlOEYlQUYlRTUlQjAlODYlMjIlM0Zwcm94eWlwJTNEdHJ1ZSUyMiVFNSU4RiU4MiVFNiU5NSVCMCVFNiVCNyVCQiVFNSU4QSVBMCVFNSU4OCVCMCVFOSU5MyVCRSVFNiU4RSVBNSVFNiU5QyVBQiVFNSVCMCVCRSVFRiVCQyU4QyVFNCVCRSU4QiVFNSVBNiU4MiVFRiVCQyU5QSUzQ2JyJTNFCiUwOSUwOSUwOSUwOSUwOSUyNm5ic3AlM0IlMjZuYnNwJTNCaHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGY21saXUlMkZXb3JrZXJWbGVzczJzdWIlMkZtYWluJTJGYWRkcmVzc2VzYXBpLnR4dCUzQ3N0cm9uZyUzRSUzRnByb3h5aXAlM0R0cnVlJTNDJTJGc3Ryb25nJTNFJTNDYnIlM0UlM0NiciUzRQolMDklMDklMDklMDklMDklM0NzdHJvbmclM0UyLiUzQyUyRnN0cm9uZyUzRSUyMEFEREFQSSUyMCVFNSVBNiU4MiVFNiU5RSU5QyVFNiU5OCVBRiUyMCUzQ2ElMjBocmVmJTNEJTI3aHR0cHMlM0ElMkYlMkZnaXRodWIuY29tJTJGWElVMiUyRkNsb3VkZmxhcmVTcGVlZFRlc3QlMjclM0VDbG91ZGZsYXJlU3BlZWRUZXN0JTNDJTJGYSUzRSUyMCVFNyU5QSU4NCUyMGNzdiUyMCVFNyVCQiU5MyVFNiU5RSU5QyVFNiU5NiU4NyVFNCVCQiVCNiVFRiVCQyU4QyVFNCVCRSU4QiVFNSVBNiU4MiVFRiVCQyU5QSUzQ2JyJTNFCiUwOSUwOSUwOSUwOSUwOSUyNm5ic3AlM0IlMjZuYnNwJTNCaHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGY21saXUlMkZXb3JrZXJWbGVzczJzdWIlMkZtYWluJTJGQ2xvdWRmbGFyZVNwZWVkVGVzdC5jc3YlM0NiciUzRSUzQ2JyJTNFCiUwOSUwOSUwOSUwOSUwOSUyNm5ic3AlM0IlMjZuYnNwJTNCLSUyMCVFNSVBNiU4MiVFOSU5QyU4MCVFNiU4QyU4NyVFNSVBRSU5QTIwNTMlRTclQUIlQUYlRTUlOEYlQTMlRTUlOEYlQUYlRTUlQjAlODYlMjIlM0Zwb3J0JTNEMjA1MyUyMiVFNSU4RiU4MiVFNiU5NSVCMCVFNiVCNyVCQiVFNSU4QSVBMCVFNSU4OCVCMCVFOSU5MyVCRSVFNiU4RSVBNSVFNiU5QyVBQiVFNSVCMCVCRSVFRiVCQyU4QyVFNCVCRSU4QiVFNSVBNiU4MiVFRiVCQyU5QSUzQ2JyJTNFCiUwOSUwOSUwOSUwOSUwOSUyNm5ic3AlM0IlMjZuYnNwJTNCaHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGY21saXUlMkZXb3JrZXJWbGVzczJzdWIlMkZtYWluJTJGQ2xvdWRmbGFyZVNwZWVkVGVzdC5jc3YlM0NzdHJvbmclM0UlM0Zwb3J0JTNEMjA1MyUzQyUyRnN0cm9uZyUzRSUzQ2JyJTNFJTNDYnIlM0UKJTA5JTA5JTA5JTA5JTA5JTI2bmJzcCUzQiUyNm5ic3AlM0ItJTIwJUU1JUE2JTgyJUU5JTlDJTgwJUU2JThDJTg3JUU1JUFFJTlBJUU4JThBJTgyJUU3JTgyJUI5JUU1JUE0JTg3JUU2JUIzJUE4JUU1JThGJUFGJUU1JUIwJTg2JTIyJTNGaWQlM0RDRiVFNCVCQyU5OCVFOSU4MCU4OSUyMiVFNSU4RiU4MiVFNiU5NSVCMCVFNiVCNyVCQiVFNSU4QSVBMCVFNSU4OCVCMCVFOSU5MyVCRSVFNiU4RSVBNSVFNiU5QyVBQiVFNSVCMCVCRSVFRiVCQyU4QyVFNCVCRSU4QiVFNSVBNiU4MiVFRiVCQyU5QSUzQ2JyJTNFCiUwOSUwOSUwOSUwOSUwOSUyNm5ic3AlM0IlMjZuYnNwJTNCaHR0cHMlM0ElMkYlMkZyYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tJTJGY21saXUlMkZXb3JrZXJWbGVzczJzdWIlMkZtYWluJTJGQ2xvdWRmbGFyZVNwZWVkVGVzdC5jc3YlM0NzdHJvbmclM0UlM0ZpZCUzRENGJUU0JUJDJTk4JUU5JTgwJTg5JTNDJTJGc3Ryb25nJTNFJTNDYnIlM0UlM0NiciUzRQolMDklMDklMDklMDklMDklMjZuYnNwJTNCJTI2bmJzcCUzQi0lMjAlRTUlQTYlODIlRTklOUMlODAlRTYlOEMlODclRTUlQUUlOUElRTUlQTQlOUElRTQlQjglQUElRTUlOEYlODIlRTYlOTUlQjAlRTUlODglOTklRTklOUMlODAlRTglQTYlODElRTQlQkQlQkYlRTclOTQlQTglMjclMjYlMjclRTUlODElOUElRTklOTclQjQlRTklOUElOTQlRUYlQkMlOEMlRTQlQkUlOEIlRTUlQTYlODIlRUYlQkMlOUElM0NiciUzRQolMDklMDklMDklMDklMDklMjZuYnNwJTNCJTI2bmJzcCUzQmh0dHBzJTNBJTJGJTJGcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSUyRmNtbGl1JTJGV29ya2VyVmxlc3Myc3ViJTJGbWFpbiUyRkNsb3VkZmxhcmVTcGVlZFRlc3QuY3N2JTNGaWQlM0RDRiVFNCVCQyU5OCVFOSU4MCU4OSUzQ3N0cm9uZyUzRSUyNiUzQyUyRnN0cm9uZyUzRXBvcnQlM0QyMDUzJTNDYnIlM0U='))}
+                </div>
+                <div class="editor-container">
+                    ${hasKV ? `
+                    <textarea class="editor" 
+                        placeholder="${decodeURIComponent(atob('QUREJUU3JUE0JUJBJUU0JUJFJThCJUVGJUJDJTlBCnZpc2EuY24lMjMlRTQlQkMlOTglRTklODAlODklRTUlOUYlOUYlRTUlOTAlOEQKMTI3LjAuMC4xJTNBMTIzNCUyM0NGbmF0CiU1QjI2MDYlM0E0NzAwJTNBJTNBJTVEJTNBMjA1MyUyM0lQdjYKCiVFNiVCMyVBOCVFNiU4NCU4RiVFRiVCQyU5QQolRTYlQUYlOEYlRTglQTElOEMlRTQlQjglODAlRTQlQjglQUElRTUlOUMlQjAlRTUlOUQlODAlRUYlQkMlOEMlRTYlQTAlQkMlRTUlQkMlOEYlRTQlQjglQkElMjAlRTUlOUMlQjAlRTUlOUQlODAlM0ElRTclQUIlQUYlRTUlOEYlQTMlMjMlRTUlQTQlODclRTYlQjMlQTgKSVB2NiVFNSU5QyVCMCVFNSU5RCU4MCVFOSU5QyU4MCVFOCVBNiU4MSVFNyU5NCVBOCVFNCVCOCVBRCVFNiU4QiVBQyVFNSU4RiVCNyVFNiU4QiVBQyVFOCVCNSVCNyVFNiU5RCVBNSVFRiVCQyU4QyVFNSVBNiU4MiVFRiVCQyU5QSU1QjI2MDYlM0E0NzAwJTNBJTNBJTVEJTNBMjA1MwolRTclQUIlQUYlRTUlOEYlQTMlRTQlQjglOEQlRTUlODYlOTklRUYlQkMlOEMlRTklQkIlOTglRTglQUUlQTQlRTQlQjglQkElMjA0NDMlMjAlRTclQUIlQUYlRTUlOEYlQTMlRUYlQkMlOEMlRTUlQTYlODIlRUYlQkMlOUF2aXNhLmNuJTIzJUU0JUJDJTk4JUU5JTgwJTg5JUU1JTlGJTlGJUU1JTkwJThECgoKQUREQVBJJUU3JUE0JUJBJUU0JUJFJThCJUVGJUJDJTlBCmh0dHBzJTNBJTJGJTJGcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSUyRmNtbGl1JTJGV29ya2VyVmxlc3Myc3ViJTJGcmVmcyUyRmhlYWRzJTJGbWFpbiUyRmFkZHJlc3Nlc2FwaS50eHQKCiVFNiVCMyVBOCVFNiU4NCU4RiVFRiVCQyU5QUFEREFQSSVFNyU5QiVCNCVFNiU4RSVBNSVFNiVCNyVCQiVFNSU4QSVBMCVFNyU5QiVCNCVFOSU5MyVCRSVFNSU4RCVCMyVFNSU4RiVBRg=='))}"
+                        id="content">${content}</textarea>
+                    <div class="save-container">
+                        <button class="back-btn" onclick="goBack()">返回配置页</button>
+                        <button class="bestip-btn" onclick="goBestIP()">在线优选IP</button>
+                        <button class="save-btn" onclick="saveContent(this)">保存</button>
+                        <span class="save-status" id="saveStatus"></span>
+                    </div>
+                    <br>
+                    ################################################################<br>
+                    ${cmad}
+                    ` : '<p>未绑定KV空间</p>'}
+                </div>
+        
+                <script>
+                if (document.querySelector('.editor')) {
+                    let timer;
+                    const textarea = document.getElementById('content');
+                    const originalContent = textarea.value;
+        
+                    function goBack() {
+                        const currentUrl = window.location.href;
+                        const parentUrl = currentUrl.substring(0, currentUrl.lastIndexOf('/'));
+                        window.location.href = parentUrl;
+                    }
+        
+                    function goBestIP() {
+                        const currentUrl = window.location.href;
+                        const parentUrl = currentUrl.substring(0, currentUrl.lastIndexOf('/'));
+                        window.location.href = parentUrl + '/bestip';
+                    }
+        
+                    function replaceFullwidthColon() {
+                        const text = textarea.value;
+                        textarea.value = text.replace(/：/g, ':');
+                    }
+                    
+                    function saveContent(button) {
+                        try {
+                            const updateButtonText = (step) => {
+                                button.textContent = \`保存中: \${step}\`;
+                            };
+  
+                            const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+                            
+  
+                            if (!isIOS) {
+                                replaceFullwidthColon();
+                            }
+                            updateButtonText('开始保存');
+                            button.disabled = true;
+  
+                            const textarea = document.getElementById('content');
+                            if (!textarea) {
+                                throw new Error('找不到文本编辑区域');
+                            }
+                            updateButtonText('获取内容');
+                            let newContent;
+                            let originalContent;
+                            try {
+                                newContent = textarea.value || '';
+                                originalContent = textarea.defaultValue || '';
+                            } catch (e) {
+                                console.error('获取内容错误:', e);
+                                throw new Error('无法获取编辑内容');
+                            }
+                            updateButtonText('准备状态更新函数');
+                            const updateStatus = (message, isError = false) => {
+                                const statusElem = document.getElementById('saveStatus');
+                                if (statusElem) {
+                                    statusElem.textContent = message;
+                                    statusElem.style.color = isError ? 'red' : '#666';
+                                }
+                            };
+                            updateButtonText('准备按钮重置函数');
+                            const resetButton = () => {
+                                button.textContent = '保存';
+                                button.disabled = false;
+                            };
+                            if (newContent !== originalContent) {
+                                updateButtonText('发送保存请求');
+                                fetch(window.location.href, {
+                                    method: 'POST',
+                                    body: newContent,
+                                    headers: {
+                                        'Content-Type': 'text/plain;charset=UTF-8'
+                                    },
+                                    cache: 'no-cache'
+                                })
+                                .then(response => {
+                                    updateButtonText('检查响应状态');
+                                    if (!response.ok) {
+                                        throw new Error(\`HTTP error! status: \${response.status}\`);
+                                    }
+                                    updateButtonText('更新保存状态');
+                                    const now = new Date().toLocaleString();
+                                    document.title = \`编辑已保存 \${now}\`;
+                                    updateStatus(\`已保存 \${now}\`);
+                                })
+                                .catch(error => {
+                                    updateButtonText('处理错误');
+                                    console.error('Save error:', error);
+                                    updateStatus(\`保存失败: \${error.message}\`, true);
+                                })
+                                .finally(() => {
+                                    resetButton();
+                                });
+                            } else {
+                                updateButtonText('检查内容变化');
+                                updateStatus('内容未变化');
+                                resetButton();
+                            }
+                        } catch (error) {
+                            console.error('保存过程出错:', error);
+                            button.textContent = '保存';
+                            button.disabled = false;
+                            const statusElem = document.getElementById('saveStatus');
+                            if (statusElem) {
+                                statusElem.textContent = \`错误: \${error.message}\`;
+                                statusElem.style.color = 'red';
+                            }
+                        }
+                    }
+        
+                    textarea.addEventListener('blur', saveContent);
+                    textarea.addEventListener('input', () => {
+                        clearTimeout(timer);
+                        timer = setTimeout(saveContent, 5000);
+                    });
+                }
+        
+                function toggleNotice() {
+                    const noticeContent = document.getElementById('noticeContent');
+                    const noticeToggle = document.getElementById('noticeToggle');
+                    if (noticeContent.style.display === 'none' || noticeContent.style.display === '') {
+                        noticeContent.style.display = 'block';
+                        noticeToggle.textContent = '注意事项∧';
+                    } else {
+                        noticeContent.style.display = 'none';
+                        noticeToggle.textContent = '注意事项∨';
+                    }
+                }
+        
+  
+                document.addEventListener('DOMContentLoaded', () => {
+                    document.getElementById('noticeContent').style.display = 'none';
+                });
+                </script>
+            </body>
+            </html>
+        `;
+
+        return new Response(html, {
+            headers: { "Content-Type": "text/html;charset=utf-8" }
+        });
+    } catch (error) {
+        console.error('处理请求时发生错误:', error);
+        return new Response("服务器错误: " + error.message, {
+            status: 500,
+            headers: { "Content-Type": "text/plain;charset=utf-8" }
+        });
+    }
+}
+
+async function resolveToIPv6(target) {
+    if (!DNS64Server) {
+        const defaultAddress = atob('cHJveHlpcC5jbWxpdXNzc3MubmV0');
+        try {
+            const response = await fetch(atob('aHR0cHM6Ly8xLjEuMS4xL2Rucy1xdWVyeT9uYW1lPW5hdDY0LmNtbGl1c3Nzcy5uZXQmdHlwZT1UWFQ='), {
+                headers: { 'Accept': 'application/dns-json' }
+            });
+
+            if (!response.ok) return defaultAddress;
+            const data = await response.json();
+            const txtRecords = (data.Answer || []).filter(record => record.type === 16).map(record => record.data);
+
+            if (txtRecords.length === 0) return defaultAddress;
+            let txtData = txtRecords[0];
+            if (txtData.startsWith('"') && txtData.endsWith('"')) txtData = txtData.slice(1, -1);
+            const prefixes = txtData.replace(/\\010/g, '\n').split('\n').filter(prefix => prefix.trim());
+            if (prefixes.length === 0) return defaultAddress;
+            DNS64Server = prefixes[Math.floor(Math.random() * prefixes.length)];
+        } catch (error) {
+            console.error('DNS64Server查询失败:', error);
+            return defaultAddress;
+        }
+    }
+
+  
+    function isIPv4(str) {
+        const parts = str.split('.');
+        return parts.length === 4 && parts.every(part => {
+            const num = parseInt(part, 10);
+            return num >= 0 && num <= 255 && part === num.toString();
+        });
+    }
+
+  
+    function isIPv6(str) {
+        return str.includes(':') && /^[0-9a-fA-F:]+$/.test(str);
+    }
+
+  
+    async function fetchIPv4(domain) {
+        const url = `https://1.1.1.1/dns-query?name=${domain}&type=A`;
+        const response = await fetch(url, {
+            headers: { 'Accept': 'application/dns-json' }
+        });
+
+        if (!response.ok) throw new Error('DNS查询失败');
+
+        const data = await response.json();
+        const ipv4s = (data.Answer || [])
+            .filter(record => record.type === 1)
+            .map(record => record.data);
+
+        if (ipv4s.length === 0) throw new Error('未找到IPv4地址');
+        return ipv4s[Math.floor(Math.random() * ipv4s.length)];
+    }
+
+  
+    async function queryNAT64(domain) {
+        const socket = connect({
+            hostname: isIPv6(DNS64Server) ? `[${DNS64Server}]` : DNS64Server,
+            port: 53
+        });
+
+        const writer = socket.writable.getWriter();
+        const reader = socket.readable.getReader();
+
+        try {
+  
+            const query = buildDNSQuery(domain);
+            const queryWithLength = new Uint8Array(query.length + 2);
+            queryWithLength[0] = query.length >> 8;
+            queryWithLength[1] = query.length & 0xFF;
+            queryWithLength.set(query, 2);
+            await writer.write(queryWithLength);
+
+  
+            const response = await readDNSResponse(reader);
+            const ipv6s = parseIPv6(response);
+
+            return ipv6s.length > 0 ? ipv6s[0] : '未找到IPv6地址';
+        } finally {
+            await writer.close();
+            await reader.cancel();
+        }
+    }
+
+  
+    function buildDNSQuery(domain) {
+        const buffer = new ArrayBuffer(512);
+        const view = new DataView(buffer);
+        let offset = 0;
+
+  
+        view.setUint16(offset, Math.floor(Math.random() * 65536)); offset += 2; // ID
+        view.setUint16(offset, 0x0100); offset += 2; // 标志
+        view.setUint16(offset, 1); offset += 2; // 问题数
+        view.setUint16(offset, 0); offset += 6; // 答案数/权威数/附加数
+
+  
+        for (const label of domain.split('.')) {
+            view.setUint8(offset++, label.length);
+            for (let i = 0; i < label.length; i++) {
+                view.setUint8(offset++, label.charCodeAt(i));
+            }
+        }
+        view.setUint8(offset++, 0); // 结束标记
+
+  
+        view.setUint16(offset, 28); offset += 2; // AAAA记录
+        view.setUint16(offset, 1); offset += 2; // IN类
+
+        return new Uint8Array(buffer, 0, offset);
+    }
+
+  
+    async function readDNSResponse(reader) {
+        const chunks = [];
+        let totalLength = 0;
+        let expectedLength = null;
+
+        while (true) {
+            const { value, done } = await reader.read();
+            if (done) break;
+
+            chunks.push(value);
+            totalLength += value.length;
+
+            if (expectedLength === null && totalLength >= 2) {
+                expectedLength = (chunks[0][0] << 8) | chunks[0][1];
+            }
+
+            if (expectedLength !== null && totalLength >= expectedLength + 2) {
+                break;
+            }
+        }
+
+  
+        const fullResponse = new Uint8Array(totalLength);
+        let offset = 0;
+        for (const chunk of chunks) {
+            fullResponse.set(chunk, offset);
+            offset += chunk.length;
+        }
+
+        return fullResponse.slice(2);
+    }
+
+  
+    function parseIPv6(response) {
+        const view = new DataView(response.buffer);
+        let offset = 12; // 跳过DNS头部
+
+  
+        while (view.getUint8(offset) !== 0) {
+            offset += view.getUint8(offset) + 1;
+        }
+        offset += 5;
+
+        const answers = [];
+        const answerCount = view.getUint16(6); // 答案数量
+
+        for (let i = 0; i < answerCount; i++) {
+  
+            if ((view.getUint8(offset) & 0xC0) === 0xC0) {
+                offset += 2;
+            } else {
+                while (view.getUint8(offset) !== 0) {
+                    offset += view.getUint8(offset) + 1;
+                }
+                offset++;
+            }
+
+            const type = view.getUint16(offset); offset += 2;
+            offset += 6; // 跳过类和TTL
+            const dataLength = view.getUint16(offset); offset += 2;
+
+            if (type === 28 && dataLength === 16) { // AAAA记录
+                const parts = [];
+                for (let j = 0; j < 8; j++) {
+                    parts.push(view.getUint16(offset + j * 2).toString(16));
+                }
+                answers.push(parts.join(':'));
+            }
+            offset += dataLength;
+        }
+
+        return answers;
+    }
+
+    function convertToNAT64IPv6(ipv4Address) {
+        const parts = ipv4Address.split('.');
+        if (parts.length !== 4) {
+            throw new Error('无效的IPv4地址');
+        }
+
+  
+        const hex = parts.map(part => {
+            const num = parseInt(part, 10);
+            if (num < 0 || num > 255) {
+                throw new Error('无效的IPv4地址段');
+            }
+            return num.toString(16).padStart(2, '0');
+        });
+
+  
+        return DNS64Server.split('/96')[0] + hex[0] + hex[1] + ":" + hex[2] + hex[3];
+    }
+
+    try {
+  
+        if (isIPv6(target)) return target; // IPv6直接返回
+        const ipv4 = isIPv4(target) ? target : await fetchIPv4(target);
+        const nat64 = DNS64Server.endsWith('/96') ? convertToNAT64IPv6(ipv4) : await queryNAT64(ipv4 + atob('LmlwLjA5MDIyNy54eXo='));
+        return isIPv6(nat64) ? nat64 : atob('cHJveHlpcC5jbWxpdXNzc3MubmV0');
+    } catch (error) {
+        console.error('解析错误:', error);
+        return atob('cHJveHlpcC5jbWxpdXNzc3MubmV0');
+    }
+}
+
+async function bestIP(request, env, txt = 'ADD.txt') {
+    const country = request.cf?.country || 'CN';
+    const url = new URL(request.url);
+    async function getNipDomain() {
+        try {
+            const response = await fetch(atob('aHR0cHM6Ly9jbG91ZGZsYXJlLWRucy5jb20vZG5zLXF1ZXJ5P25hbWU9bmlwLjA5MDIyNy54eXomdHlwZT1UWFQ='), {
+                headers: {
+                    'Accept': 'application/dns-json'
+                }
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                if (data.Status === 0 && data.Answer && data.Answer.length > 0) {
+  
+                    const txtRecord = data.Answer[0].data;
+  
+                    const domain = txtRecord.replace(/^"(.*)"$/, '$1');
+                    console.log('通过DoH解析获取到域名: ' + domain);
+                    return domain;
+                }
+            }
+            console.warn('DoH解析失败，使用默认域名');
+            return atob('bmlwLmxmcmVlLm9yZw==');
+        } catch (error) {
+            console.error('DoH解析出错:', error);
+            return atob('aXAuMDkwMjI3Lnh5eg==');
+        }
+    }
+    const nipDomain = await getNipDomain();
+    async function GetCFIPs(ipSource = 'official', targetPort = '443') {
+        try {
+            let response;
+            if (ipSource === 'as13335') {
+  
+                response = await fetch('https://raw.githubusercontent.com/ipverse/asn-ip/master/as/13335/ipv4-aggregated.txt');
+            } else if (ipSource === 'as209242') {
+  
+                response = await fetch('https://raw.githubusercontent.com/ipverse/asn-ip/master/as/209242/ipv4-aggregated.txt');
+            } else if (ipSource === 'as24429') {
+  
+                response = await fetch('https://raw.githubusercontent.com/ipverse/asn-ip/master/as/24429/ipv4-aggregated.txt');
+            } else if (ipSource === 'as35916') {
+  
+                response = await fetch('https://raw.githubusercontent.com/ipverse/asn-ip/master/as/35916/ipv4-aggregated.txt');
+            } else if (ipSource === 'as199524') {
+  
+                response = await fetch('https://raw.githubusercontent.com/ipverse/asn-ip/master/as/199524/ipv4-aggregated.txt');
+            } else if (ipSource === 'cm') {
+  
+                response = await fetch('https://raw.githubusercontent.com/cmliu/cmliu/main/CF-CIDR.txt');
+            } else if (ipSource === 'proxyip') {
+  
+                response = await fetch('https://raw.githubusercontent.com/cmliu/ACL4SSR/main/baipiao.txt');
+                const text = response.ok ? await response.text() : '';
+
+  
+                const allLines = text.split('\n')
+                    .map(line => line.trim())
+                    .filter(line => line && !line.startsWith('#'));
+
+                const validIps = [];
+
+                for (const line of allLines) {
+                    const parsedIP = parseProxyIPLine(line, targetPort);
+                    if (parsedIP) {
+                        validIps.push(parsedIP);
+                    }
+                }
+
+                console.log(`反代IP列表解析完成，端口${targetPort}匹配到${validIps.length}个有效IP`);
+
+  
+                if (validIps.length > 512) {
+                    const shuffled = [...validIps].sort(() => 0.5 - Math.random());
+                    const selectedIps = shuffled.slice(0, 512);
+                    console.log(`IP数量超过512个，随机选择了${selectedIps.length}个IP`);
+                    return selectedIps;
+                } else {
+                    return validIps;
+                }
+            } else {
+  
+                response = await fetch('https://www.cloudflare.com/ips-v4/');
+            }
+
+            const text = response.ok ? await response.text() : `173.245.48.0/20
+103.21.244.0/22
+103.22.200.0/22
+103.31.4.0/22
+141.101.64.0/18
+108.162.192.0/18
+190.93.240.0/20
+188.114.96.0/20
+197.234.240.0/22
+198.41.128.0/17
+162.158.0.0/15
+104.16.0.0/13
+104.24.0.0/14
+172.64.0.0/13
+131.0.72.0/22`;
+            const cidrs = text.split('\n').filter(line => line.trim() && !line.startsWith('#'));
+
+            const ips = new Set(); // 使用Set去重
+            const targetCount = 512;
+            let round = 1;
+
+  
+            while (ips.size < targetCount) {
+                console.log(`第${round}轮生成IP，当前已有${ips.size}个`);
+
+  
+                for (const cidr of cidrs) {
+                    if (ips.size >= targetCount) break;
+
+                    const cidrIPs = generateIPsFromCIDR(cidr.trim(), round);
+                    cidrIPs.forEach(ip => ips.add(ip));
+
+                    console.log(`CIDR ${cidr} 第${round}轮生成${cidrIPs.length}个IP，总计${ips.size}个`);
+                }
+
+                round++;
+
+  
+                if (round > 100) {
+                    console.warn('达到最大轮次限制，停止生成');
+                    break;
+                }
+            }
+
+            console.log(`最终生成${ips.size}个不重复IP`);
+            return Array.from(ips).slice(0, targetCount);
+        } catch (error) {
+            console.error('获取CF IPs失败:', error);
+            return [];
+        }
+    }
+
+  
+    function parseProxyIPLine(line, targetPort) {
+        try {
+  
+            line = line.trim();
+            if (!line) return null;
+
+            let ip = '';
+            let port = '';
+            let comment = '';
+
+  
+            if (line.includes('#')) {
+                const parts = line.split('#');
+                const mainPart = parts[0].trim();
+                comment = parts[1].trim();
+
+  
+                if (mainPart.includes(':')) {
+                    const ipPortParts = mainPart.split(':');
+                    if (ipPortParts.length === 2) {
+                        ip = ipPortParts[0].trim();
+                        port = ipPortParts[1].trim();
+                    } else {
+  
+                        console.warn(`无效的IP:端口格式: ${line}`);
+                        return null;
+                    }
+                } else {
+  
+                    ip = mainPart;
+                    port = '443';
+                }
+            } else {
+  
+                if (line.includes(':')) {
+                    const ipPortParts = line.split(':');
+                    if (ipPortParts.length === 2) {
+                        ip = ipPortParts[0].trim();
+                        port = ipPortParts[1].trim();
+                    } else {
+  
+                        console.warn(`无效的IP:端口格式: ${line}`);
+                        return null;
+                    }
+                } else {
+  
+                    ip = line;
+                    port = '443';
+                }
+            }
+
+  
+            if (!isValidIP(ip)) {
+                console.warn(`无效的IP地址: ${ip} (来源行: ${line})`);
+                return null;
+            }
+
+  
+            const portNum = parseInt(port);
+            if (isNaN(portNum) || portNum < 1 || portNum > 65535) {
+                console.warn(`无效的端口号: ${port} (来源行: ${line})`);
+                return null;
+            }
+
+  
+            if (port !== targetPort) {
+                return null; // 端口不匹配，过滤掉
+            }
+
+  
+            if (comment) {
+                return ip + ':' + port + '#' + comment;
+            } else {
+                return ip + ':' + port;
+            }
+
+        } catch (error) {
+            console.error(`解析IP行失败: ${line}`, error);
+            return null;
+        }
+    }
+
+  
+    function isValidIP(ip) {
+        const ipRegex = /^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/;
+        const match = ip.match(ipRegex);
+
+        if (!match) return false;
+
+  
+        for (let i = 1; i <= 4; i++) {
+            const num = parseInt(match[i]);
+            if (num < 0 || num > 255) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    function generateIPsFromCIDR(cidr, count = 1) {
+        const [network, prefixLength] = cidr.split('/');
+        const prefix = parseInt(prefixLength);
+
+  
+        const ipToInt = (ip) => {
+            return ip.split('.').reduce((acc, octet) => (acc << 8) + parseInt(octet), 0) >>> 0;
+        };
+
+  
+        const intToIP = (int) => {
+            return [
+                (int >>> 24) & 255,
+                (int >>> 16) & 255,
+                (int >>> 8) & 255,
+                int & 255
+            ].join('.');
+        };
+
+        const networkInt = ipToInt(network);
+        const hostBits = 32 - prefix;
+        const numHosts = Math.pow(2, hostBits);
+
+  
+        const maxHosts = numHosts - 2; // -2 排除网络地址和广播地址
+        const actualCount = Math.min(count, maxHosts);
+        const ips = new Set();
+
+  
+        if (maxHosts <= 0) {
+            return [];
+        }
+
+  
+        let attempts = 0;
+        const maxAttempts = actualCount * 10; // 防止无限循环
+
+        while (ips.size < actualCount && attempts < maxAttempts) {
+            const randomOffset = Math.floor(Math.random() * maxHosts) + 1; // +1 避免网络地址
+            const randomIP = intToIP(networkInt + randomOffset);
+            ips.add(randomIP);
+            attempts++;
+        }
+
+        return Array.from(ips);
+    }
+
+  
+    if (request.method === "POST") {
+        if (!env.KV) return new Response("未绑定KV空间", { status: 400 });
+
+        try {
+            const contentType = request.headers.get('Content-Type');
+
+  
+            if (contentType && contentType.includes('application/json')) {
+                const data = await request.json();
+                const action = url.searchParams.get('action') || 'save';
+
+                if (!data.ips || !Array.isArray(data.ips)) {
+                    return new Response(JSON.stringify({ error: 'Invalid IP list' }), {
+                        status: 400,
+                        headers: { 'Content-Type': 'application/json' }
+                    });
+                }
+
+                if (action === 'append') {
+  
+                    const existingContent = await env.KV.get(txt) || '';
+                    const newContent = data.ips.join('\n');
+
+  
+                    const existingLines = existingContent ?
+                        existingContent.split('\n').map(line => line.trim()).filter(line => line) :
+                        [];
+                    const newLines = newContent.split('\n').map(line => line.trim()).filter(line => line);
+
+  
+                    const allLines = [...existingLines, ...newLines];
+                    const uniqueLines = [...new Set(allLines)];
+                    const combinedContent = uniqueLines.join('\n');
+
+  
+                    if (combinedContent.length > 24 * 1024 * 1024) {
+                        return new Response(JSON.stringify({
+                            error: `追加失败：合并后内容过大（${(combinedContent.length / 1024 / 1024).toFixed(2)}MB），超过KV存储限制（24MB）`
+                        }), {
+                            status: 400,
+                            headers: { 'Content-Type': 'application/json' }
+                        });
+                    }
+
+                    await env.KV.put(txt, combinedContent);
+
+                    const addedCount = uniqueLines.length - existingLines.length;
+                    const duplicateCount = newLines.length - addedCount;
+
+                    let message = `成功追加 ${addedCount} 个新的优选IP（原有 ${existingLines.length} 个，现共 ${uniqueLines.length} 个）`;
+                    if (duplicateCount > 0) {
+                        message += `，已去重 ${duplicateCount} 个重复项`;
+                    }
+
+                    return new Response(JSON.stringify({
+                        success: true,
+                        message: message
+                    }), {
+                        headers: { 'Content-Type': 'application/json' }
+                    });
+                } else {
+  
+                    const content = data.ips.join('\n');
+
+  
+                    if (content.length > 24 * 1024 * 1024) {
+                        return new Response(JSON.stringify({
+                            error: '内容过大，超过KV存储限制（24MB）'
+                        }), {
+                            status: 400,
+                            headers: { 'Content-Type': 'application/json' }
+                        });
+                    }
+
+                    await env.KV.put(txt, content);
+
+                    return new Response(JSON.stringify({
+                        success: true,
+                        message: `成功保存 ${data.ips.length} 个优选IP`
+                    }), {
+                        headers: { 'Content-Type': 'application/json' }
+                    });
+                }
+            } else {
+  
+                const content = await request.text();
+                await env.KV.put(txt, content);
+                return new Response("保存成功");
+            }
+
+        } catch (error) {
+            console.error('处理POST请求时发生错误:', error);
+            return new Response(JSON.stringify({
+                error: '操作失败: ' + error.message
+            }), {
+                status: 500,
+                headers: { 'Content-Type': 'application/json' }
+            });
+        }
+    }
+
+  
+    let content = '';
+    let hasKV = !!env.KV;
+
+    if (hasKV) {
+        try {
+            content = await env.KV.get(txt) || '';
+        } catch (error) {
+            console.error('读取KV时发生错误:', error);
+            content = '读取数据时发生错误: ' + error.message;
+        }
+    }
+
+  
+    const cfIPs = []; // 初始为空数组
+
+  
+    const isChina = country === 'CN';
+    const countryDisplayClass = isChina ? '' : 'proxy-warning';
+    const countryDisplayText = isChina ? `${country}` : `${country} ⚠️`;
+
+    const html = `
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Cloudflare IP优选</title>
+    <style>
+        body {
+            width: 80%;
+            margin: 0 auto;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            padding: 20px;
+        }
+        .ip-list {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .ip-item {
+            margin: 2px 0;
+            font-family: monospace;
+        }
+        .stats {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .test-info {
+            margin-top: 15px;
+            padding: 12px;
+            background-color: #f3e5f5;
+            border: 1px solid #ce93d8;
+            border-radius: 6px;
+            color: #4a148c;
+        }
+        .test-info p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .proxy-warning {
+            color: #d32f2f !important;
+            font-weight: bold !important;
+            font-size: 1.1em;
+        }
+        .warning-notice {
+            background-color: #ffebee;
+            border: 2px solid #f44336;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            color: #c62828;
+        }
+        .warning-notice h3 {
+            margin: 0 0 10px 0;
+            color: #d32f2f;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .warning-notice p {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+        .warning-notice ul {
+            margin: 10px 0 10px 20px;
+            line-height: 1.6;
+        }
+        .test-controls {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .port-selector {
+            margin: 10px 0;
+        }
+        .port-selector label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .port-selector select {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .test-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .test-button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .save-button {
+            background-color: #2196F3;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .save-button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .save-button:not(:disabled):hover {
+            background-color: #1976D2;
+        }
+        .append-button {
+            background-color: #FF9800;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .append-button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .append-button:not(:disabled):hover {
+            background-color: #F57C00;
+        }
+        .edit-button {
+            background-color: #9C27B0;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .edit-button:hover {
+            background-color: #7B1FA2;
+        }
+        .back-button {
+            background-color: #607D8B;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #455A64;
+        }
+        .save-warning {
+            margin-top: 10px;
+            background-color: #fff3e0;
+            border: 2px solid #ff9800;
+            border-radius: 6px;
+            padding: 12px;
+            color: #e65100;
+            font-weight: bold;
+        }
+        .save-warning small {
+            font-size: 14px;
+            line-height: 1.5;
+            display: block;
+        }
+        .message {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            display: none;
+        }
+        .message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .progress {
+            width: 100%;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .progress-bar {
+            width: 0%;
+            height: 20px;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: width 0.3s;
+        }
+        .good-latency { color: #4CAF50; font-weight: bold; }
+        .medium-latency { color: #FF9800; font-weight: bold; }
+        .bad-latency { color: #f44336; font-weight: bold; }
+        .show-more-section {
+            text-align: center;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .show-more-btn {
+            background-color: #607D8B;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .show-more-btn:hover {
+            background-color: #455A64;
+        }
+        .ip-display-info {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .save-tip {
+            margin-top: 15px;
+            padding: 12px;
+            background-color: #e8f5e8;
+            border: 1px solid #4CAF50;
+            border-radius: 6px;
+            color: #2e7d32;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .save-tip strong {
+            color: #1b5e20;
+        }
+        .warm-tips {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff3e0;
+            border: 2px solid #ff9800;
+            border-radius: 8px;
+            color: #e65100;
+        }
+        .warm-tips h3 {
+            margin: 0 0 10px 0;
+            color: #f57c00;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .warm-tips p {
+            margin: 8px 0;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        .warm-tips ul {
+            margin: 10px 0 10px 20px;
+            line-height: 1.6;
+        }
+        .warm-tips li {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .warm-tips strong {
+            color: #e65100;
+            font-weight: bold;
+        }
+        .region-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .region-btn {
+            padding: 6px 12px;
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .region-btn:hover {
+            background-color: #d5d5d5;
+        }
+        .region-btn.active {
+            background-color: #2196F3;
+            color: white;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>在线优选IP</h1>
+    
+    ${!isChina ? `
+    <div class="warning-notice">
+        <h3>🚨 代理检测警告</h3>
+        <p><strong>检测到您当前很可能处于代理/VPN环境中！</strong></p>
+        <p>在代理状态下进行的IP优选测试结果将不准确，可能导致：</p>
+        <ul>
+            <li>延迟数据失真，无法反映真实网络状况</li>
+            <li>优选出的IP在直连环境下表现不佳</li>
+            <li>测试结果对实际使用场景参考价值有限</li>
+        </ul>
+        <p><strong>建议操作：</strong>请关闭所有代理软件（VPN、科学上网工具等），确保处于直连网络环境后重新访问本页面。</p>
+    </div>
+    ` : ''}
+
+    <div class="stats">
+        <h2>统计信息</h2>
+        <p><strong>您的国家：</strong><span class="${countryDisplayClass}">${countryDisplayText}</span></p>
+        <p><strong>获取到的IP总数：</strong><span id="ip-count">点击开始测试后加载</span></p>
+        <p><strong>测试进度：</strong><span id="progress-text">未开始</span></p>
+        <div class="progress">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="test-info">
+            <p><strong>📊 测试说明：</strong>当前优选方式仅进行网络延迟测试，主要评估连接响应速度，并未包含带宽速度测试。延迟测试可快速筛选出响应最快的IP节点，适合日常使用场景的初步优选。</p>
+        </div>
+    </div>
+    
+    <div class="warm-tips" id="warm-tips">
+        <h3>💡 温馨提示</h3>
+        <p><strong>优选完成但测试"真连接延迟"为 -1？</strong>这很有可能是您的网络运营商对你的请求进行了阻断。</p>
+        <p><strong>建议尝试以下解决方案：</strong></p>
+        <ul>
+            <li><strong>更换端口：</strong>尝试使用其他端口（如 2053、2083、2087、2096、8443）</li>
+            <li><strong>更换IP库：</strong>切换到不同的IP来源（CM整理列表、AS13335、AS209242列表等，但如果你不明白AS24429和AS199524意味着什么，那就不要选。）</li>
+            <li><strong>更换自定义域名：</strong>如果您使用的还是免费域名，那么您更应该尝试一下更换自定义域</li>
+        </ul>
+        <p>💡 <strong>小贴士：</strong>不同地区和网络环境对各端口的支持情况可能不同，多尝试几个端口组合通常能找到适合的IP。</p>
+    </div>
+
+    <div class="test-controls">
+        <div class="port-selector">
+            <label for="ip-source-select">IP库：</label>
+            <select id="ip-source-select">
+                <option value="official">CF官方列表</option>
+                <option value="cm">CM整理列表</option>
+                <option value="as13335">AS13335列表</option>
+                <option value="as209242">AS209242列表</option>
+                <option value="as24429">AS24429列表(Alibaba)</option>
+                <option value="as199524">AS199524列表(G-Core)</option>
+                <option value="proxyip">反代IP列表</option>
+            </select>
+
+            <label for="port-select" style="margin-left: 20px;">端口：</label>
+            <select id="port-select">
+                <option value="443">443</option>
+                <option value="2053">2053</option>
+                <option value="2083">2083</option>
+                <option value="2087">2087</option>
+                <option value="2096">2096</option>
+                <option value="8443">8443</option>
+            </select>
+        </div>
+        <div class="button-group">
+            <button class="test-button" id="test-btn" onclick="startTest()">开始延迟测试</button>
+            <button class="save-button" id="save-btn" onclick="saveIPs()" disabled>覆盖保存优选IP</button>
+            <button class="append-button" id="append-btn" onclick="appendIPs()" disabled>追加保存优选IP</button>
+            <button class="edit-button" id="edit-btn" onclick="goEdit()">编辑优选列表</button>
+            <button class="back-button" id="back-btn" onclick="goBack()">返回配置页</button>
+        </div>
+        <div class="save-warning">
+            <small>⚠️ 重要提醒："覆盖保存优选IP"会完全覆盖当前 addresses/ADD 优选内容，请慎重考虑！建议优先使用"追加保存优选IP"功能。</small>
+        </div>
+        <div class="save-tip">
+            <strong>💡 保存提示：</strong>[<strong>覆盖保存优选IP</strong>] 和 [<strong>追加保存优选IP</strong>] 功能仅会保存延迟最低的<strong>前16个优选IP</strong>。如需添加更多IP或进行自定义编辑，请使用 [<strong>编辑优选列表</strong>] 功能。
+        </div>
+        <div id="message" class="message"></div>
+    </div>
+    
+    <h2>IP列表 <span id="result-count"></span></h2>
+    <div class="ip-display-info" id="ip-display-info"></div>
+    <div id="region-filter" style="margin: 15px 0; display: none;"></div>
+    <div class="ip-list" id="ip-list">
+        <div class="ip-item">请选择端口和IP库，然后点击"开始延迟测试"加载IP列表</div>
+    </div>
+    <div class="show-more-section" id="show-more-section" style="display: none;">
+        <button class="show-more-btn" id="show-more-btn" onclick="toggleShowMore()">显示更多</button>
+    </div>
+    
+    <script>
+        let originalIPs = []; // 改为动态加载
+        let testResults = [];
+        let displayedResults = []; // 新增：存储当前显示的结果
+        let showingAll = false; // 新增：标记是否显示全部内容
+        let currentDisplayType = 'loading'; // 新增：当前显示类型 'loading' | 'results'
+        let cloudflareLocations = {}; // 新增：存储Cloudflare位置信息
+        
+  
+        const StorageKeys = {
+            PORT: 'cf-ip-test-port',
+            IP_SOURCE: 'cf-ip-test-source'
+        };
+        
+  
+        async function loadCloudflareLocations() {
+            try {
+                const response = await fetch('https://speed.cloudflare.com/locations');
+                if (response.ok) {
+                    const locations = await response.json();
+  
+                    cloudflareLocations = {};
+                    locations.forEach(location => {
+                        cloudflareLocations[location.iata] = location;
+                    });
+                    console.log('Cloudflare位置信息加载成功:', Object.keys(cloudflareLocations).length, '个位置');
+                } else {
+                    console.warn('无法加载Cloudflare位置信息，将使用原始colo值');
+                }
+            } catch (error) {
+                console.error('加载Cloudflare位置信息失败:', error);
+                console.warn('将使用原始colo值');
+            }
+        }
+        
+  
+        function initializeSettings() {
+            const portSelect = document.getElementById('port-select');
+            const ipSourceSelect = document.getElementById('ip-source-select');
+            
+  
+            const savedPort = localStorage.getItem(StorageKeys.PORT);
+            const savedIPSource = localStorage.getItem(StorageKeys.IP_SOURCE);
+            
+  
+            if (savedPort && portSelect.querySelector(\`option[value="\${savedPort}"]\`)) {
+                portSelect.value = savedPort;
+            } else {
+                portSelect.value = '8443'; // 默认值
+            }
+            
+  
+            if (savedIPSource && ipSourceSelect.querySelector(\`option[value="\${savedIPSource}"]\`)) {
+                ipSourceSelect.value = savedIPSource;
+            } else {
+                ipSourceSelect.value = 'official'; // 默认值改为CF官方列表
+            }
+            
+  
+            portSelect.addEventListener('change', function() {
+                localStorage.setItem(StorageKeys.PORT, this.value);
+            });
+            
+            ipSourceSelect.addEventListener('change', function() {
+                localStorage.setItem(StorageKeys.IP_SOURCE, this.value);
+            });
+        }
+        
+  
+        document.addEventListener('DOMContentLoaded', async function() {
+  
+            await loadCloudflareLocations();
+  
+            initializeSettings();
+        });
+        
+  
+        function toggleShowMore() {
+  
+            if (currentDisplayType === 'testing') {
+                return;
+            }
+            
+            showingAll = !showingAll;
+            
+            if (currentDisplayType === 'loading') {
+                displayLoadedIPs();
+            } else if (currentDisplayType === 'results') {
+                displayResults();
+            }
+        }
+        
+  
+        function displayLoadedIPs() {
+            const ipList = document.getElementById('ip-list');
+            const showMoreSection = document.getElementById('show-more-section');
+            const showMoreBtn = document.getElementById('show-more-btn');
+            const ipDisplayInfo = document.getElementById('ip-display-info');
+            
+            if (originalIPs.length === 0) {
+                ipList.innerHTML = '<div class="ip-item">加载IP列表失败，请重试</div>';
+                showMoreSection.style.display = 'none';
+                ipDisplayInfo.textContent = '';
+                return;
+            }
+            
+            const displayCount = showingAll ? originalIPs.length : Math.min(originalIPs.length, 16);
+            const displayIPs = originalIPs.slice(0, displayCount);
+            
+  
+            if (originalIPs.length <= 16) {
+                ipDisplayInfo.textContent = \`显示全部 \${originalIPs.length} 个IP\`;
+                showMoreSection.style.display = 'none';
+            } else {
+                ipDisplayInfo.textContent = \`显示前 \${displayCount} 个IP，共加载 \${originalIPs.length} 个IP\`;
+  
+                if (currentDisplayType !== 'testing') {
+                    showMoreSection.style.display = 'block';
+                    showMoreBtn.textContent = showingAll ? '显示更少' : '显示更多';
+                    showMoreBtn.disabled = false;
+                } else {
+                    showMoreSection.style.display = 'none';
+                }
+            }
+            
+  
+            ipList.innerHTML = displayIPs.map(ip => \`<div class="ip-item">\${ip}</div>\`).join('');
+        }
+        
+        function showMessage(text, type = 'success') {
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = text;
+            messageDiv.className = \`message \${type}\`;
+            messageDiv.style.display = 'block';
+            
+  
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 3000);
+        }
+        
+        function updateButtonStates() {
+            const saveBtn = document.getElementById('save-btn');
+            const appendBtn = document.getElementById('append-btn');
+            const hasResults = displayedResults.length > 0;
+            
+            saveBtn.disabled = !hasResults;
+            appendBtn.disabled = !hasResults;
+        }
+        
+        function disableAllButtons() {
+            const testBtn = document.getElementById('test-btn');
+            const saveBtn = document.getElementById('save-btn');
+            const appendBtn = document.getElementById('append-btn');
+            const editBtn = document.getElementById('edit-btn');
+            const backBtn = document.getElementById('back-btn');
+            const portSelect = document.getElementById('port-select');
+            const ipSourceSelect = document.getElementById('ip-source-select');
+            
+            testBtn.disabled = true;
+            saveBtn.disabled = true;
+            appendBtn.disabled = true;
+            editBtn.disabled = true;
+            backBtn.disabled = true;
+            portSelect.disabled = true;
+            ipSourceSelect.disabled = true;
+        }
+        
+        function enableButtons() {
+            const testBtn = document.getElementById('test-btn');
+            const editBtn = document.getElementById('edit-btn');
+            const backBtn = document.getElementById('back-btn');
+            const portSelect = document.getElementById('port-select');
+            const ipSourceSelect = document.getElementById('ip-source-select');
+            
+            testBtn.disabled = false;
+            editBtn.disabled = false;
+            backBtn.disabled = false;
+            portSelect.disabled = false;
+            ipSourceSelect.disabled = false;
+            updateButtonStates();
+        }
+        
+        async function saveIPs() {
+  
+            let ipsToSave = [];
+            if (document.getElementById('region-filter') && document.getElementById('region-filter').style.display !== 'none') {
+  
+                ipsToSave = displayedResults;
+            } else {
+  
+                ipsToSave = testResults;
+            }
+            
+            if (ipsToSave.length === 0) {
+                showMessage('没有可保存的IP结果', 'error');
+                return;
+            }
+            
+            const saveBtn = document.getElementById('save-btn');
+            const originalText = saveBtn.textContent;
+            
+  
+            disableAllButtons();
+            saveBtn.textContent = '保存中...';
+            
+            try {
+  
+                const saveCount = Math.min(ipsToSave.length, 16);
+                const ips = ipsToSave.slice(0, saveCount).map(result => result.display);
+                
+                const response = await fetch('?action=save', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ ips })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showMessage(data.message + '（已保存前' + saveCount + '个最优IP）', 'success');
+                } else {
+                    showMessage(data.error || '保存失败', 'error');
+                }
+                
+            } catch (error) {
+                showMessage('保存失败: ' + error.message, 'error');
+            } finally {
+                saveBtn.textContent = originalText;
+                enableButtons();
+            }
+        }
+        
+        async function appendIPs() {
+  
+            let ipsToAppend = [];
+            if (document.getElementById('region-filter') && document.getElementById('region-filter').style.display !== 'none') {
+  
+                ipsToAppend = displayedResults;
+            } else {
+  
+                ipsToAppend = testResults;
+            }
+            
+            if (ipsToAppend.length === 0) {
+                showMessage('没有可追加的IP结果', 'error');
+                return;
+            }
+            
+            const appendBtn = document.getElementById('append-btn');
+            const originalText = appendBtn.textContent;
+            
+  
+            disableAllButtons();
+            appendBtn.textContent = '追加中...';
+            
+            try {
+  
+                const saveCount = Math.min(ipsToAppend.length, 16);
+                const ips = ipsToAppend.slice(0, saveCount).map(result => result.display);
+                
+                const response = await fetch('?action=append', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ ips })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showMessage(data.message + '（已追加前' + saveCount + '个最优IP）', 'success');
+                } else {
+                    showMessage(data.error || '追加失败', 'error');
+                }
+                
+            } catch (error) {
+                showMessage('追加失败: ' + error.message, 'error');
+            } finally {
+                appendBtn.textContent = originalText;
+                enableButtons();
+            }
+        }
+        
+        function goEdit() {
+            const currentUrl = window.location.href;
+            const parentUrl = currentUrl.substring(0, currentUrl.lastIndexOf('/'));
+            window.location.href = parentUrl + '/edit';
+        }
+        
+        function goBack() {
+            const currentUrl = window.location.href;
+            const parentUrl = currentUrl.substring(0, currentUrl.lastIndexOf('/'));
+            window.location.href = parentUrl;
+        }
+        
+        async function testIP(ip, port) {
+            const timeout = 5000; // 增加超时时间到5秒
+            
+  
+            const parsedIP = parseIPFormat(ip, port);
+            if (!parsedIP) {
+                return null;
+            }
+            
+  
+            let lastError = null;
+            for (let attempt = 1; attempt <= 3; attempt++) {
+                const result = await singleTest(parsedIP.host, parsedIP.port, timeout);
+                if (result) {
+                    console.log(\`IP \${parsedIP.host}:\${parsedIP.port} 第\${attempt}次测试成功: \${result.latency}ms, colo: \${result.colo}, 类型: \${result.type}\`);
+                    
+  
+                    const locationCode = cloudflareLocations[result.colo] ? cloudflareLocations[result.colo].cca2 : result.colo;
+                    
+  
+                    const typeText = result.type === 'official' ? '官方优选' : '反代优选';
+                    const display = \`\${parsedIP.host}:\${parsedIP.port}#\${locationCode} \${typeText} \${result.latency}ms\`;
+                    
+                    return {
+                        ip: parsedIP.host,
+                        port: parsedIP.port,
+                        latency: result.latency,
+                        colo: result.colo,
+                        type: result.type,
+                        locationCode: locationCode,
+                        comment: \`\${locationCode} \${typeText}\`,
+                        display: display
+                    };
+                } else {
+                    console.log(\`IP \${parsedIP.host}:\${parsedIP.port} 第\${attempt}次测试失败\`);
+                    if (attempt < 3) {
+  
+                        await new Promise(resolve => setTimeout(resolve, 200));
+                    }
+                }
+            }
+            
+            return null; // 所有尝试都失败
+        }
+        
+  
+        function parseIPFormat(ipString, defaultPort) {
+            try {
+                let host, port, comment;
+                
+  
+                let mainPart = ipString;
+                if (ipString.includes('#')) {
+                    const parts = ipString.split('#');
+                    mainPart = parts[0];
+                    comment = parts[1];
+                }
+                
+  
+                if (mainPart.includes(':')) {
+                    const parts = mainPart.split(':');
+                    host = parts[0];
+                    port = parseInt(parts[1]);
+                } else {
+                    host = mainPart;
+                    port = parseInt(defaultPort);
+                }
+                
+  
+                if (!host || !port || isNaN(port)) {
+                    return null;
+                }
+                
+                return {
+                    host: host.trim(),
+                    port: port,
+                    comment: comment ? comment.trim() : null
+                };
+            } catch (error) {
+                console.error('解析IP格式失败:', ipString, error);
+                return null;
+            }
+        }
+        
+        async function singleTest(ip, port, timeout) {
+  
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), timeout);
+                const parts = ip.split('.').map(part => {
+                    const hex = parseInt(part, 10).toString(16);
+                    return hex.length === 1 ? '0' + hex : hex; // 补零
+                });
+                const nip = parts.join('');
+                
+  
+                await fetch('https://' + nip + '.${nipDomain}:' + port + '/cdn-cgi/trace', {
+                    signal: controller.signal,
+                    mode: 'cors'
+                });
+                
+                clearTimeout(timeoutId);
+            } catch (preRequestError) {
+  
+                console.log('预请求失败 (' + ip + ':' + port + '):', preRequestError.message);
+            }
+            
+  
+            const startTime = Date.now();
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), timeout);
+                const parts = ip.split('.').map(part => {
+                    const hex = parseInt(part, 10).toString(16);
+                    return hex.length === 1 ? '0' + hex : hex; // 补零
+                });
+                const nip = parts.join('');
+                const response = await fetch('https://' + nip + '.${nipDomain}:' + port + '/cdn-cgi/trace', {
+                    signal: controller.signal,
+                    mode: 'cors'
+                });
+                
+                clearTimeout(timeoutId);
+                
+  
+                if (response.status === 200) {
+                    const latency = Date.now() - startTime;
+                    const responseText = await response.text();
+                    
+  
+                    const traceData = parseTraceResponse(responseText);
+                    
+                    if (traceData && traceData.ip && traceData.colo) {
+  
+                        const responseIP = traceData.ip;
+                        let ipType = 'official'; // 默认官方IP
+                        
+  
+                        if (responseIP.includes(':') || responseIP === ip) {
+                            ipType = 'proxy'; // 反代IP
+                        }
+  
+                        
+                        return {
+                            ip: ip,
+                            port: port,
+                            latency: latency,
+                            colo: traceData.colo,
+                            type: ipType,
+                            responseIP: responseIP
+                        };
+                    }
+                }
+                
+                return null;
+                
+            } catch (error) {
+                const latency = Date.now() - startTime;
+                
+  
+                if (latency >= timeout - 100) {
+                    return null;
+                }
+                
+                return null;
+            }
+        }
+        
+  
+        function parseTraceResponse(responseText) {
+            try {
+                const lines = responseText.split('\\n');
+                const data = {};
+                
+                for (const line of lines) {
+                    const trimmedLine = line.trim();
+                    if (trimmedLine && trimmedLine.includes('=')) {
+                        const [key, value] = trimmedLine.split('=', 2);
+                        data[key] = value;
+                    }
+                }
+                
+                return data;
+            } catch (error) {
+                console.error('解析trace响应失败:', error);
+                return null;
+            }
+        }
+        
+        async function testIPsWithConcurrency(ips, port, maxConcurrency = 32) {
+            const results = [];
+            const totalIPs = ips.length;
+            let completedTests = 0;
+            
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+            
+  
+            let index = 0;
+            
+            async function worker() {
+                while (index < ips.length) {
+                    const currentIndex = index++;
+                    const ip = ips[currentIndex];
+                    
+                    const result = await testIP(ip, port);
+                    if (result) {
+                        results.push(result);
+                    }
+                    
+                    completedTests++;
+                    
+  
+                    const progress = (completedTests / totalIPs) * 100;
+                    progressBar.style.width = progress + '%';
+                    progressText.textContent = \`\${completedTests}/\${totalIPs} (\${progress.toFixed(1)}%) - 有效IP: \${results.length}\`;
+                }
+            }
+            
+  
+            const workers = Array(Math.min(maxConcurrency, ips.length))
+                .fill()
+                .map(() => worker());
+            
+            await Promise.all(workers);
+            
+            return results;
+        }
+        
+        async function startTest() {
+            const testBtn = document.getElementById('test-btn');
+            const portSelect = document.getElementById('port-select');
+            const ipSourceSelect = document.getElementById('ip-source-select');
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+            const ipList = document.getElementById('ip-list');
+            const resultCount = document.getElementById('result-count');
+            const ipCount = document.getElementById('ip-count');
+            const ipDisplayInfo = document.getElementById('ip-display-info');
+            const showMoreSection = document.getElementById('show-more-section');
+            
+            const selectedPort = portSelect.value;
+            const selectedIPSource = ipSourceSelect.value;
+            
+  
+            localStorage.setItem(StorageKeys.PORT, selectedPort);
+            localStorage.setItem(StorageKeys.IP_SOURCE, selectedIPSource);
+            
+            testBtn.disabled = true;
+            testBtn.textContent = '加载IP列表...';
+            portSelect.disabled = true;
+            ipSourceSelect.disabled = true;
+            testResults = [];
+            displayedResults = []; // 重置显示结果
+            showingAll = false; // 重置显示状态
+            currentDisplayType = 'loading'; // 设置当前显示类型
+            ipList.innerHTML = '<div class="ip-item">正在加载IP列表，请稍候...</div>';
+            ipDisplayInfo.textContent = '';
+            showMoreSection.style.display = 'none';
+            updateButtonStates(); // 更新按钮状态
+            
+  
+            progressBar.style.width = '0%';
+            
+  
+            let ipSourceName = '';
+            switch(selectedIPSource) {
+                case 'official':
+                    ipSourceName = 'CF官方';
+                    break;
+                case 'cm':
+                    ipSourceName = 'CM整理';
+                    break;
+                case 'as13335':
+                    ipSourceName = 'CF全段';
+                    break;
+                case 'as209242':
+                    ipSourceName = 'CF非官方';
+                    break;
+                case 'as24429':
+                    ipSourceName = 'Alibaba';
+                    break;
+                case 'as199524':
+                    ipSourceName = 'G-Core';
+                    break;
+                case 'proxyip':
+                    ipSourceName = '反代IP';
+                    break;
+                default:
+                    ipSourceName = '未知';
+            }
+            
+            progressText.textContent = '正在加载 ' + ipSourceName + ' IP列表...';
+            
+  
+            originalIPs = await loadIPs(selectedIPSource, selectedPort);
+
+            if (originalIPs.length === 0) {
+                ipList.innerHTML = '<div class="ip-item">加载IP列表失败，请重试</div>';
+                ipCount.textContent = '0 个';
+                testBtn.disabled = false;
+                testBtn.textContent = '开始延迟测试';
+                portSelect.disabled = false;
+                ipSourceSelect.disabled = false;
+                progressText.textContent = '加载失败';
+                return;
+            }
+            
+  
+            ipCount.textContent = originalIPs.length + ' 个';
+            
+  
+            displayLoadedIPs();
+            
+  
+            testBtn.textContent = '测试中...';
+            progressText.textContent = '开始测试端口 ' + selectedPort + '...';
+            currentDisplayType = 'testing'; // 切换到测试状态
+            
+  
+            showMoreSection.style.display = 'none';
+            
+  
+            const results = await testIPsWithConcurrency(originalIPs, selectedPort, 32);
+            
+  
+            testResults = results.sort((a, b) => a.latency - b.latency);
+            
+  
+            currentDisplayType = 'results'; // 切换到结果显示状态
+            showingAll = false; // 重置显示状态
+            displayResults();
+            
+  
+            createRegionFilter();
+            
+            testBtn.disabled = false;
+            testBtn.textContent = '重新测试';
+            portSelect.disabled = false;
+            ipSourceSelect.disabled = false;
+            progressText.textContent = '完成 - 有效IP: ' + testResults.length + '/' + originalIPs.length + ' (端口: ' + selectedPort + ', IP库: ' + ipSourceName + ')';
+        }
+        
+  
+        async function loadIPs(ipSource, port) {
+            try {
+                const response = await fetch(\`?loadIPs=\${ipSource}&port=\${port}\`, {
+                    method: 'GET'
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Failed to load IPs');
+                }
+                
+                const data = await response.json();
+                return data.ips || [];
+            } catch (error) {
+                console.error('加载IP列表失败:', error);
+                return [];
+            }
+        }
+        
+        function displayResults() {
+            const ipList = document.getElementById('ip-list');
+            const resultCount = document.getElementById('result-count');
+            const showMoreSection = document.getElementById('show-more-section');
+            const showMoreBtn = document.getElementById('show-more-btn');
+            const ipDisplayInfo = document.getElementById('ip-display-info');
+            
+            if (testResults.length === 0) {
+                ipList.innerHTML = '<div class="ip-item">未找到有效的IP</div>';
+                resultCount.textContent = '';
+                ipDisplayInfo.textContent = '';
+                showMoreSection.style.display = 'none';
+                displayedResults = [];
+                updateButtonStates();
+                return;
+            }
+            
+  
+            const maxDisplayCount = showingAll ? testResults.length : Math.min(testResults.length, 16);
+            displayedResults = testResults.slice(0, maxDisplayCount);
+            
+  
+            if (testResults.length <= 16) {
+                resultCount.textContent = '(共测试出 ' + testResults.length + ' 个有效IP)';
+                ipDisplayInfo.textContent = '显示全部 ' + testResults.length + ' 个测试结果';
+                showMoreSection.style.display = 'none';
+            } else {
+                resultCount.textContent = '(共测试出 ' + testResults.length + ' 个有效IP)';
+                ipDisplayInfo.textContent = '显示前 ' + maxDisplayCount + ' 个测试结果，共 ' + testResults.length + ' 个有效IP';
+                showMoreSection.style.display = 'block';
+                showMoreBtn.textContent = showingAll ? '显示更少' : '显示更多';
+                showMoreBtn.disabled = false; // 确保在结果显示时启用按钮
+            }
+            
+            const resultsHTML = displayedResults.map(result => {
+                let className = 'good-latency';
+                if (result.latency > 200) className = 'bad-latency';
+                else if (result.latency > 100) className = 'medium-latency';
+                
+                return '<div class="ip-item ' + className + '">' + result.display + '</div>';
+            }).join('');
+            
+            ipList.innerHTML = resultsHTML;
+            updateButtonStates();
+        }
+        
+  
+        function createRegionFilter() {
+  
+            const uniqueRegions = [...new Set(testResults.map(result => result.locationCode))];
+            uniqueRegions.sort(); // 按字母顺序排序
+            
+            const filterContainer = document.getElementById('region-filter');
+            if (!filterContainer) return;
+            
+            if (uniqueRegions.length === 0) {
+                filterContainer.style.display = 'none';
+                return;
+            }
+            
+  
+            let filterHTML = '<h3>地区筛选：</h3><div class="region-buttons">';
+            filterHTML += '<button class="region-btn active" data-region="all">全部 (' + testResults.length + ')</button>';
+            
+            uniqueRegions.forEach(region => {
+                const count = testResults.filter(r => r.locationCode === region).length;
+                filterHTML += '<button class="region-btn" data-region="' + region + '">' + region + ' (' + count + ')</button>';
+            });
+            
+            filterHTML += '</div>';
+            filterContainer.innerHTML = filterHTML;
+            filterContainer.style.display = 'block';
+            
+  
+            document.querySelectorAll('.region-btn').forEach(button => {
+                button.addEventListener('click', function() {
+  
+                    document.querySelectorAll('.region-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+  
+                    const selectedRegion = this.getAttribute('data-region');
+                    if (selectedRegion === 'all') {
+                        displayedResults = [...testResults];
+                    } else {
+                        displayedResults = testResults.filter(result => result.locationCode === selectedRegion);
+                    }
+                    
+  
+                    showingAll = false;
+                    displayFilteredResults();
+                });
+            });
+        }
+        
+  
+        function displayFilteredResults() {
+            const ipList = document.getElementById('ip-list');
+            const resultCount = document.getElementById('result-count');
+            const showMoreSection = document.getElementById('show-more-section');
+            const showMoreBtn = document.getElementById('show-more-btn');
+            const ipDisplayInfo = document.getElementById('ip-display-info');
+            
+            if (displayedResults.length === 0) {
+                ipList.innerHTML = '<div class="ip-item">未找到有效的IP</div>';
+                resultCount.textContent = '';
+                ipDisplayInfo.textContent = '';
+                showMoreSection.style.display = 'none';
+                updateButtonStates();
+                return;
+            }
+            
+  
+            const maxDisplayCount = showingAll ? displayedResults.length : Math.min(displayedResults.length, 16);
+            const currentResults = displayedResults.slice(0, maxDisplayCount);
+            
+  
+            const totalCount = testResults.length;
+            const filteredCount = displayedResults.length;
+            
+            if (filteredCount <= 16) {
+                resultCount.textContent = '(共测试出 ' + totalCount + ' 个有效IP，筛选出 ' + filteredCount + ' 个)';
+                ipDisplayInfo.textContent = '显示全部 ' + filteredCount + ' 个筛选结果';
+                showMoreSection.style.display = 'none';
+            } else {
+                resultCount.textContent = '(共测试出 ' + totalCount + ' 个有效IP，筛选出 ' + filteredCount + ' 个)';
+                ipDisplayInfo.textContent = '显示前 ' + maxDisplayCount + ' 个筛选结果，共 ' + filteredCount + ' 个';
+                showMoreSection.style.display = 'block';
+                showMoreBtn.textContent = showingAll ? '显示更少' : '显示更多';
+                showMoreBtn.disabled = false;
+            }
+            
+            const resultsHTML = currentResults.map(result => {
+                let className = 'good-latency';
+                if (result.latency > 200) className = 'bad-latency';
+                else if (result.latency > 100) className = 'medium-latency';
+                
+                return '<div class="ip-item ' + className + '">' + result.display + '</div>';
+            }).join('');
+            
+            ipList.innerHTML = resultsHTML;
+            updateButtonStates();
+        }
+    </script>
+    
+    </body>
+    </html>
+    `;
+
+  
+    if (url.searchParams.get('loadIPs')) {
+        const ipSource = url.searchParams.get('loadIPs');
+        const port = url.searchParams.get('port') || '443';
+        const ips = await GetCFIPs(ipSource, port);
+
+        return new Response(JSON.stringify({ ips }), {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+    }
+
+    return new Response(html, {
+        headers: {
+            'Content-Type': 'text/html; charset=UTF-8',
+        },
+    });
+}
+
+/**
+ * 获取 Cloudflare 账户今日使用量统计
+ * @param {string} accountId - 账户ID（可选，如果没有会自动获取）
+ * @param {string} email - Cloudflare 账户邮箱
+ * @param {string} apikey - Cloudflare API 密钥
+ * @param {string} apitoken - Cloudflare API 令牌
+ * @param {number} all - 总限额，默认10万次
+ * @returns {Array} [总限额, Pages请求数, Workers请求数, 总请求数]
+ */
+async function getUsage(accountId, email, apikey, apitoken, all = 100000) {
+    /**
+     * 获取 Cloudflare 账户ID
+     * @param {string} email - 账户邮箱
+     * @param {string} apikey - API密钥
+     * @param {number} accountIndex - 取第几个账户，默认第0个
+     * @returns {string} 账户ID
+     */
+    async function getAccountId(email, apikey) {
+        console.log('正在获取账户信息...');
+
+        const response = await fetch("https://api.cloudflare.com/client/v4/accounts", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "X-AUTH-EMAIL": email,
+                "X-AUTH-KEY": apikey,
+            }
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.error(`获取账户信息失败: ${response.status} ${response.statusText}`, errorText);
+            throw new Error(`Cloudflare API 请求失败: ${response.status} ${response.statusText} - ${errorText}`);
+        }
+
+        const res = await response.json();
+  
+
+        let accountIndex = 0; // 默认取第一个账户
+        let foundMatch = false; // 标记是否找到匹配的账户
+
+  
+        if (res?.result && res.result.length > 1) {
+            console.log(`发现 ${res.result.length} 个账户，正在智能匹配...`);
+
+  
+            const emailPrefix = email.toLowerCase();
+            console.log(`邮箱: ${emailPrefix}`);
+
+  
+            for (let i = 0; i < res.result.length; i++) {
+                const accountName = res.result[i]?.name?.toLowerCase() || '';
+                console.log(`检查账户 ${i}: ${res.result[i]?.name}`);
+
+  
+                if (accountName.startsWith(emailPrefix)) {
+                    accountIndex = i;
+                    foundMatch = true;
+                    console.log(`✅ 找到匹配账户，使用第 ${i} 个账户`);
+                    break;
+                }
+            }
+
+  
+            if (!foundMatch) {
+                console.log('❌ 未找到匹配的账户，使用默认第 0 个账户');
+            }
+        } else if (res?.result && res.result.length === 1) {
+            console.log('只有一个账户，使用第 0 个账户');
+            foundMatch = true;
+        }
+
+        const name = res?.result?.[accountIndex]?.name;
+        const id = res?.result?.[accountIndex]?.id;
+
+        console.log(`最终选择账户 ${accountIndex} - 名称: ${name}, ID: ${id}`);
+
+        if (!id) {
+            throw new Error("找不到有效的账户ID，请检查API权限");
+        }
+
+        return id;
+    }
+
+    try {
+  
+        if (!accountId) {
+            console.log('未提供账户ID，正在自动获取...');
+            accountId = await getAccountId(email, apikey);
+        }
+
+  
+        const now = new Date();
+        const endDate = now.toISOString(); // 结束时间：现在
+
+  
+        now.setUTCHours(0, 0, 0, 0);
+        const startDate = now.toISOString(); // 开始时间：今天0点
+
+        console.log(`查询时间范围: ${startDate} 到 ${endDate}`);
+  
+        let headers = {}
+        if (apikey) {
+            headers = {
+                "Content-Type": "application/json",
+                "X-AUTH-EMAIL": email,
+                "X-AUTH-KEY": apikey,
+            };
+        }
+        if (apitoken) {
+            headers = {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${apitoken}`,
+            }
+        }
+
+  
+        const response = await fetch("https://api.cloudflare.com/client/v4/graphql", {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify({
+  
+                query: `query getBillingMetrics($accountId: String!, $filter: AccountWorkersInvocationsAdaptiveFilter_InputObject) {
+                    viewer {
+                        accounts(filter: {accountTag: $accountId}) {
+                            pagesFunctionsInvocationsAdaptiveGroups(limit: 1000, filter: $filter) {
+                                sum {
+                                    requests
+                                }
+                            }
+                            workersInvocationsAdaptive(limit: 10000, filter: $filter) {
+                                sum {
+                                    requests
+                                }
+                            }
+                        }
+                    }
+                }`,
+                variables: {
+                    accountId: accountId,
+                    filter: {
+                        datetime_geq: startDate, // 大于等于开始时间
+                        datetime_leq: endDate    // 小于等于结束时间
+                    },
+                },
+            }),
+        });
+
+  
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.error(`GraphQL查询失败: ${response.status} ${response.statusText}`, errorText);
+            console.log('返回默认值：全部为0');
+            return [all, 0, 0, 0];
+        }
+
+        const res = await response.json();
+
+  
+        if (res.errors && res.errors.length > 0) {
+            console.error('GraphQL查询错误:', res.errors[0].message);
+            console.log('返回默认值：全部为0');
+            return [all, 0, 0, 0];
+        }
+
+  
+        const accounts = res?.data?.viewer?.accounts?.[0];
+
+        if (!accounts) {
+            console.warn('未找到账户数据');
+            return [all, 0, 0, 0];
+        }
+
+  
+        const pagesArray = accounts?.pagesFunctionsInvocationsAdaptiveGroups || [];
+        const pages = pagesArray.reduce((total, item) => {
+            return total + (item?.sum?.requests || 0);
+        }, 0);
+
+  
+        const workersArray = accounts?.workersInvocationsAdaptive || [];
+        const workers = workersArray.reduce((total, item) => {
+            return total + (item?.sum?.requests || 0);
+        }, 0);
+
+  
+        const total = pages + workers;
+
+        console.log(`统计结果 - Pages: ${pages}, Workers: ${workers}, 总计: ${total}`);
+
+  
+        return [all, pages || 0, workers || 0, total || 0];
+
+    } catch (error) {
+        console.error('获取使用量时发生错误:', error.message);
+  
+        return [all, 0, 0, 0];
+    }
+}
+
+async function nginx() {
+    const text = `
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Welcome to nginx!</title>
+	<style>
+		body {
+			width: 35em;
+			margin: 0 auto;
+			font-family: Tahoma, Verdana, Arial, sans-serif;
+		}
+	</style>
+	</head>
+	<body>
+	<h1>Welcome to nginx!</h1>
+	<p>If you see this page, the nginx web server is successfully installed and
+	working. Further configuration is required.</p>
+	
+	<p>For online documentation and support please refer to
+	<a href="http://nginx.org/">nginx.org</a>.<br/>
+	Commercial support is available at
+	<a href="http://nginx.com/">nginx.com</a>.</p>
+	
+	<p><em>Thank you for using nginx.</em></p>
+	</body>
+	</html>
+	`
+    return text;
+}
